@@ -1,0 +1,1 @@
+{"artist": "Bob%20Dylan", "title": "Knockin'%20On%20Heaven's%20DoorRemastered", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
