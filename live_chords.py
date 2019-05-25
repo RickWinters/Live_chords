@@ -41,6 +41,7 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = title.replace(")", "")
         title = title.replace("live", "")
         title = title.replace("Live", "")
+        title = title.replace("\'","")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
     else:
         title = "no song playing"
@@ -99,7 +100,7 @@ def extract_search_results(strings):
 
     data = json.loads(content)  # create dictionary from string
 
-    if 'not_found' in data['data']:
+    if ('not_found' in data['data']) and (data['data']['not_found'] == True):
         data = "no data found"
     else:
         data = json.loads(content)  # convert stringed json file to python dict
@@ -112,15 +113,26 @@ def extract_search_results(strings):
 # Print the search results to the console
 def sort_search_results(data):
     # while loop that loops over all the results and checks if it contains chords or tabs. If there are results which are not tabs or chords these results are popped.
+
     i = 0  # iterator
-    while i < len(data) and len(data) > 1:  # while iterator
+    #while i < len(data) and len(data) > 1:  # while iterator
+    #    result = data[i]
+    #    if "type_name" in result:
+    #        # if not (result["type_name"] == "Chords" or result["type_name"] == "Tab"):
+    #        if not result["type_name"] == "Chords":
+    #            data.pop(i)
+    #        else:
+    #            i += 1
+    #    else:
+    #        data.pop(i)
+
+    while i < len(data) and len(data) > 1:
         result = data[i]
-        if "type_name" in result:
-            # if not (result["type_name"] == "Chords" or result["type_name"] == "Tab"):
-            if not result["type_name"] == "Chords":
-                data.pop(i)
-            else:
+        if "type" in result:
+            if result['type'].lower() == "chords":
                 i += 1
+            else:
+                data.pop(i)
         else:
             data.pop(i)
 
@@ -327,11 +339,9 @@ class file:
                     line2 = line2.lower()
                     line2 = normalize_line(line2)
                     j += 1
-                    line2app = self.azlyrics[
-                        j].lower()  # check the next line as well, incase the lyrics in tabslines correspond with 2 lines of text in azlyrics
+                    line2app = self.azlyrics[j].lower()  # check the next line as well, incase the lyrics in tabslines correspond with 2 lines of text in azlyrics
                     line2app = normalize_line(line2app)
-                    similarity = similar(line1,
-                                         line2)  # check similarity, so that "blowin'" and "blowing" can still be matched
+                    similarity = similar(line1,line2)  # check similarity, so that "blowin'" and "blowing" can still be matched
                     ind = line2.find(line1[0:4])
                     partlinesimilarity = similar(line1, line2[ind:ind + len(line1)])
                     if partlinesimilarity > 0.5 or similarity > 0.5:  # if tabslines text is only part of the azlyrics than it matches as well or if the similarity is similar. TODO check if part of line2 is similar enough?
@@ -376,14 +386,13 @@ class file:
 
     def sort_lyrics(self):
         i = 0
+        introtext = ""
+        starttext = ""
         for line in self.tabslines:
             if "intro" in line['group'].lower(): #if the tabslines are part of the intro, assing them regardless if they're lyrics or not.
-                self.chorded_lyrics.append({})
-                self.chorded_lyrics[-1]['lyrics'] = line['text']
-                self.chorded_lyrics[-1]['chords'] = ""
-                self.chorded_lyrics[-1]['start'] = 0
-                self.chorded_lyrics[-1]['end'] = 0
-                self.chorded_lyrics[-1]['group'] = line['group']
+                introtext += line['text'] + "\n"
+            elif "start" in line['group'].lower():
+                starttext += line['text'] + "\n"
             else:
                 if line['lyrics']: #if the tabslines is past the lyrics, only group them if this line is a lyrics. Assign the previous line for chords
                     self.chorded_lyrics.append({})
@@ -396,6 +405,21 @@ class file:
                     self.chorded_lyrics[-1]['stop'] = 0
                     self.chorded_lyrics[-1]['group'] = line['group']
             i += 1
+        introdict = {}
+        introdict['lyrics'] = introtext
+        introdict['chords'] = ""
+        introdict['start'] = 0
+        introdict['end'] = 0
+        introdict['group'] = "intro"
+        self.chorded_lyrics.insert(0,introdict)
+
+        startdict = {}
+        startdict['lyrics'] = starttext
+        startdict['chords'] = ""
+        startdict['start'] = 0
+        startdict['end'] = 0
+        startdict['group'] = "start"
+        self.chorded_lyrics.insert(0,startdict)
 
 
 def normalize_line(str):
@@ -482,9 +506,6 @@ def main():
     artist = ""
     title_old = ""
     title = ""
-
-    black = (30, 30, 30)
-    current_line = (50, 50, 50)
 
     while True:
         title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
