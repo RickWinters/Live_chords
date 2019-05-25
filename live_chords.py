@@ -152,14 +152,12 @@ def sort_search_results(data):
 # Print tabs to console
 def print_tabs(file):
     if file.has_azlyrics and file.has_tabs:
-        group = "start"
         for line in file.chorded_lyrics:
-            if line['group'] != group:
-                group = line['group']
-                print("\n")
-            if line['chords'] != "":
-                print("chords: " + line['chords'])
-            print("lyrics: " + line['lyrics'])
+            if line['group'] == 'intro' or line['group'] == 'start':
+                print(line['lyrics'])
+            else:
+                if line['chords'] != "": print("chords: " + line['chords'])
+                if line['lyrics'] != "": print("lyrics: " + line['lyrics'])
     elif file.has_tabs and not file.has_azlyrics:
         for line in file.tabslines:
             print(line['text'])

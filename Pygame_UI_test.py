@@ -91,7 +91,7 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
 def draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line):
     if len(chorded_lyrics) >= 1:
         size = screen.get_size()
-        height = int(round(size[1] / 6))
+        height = int(round(size[1] / 6)) #height of one line
         left_offset = 100
         if active_line > 1:
             chords_info = fonts['inactive'].render(chorded_lyrics[active_line - 2]['chords'], False,
