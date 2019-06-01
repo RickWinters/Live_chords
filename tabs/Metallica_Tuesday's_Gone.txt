@@ -1,0 +1,1 @@
+{"artist": "Metallica", "title": "Tuesday's%20Gone", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

@@ -1,0 +1,1 @@
+{"artist": "no%20song%20playing", "title": "no%20song%20playing", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
