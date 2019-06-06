@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16414804-f0a3-41f4-b22a-52a2228916b6" name="Default" comment="changed printout in backend">
+    <list default="true" id="16414804-f0a3-41f4-b22a-52a2228916b6" name="Default" comment="added file version checking. Meaning if the backend is updated, files are lyrics are re-downloaded and scanned. Necessary to sync them again though.">
       <change beforePath="$PROJECT_DIR$/.cache-rickwinters12" beforeDir="false" afterPath="$PROJECT_DIR$/.cache-rickwinters12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pygame_UI_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame_UI_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Until_We_Meet_Again.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Until_We_Meet_Again.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Twarres_Fugelfrij.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Twarres_Fugelfrij.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Twarres_She_Couldnt_Laugh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Twarres_She_Couldnt_Laugh.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Twarres_Tink_Oan_My.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Twarres_Tink_Oan_My.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Twarres_Were_Alone.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Twarres_Were_Alone.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Twarres_Wêr_Bisto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Twarres_Wêr_Bisto.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/no_song_playing_no_song_playing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/no_song_playing_no_song_playing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +28,87 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+            <state relative-caret-position="1084">
+              <caret line="529" column="39" lean-forward="true" selection-start-line="524" selection-start-column="4" selection-end-line="529" selection-end-column="39" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#242#284#0" />
+                <element signature="e#438#2121#0" />
+                <element signature="e#844#999#0" />
+                <element signature="e#1229#1936#0" />
+                <element signature="e#1955#2030#0" />
+                <element signature="e#2310#3162#0" />
+                <element signature="e#2628#3117#0" />
+                <element signature="e#2744#3002#0" />
+                <element signature="e#2860#2943#0" />
+                <element signature="e#3282#4046#0" />
+                <element signature="e#3421#3591#0" />
+                <element signature="e#3534#3591#0" />
+                <element signature="e#3745#4030#0" />
+                <element signature="e#4151#4698#0" />
+                <element signature="e#4199#4333#0" />
+                <element signature="e#4292#4333#0" />
+                <element signature="e#4527#4663#0" />
+                <element signature="e#4778#5955#0" />
+                <element signature="e#4968#5025#0" />
+                <element signature="e#5393#5596#0" />
+                <element signature="e#5451#5558#0" />
+                <element signature="e#5706#5870#0" />
+                <element signature="e#5738#5870#0" />
+                <element signature="e#5793#5870#0" />
+                <element signature="e#6008#6483#0" />
+                <element signature="e#6056#6365#0" />
+                <element signature="e#6101#6365#0" />
+                <element signature="e#6230#6365#0" />
+                <element signature="e#6424#6483#0" />
+                <element signature="e#6692#9930#0" />
+                <element signature="e#7383#7893#0" />
+                <element signature="e#7948#8592#0" />
+                <element signature="e#9343#9641#0" />
+                <element signature="e#9394#9641#0" />
+                <element signature="e#9664#9869#0" />
+                <element signature="e#9933#10153#0" />
+                <element signature="e#10541#11000#0" />
+                <element signature="e#11104#11560#0" />
+                <element signature="e#11698#12191#0" />
+                <element signature="e#12227#12592#0" />
+                <element signature="e#12983#13549#0" />
+                <element signature="e#13441#13549#0" />
+                <element signature="e#13667#15791#0" />
+                <element signature="e#13918#15791#0" />
+                <element signature="e#14121#14853#0" />
+                <element signature="e#15233#15791#0" />
+                <element signature="e#16159#18367#0" />
+                <element signature="e#16216#18323#0" />
+                <element signature="e#16413#18303#0" />
+                <element signature="e#16528#18303#0" />
+                <element signature="e#17355#17579#0" />
+                <element signature="e#18030#18303#0" />
+                <element signature="e#18410#19033#0" />
+                <element signature="e#18625#19033#0" />
+                <element signature="e#18661#18800#0" />
+                <element signature="e#18842#18998#0" />
+                <element signature="e#19070#20804#0" />
+                <element signature="e#19170#20321#0" />
+                <element signature="e#19480#20302#0" />
+                <element signature="e#19635#20302#0" />
+                <element signature="e#20836#21097#0" />
+                <element signature="e#21131#21193#0" />
+                <element signature="e#21226#21411#0" />
+                <element signature="e#21442#21632#0" />
+                <element signature="e#21664#22760#0" />
+                <element signature="e#21707#21754#0" />
+                <element signature="e#21802#21862#0" />
+                <element signature="e#21891#22146#0" />
+                <element signature="e#21942#22015#0" />
+                <element signature="e#22180#22455#0" />
+                <element signature="e#22197#22269#0" />
+                <element signature="e#22326#22455#0" />
+                <element signature="e#22360#22455#0" />
+                <element signature="e#22493#22558#0" />
+                <element signature="e#22594#22760#0" />
+                <element signature="e#23115#23642#0" />
+                <element signature="e#23358#23601#0" />
               </folding>
             </state>
           </provider>
@@ -39,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
-              <caret line="228" selection-start-line="228" selection-end-line="228" />
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -51,11 +135,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Current_song.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state>
+              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -115,10 +202,10 @@
         <option value="$PROJECT_DIR$/musixmatch test.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/spotipy/client.py" />
         <option value="$PROJECT_DIR$/Azlyrics_api.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/bla.py" />
         <option value="$PROJECT_DIR$/Pygame_UI_test.py" />
         <option value="$PROJECT_DIR$/live_chords.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -139,6 +226,10 @@
             <path>
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
               <item name="live_chords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -165,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Pygame_UI_test">
+  <component name="RunManager" selected="Python.live_chords">
     <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,10 +371,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.live_chords" />
-        <item itemvalue="Python.bla" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.Pygame_UI_test" />
+        <item itemvalue="Python.bla" />
         <item itemvalue="Python.musixmatch test" />
       </list>
     </recent_temporary>
@@ -306,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557934321448</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added file version checking. Meaning if the backend is updated, files are lyrics are re-downloaded and scanned. Necessary to sync them again though.">
+      <created>1559418268225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559418268225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -327,8 +425,8 @@
       <window_info id="Favorites" order="2" sideWeight="0.5176991" side_tool="true" weight="0.12381454" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31419286" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4301192" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31419286" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4301192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
@@ -404,7 +502,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deleted files" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted files" />
+    <MESSAGE value="added file version checking. Meaning if the backend is updated, files are lyrics are re-downloaded and scanned. Necessary to sync them again though." />
+    <option name="LAST_COMMIT_MESSAGE" value="added file version checking. Meaning if the backend is updated, files are lyrics are re-downloaded and scanned. Necessary to sync them again though." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -413,36 +512,6 @@
           <url>file://$PROJECT_DIR$/musixmatch test.py</url>
           <line>60</line>
           <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="323" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>415</line>
-          <option name="timeStamp" value="344" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>207</line>
-          <option name="timeStamp" value="345" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>373</line>
-          <option name="timeStamp" value="350" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="357" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pygame_UI_test.py</url>
-          <line>125</line>
-          <option name="timeStamp" value="358" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -647,36 +716,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="159">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Current_song.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state>
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        <state relative-caret-position="1084">
+          <caret line="529" column="39" lean-forward="true" selection-start-line="524" selection-start-column="4" selection-end-line="529" selection-end-column="39" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#242#284#0" />
+            <element signature="e#438#2121#0" />
+            <element signature="e#844#999#0" />
+            <element signature="e#1229#1936#0" />
+            <element signature="e#1955#2030#0" />
+            <element signature="e#2310#3162#0" />
+            <element signature="e#2628#3117#0" />
+            <element signature="e#2744#3002#0" />
+            <element signature="e#2860#2943#0" />
+            <element signature="e#3282#4046#0" />
+            <element signature="e#3421#3591#0" />
+            <element signature="e#3534#3591#0" />
+            <element signature="e#3745#4030#0" />
+            <element signature="e#4151#4698#0" />
+            <element signature="e#4199#4333#0" />
+            <element signature="e#4292#4333#0" />
+            <element signature="e#4527#4663#0" />
+            <element signature="e#4778#5955#0" />
+            <element signature="e#4968#5025#0" />
+            <element signature="e#5393#5596#0" />
+            <element signature="e#5451#5558#0" />
+            <element signature="e#5706#5870#0" />
+            <element signature="e#5738#5870#0" />
+            <element signature="e#5793#5870#0" />
+            <element signature="e#6008#6483#0" />
+            <element signature="e#6056#6365#0" />
+            <element signature="e#6101#6365#0" />
+            <element signature="e#6230#6365#0" />
+            <element signature="e#6424#6483#0" />
+            <element signature="e#6692#9930#0" />
+            <element signature="e#7383#7893#0" />
+            <element signature="e#7948#8592#0" />
+            <element signature="e#9343#9641#0" />
+            <element signature="e#9394#9641#0" />
+            <element signature="e#9664#9869#0" />
+            <element signature="e#9933#10153#0" />
+            <element signature="e#10541#11000#0" />
+            <element signature="e#11104#11560#0" />
+            <element signature="e#11698#12191#0" />
+            <element signature="e#12227#12592#0" />
+            <element signature="e#12983#13549#0" />
+            <element signature="e#13441#13549#0" />
+            <element signature="e#13667#15791#0" />
+            <element signature="e#13918#15791#0" />
+            <element signature="e#14121#14853#0" />
+            <element signature="e#15233#15791#0" />
+            <element signature="e#16159#18367#0" />
+            <element signature="e#16216#18323#0" />
+            <element signature="e#16413#18303#0" />
+            <element signature="e#16528#18303#0" />
+            <element signature="e#17355#17579#0" />
+            <element signature="e#18030#18303#0" />
+            <element signature="e#18410#19033#0" />
+            <element signature="e#18625#19033#0" />
+            <element signature="e#18661#18800#0" />
+            <element signature="e#18842#18998#0" />
+            <element signature="e#19070#20804#0" />
+            <element signature="e#19170#20321#0" />
+            <element signature="e#19480#20302#0" />
+            <element signature="e#19635#20302#0" />
+            <element signature="e#20836#21097#0" />
+            <element signature="e#21131#21193#0" />
+            <element signature="e#21226#21411#0" />
+            <element signature="e#21442#21632#0" />
+            <element signature="e#21664#22760#0" />
+            <element signature="e#21707#21754#0" />
+            <element signature="e#21802#21862#0" />
+            <element signature="e#21891#22146#0" />
+            <element signature="e#21942#22015#0" />
+            <element signature="e#22180#22455#0" />
+            <element signature="e#22197#22269#0" />
+            <element signature="e#22326#22455#0" />
+            <element signature="e#22360#22455#0" />
+            <element signature="e#22493#22558#0" />
+            <element signature="e#22594#22760#0" />
+            <element signature="e#23115#23642#0" />
+            <element signature="e#23358#23601#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
