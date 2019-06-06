@@ -9,7 +9,7 @@ import requests
 import spotipy
 import spotipy.util as util
 from bs4 import BeautifulSoup
-
+import datetime
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
@@ -18,6 +18,8 @@ def similar(a, b):
 # Get current song playing from spotify
 def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user-read-currently-playing'):
     # get acces token by logging in or get it from cache
+    if __name__ != "__main__":
+        print("SEARCHING FOR SONG NOW AT " + str(datetime.datetime.now().time()))
     token = util.prompt_for_user_token(username, scope, client_id=clientid, client_secret=clientsecret,
                                        redirect_uri=redirect_uri)
     # create spotipy object
@@ -41,6 +43,9 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = title.replace(")", "")
         title = title.replace("live", "")
         title = title.replace("Live", "")
+        title = title.replace("\'","")
+        title = title.replace("Version","")
+        title = title.replace("version","")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
     else:
         title = "no song playing"
@@ -54,6 +59,7 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
 # the input is a single string, this function seperates the multiple lines outputting an array of strings, where every index is a new line
 def seperate_lines(data, tabslines=False):
     # Seperate the HTML text in multiple lines of text, skipping the newline tag
+    data = data + "\n" #add a newline character to data so that the last line is picked up as well.
     string = " "  # generate empty string
     strings = []  # list of lines
     for char in data:  # for every character in the data
@@ -99,7 +105,7 @@ def extract_search_results(strings):
 
     data = json.loads(content)  # create dictionary from string
 
-    if 'not_found' in data['data']:
+    if ('not_found' in data['data']) and (data['data']['not_found'] == True):
         data = "no data found"
     else:
         data = json.loads(content)  # convert stringed json file to python dict
@@ -112,15 +118,26 @@ def extract_search_results(strings):
 # Print the search results to the console
 def sort_search_results(data):
     # while loop that loops over all the results and checks if it contains chords or tabs. If there are results which are not tabs or chords these results are popped.
+
     i = 0  # iterator
-    while i < len(data) and len(data) > 1:  # while iterator
+    #while i < len(data) and len(data) > 1:  # while iterator
+    #    result = data[i]
+    #    if "type_name" in result:
+    #        # if not (result["type_name"] == "Chords" or result["type_name"] == "Tab"):
+    #        if not result["type_name"] == "Chords":
+    #            data.pop(i)
+    #        else:
+    #            i += 1
+    #    else:
+    #        data.pop(i)
+
+    while i < len(data) and len(data) > 1:
         result = data[i]
-        if "type_name" in result:
-            # if not (result["type_name"] == "Chords" or result["type_name"] == "Tab"):
-            if not result["type_name"] == "Chords":
-                data.pop(i)
-            else:
+        if "type" in result:
+            if result['type'].lower() == "chords":
                 i += 1
+            else:
+                data.pop(i)
         else:
             data.pop(i)
 
@@ -140,14 +157,12 @@ def sort_search_results(data):
 # Print tabs to console
 def print_tabs(file):
     if file.has_azlyrics and file.has_tabs:
-        group = "start"
         for line in file.chorded_lyrics:
-            if line['group'] != group:
-                group = line['group']
-                print("\n")
-            if line['chords'] != "":
-                print("chords: " + line['chords'])
-            print("lyrics: " + line['lyrics'])
+            if line['group'] == 'intro' or line['group'] == 'start':
+                print(line['lyrics'])
+            else:
+                if line['chords'] != "": print("chords: " + line['chords'])
+                if line['lyrics'] != "": print("lyrics: " + line['lyrics'])
     elif file.has_tabs and not file.has_azlyrics:
         for line in file.tabslines:
             print(line['text'])
@@ -233,7 +248,7 @@ def search_lyrics(artist, title, print_to_console=False):
 #   'to_dict()': Write all the class variables to the dictionary
 #   'from_dict()': write all
 class file:
-    def __init__(self, artist, title):
+    def __init__(self, artist, title, version):
         self.artist = artist
         self.title = title
         self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
@@ -244,6 +259,8 @@ class file:
         self.has_tabs = False
         self.has_azlyrics = False
         self.chorded_lyrics = []
+        self.script_version = version
+        self.file_version = ""
         self.to_dict()
 
     def to_dict(self): #helper function to write all the instance variables to the dictionary
@@ -256,6 +273,7 @@ class file:
         self.data['has_tabs'] = self.has_tabs
         self.data['has_azlyrics'] = self.has_azlyrics
         self.data['chorded_lyrics'] = self.chorded_lyrics
+        self.data['version'] = self.script_version
 
     def from_dict(self): #when a file is loaded only the instance variable dictionary is loaded. This function loads values in.
         self.artist = self.data['artist']
@@ -267,12 +285,39 @@ class file:
         self.has_tabs = self.data['has_tabs']
         self.has_azlyrics = self.data['has_azlyrics']
         self.chorded_lyrics = self.data['chorded_lyrics']
+        if 'version' in self.data:
+            self.file_version = self.data['version']
+
+    def clear_file(self):
+        self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
+        self.tabs = ""
+        self.synced = False
+        self.tabslines = []
+        self.azlyrics = ""
+        self.has_tabs = False
+        self.has_azlyrics = False
+        self.chorded_lyrics = []
+        self.file_version = ""
+        self.to_dict()
 
     def open_file(self): #this functions opens a file from the title if it exists and otherwise searches online
         print("LOOKING FOR EXISTING FILE")
         file_exists = os.path.isfile( #see if the file exists
             "./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt")
-        if not file_exists: #if the file doesn't exist go and soarch the file
+        correct_version = True
+        if file_exists:
+            print("FILE FOUND")
+            File = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
+                        "r")
+            text = File.read()
+            File.close()
+            self.data = json.loads(text)  # load the textfile into the dictionary data
+            self.from_dict()  # load the dictionary data into the variables
+            if self.file_version != self.script_version:
+                self.clear_file()
+                correct_version = False
+                print("UPDATING TO NEWER VERSION")
+        if (not file_exists) or (not correct_version): #if the file doesn't exist go and soarch the file
             print("FILE NOT FOUND")
             tabs, azlyrics = search_lyrics(self.artist, self.title) #searches on the internet for the tabs and azlyrics
             if tabs != "no data found": #if tabs are found, fill in the instance variables
@@ -299,14 +344,7 @@ class file:
                     self.compare_lyrics() #compare lyrics will analyze the tabslines for which lines are lyrics and which line is chords. this uses azlyrics as masterfile and marks any tabslines as lyrics when it is similar enough
                     self.group_on_keywords() #assign a group to every line by extending keywords to all following lines until the next keyword
                     self.sort_lyrics() #use all the tabslines to fill the 'chorded_lyrics', this is a group of lyrics chords belonging to this line. These can be printed to the screen as one single group.
-        else:
-            print("FILE FOUND")
-            File = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
-                        "r")
-            text = File.read()
-            File.close()
-            self.data = json.loads(text) #load the textfile into the dictionary data
-            self.from_dict() #load the dictionary data into the variables
+
 
     def close_file(self):
         self.to_dict() #load the variables into the dictionary
@@ -327,11 +365,9 @@ class file:
                     line2 = line2.lower()
                     line2 = normalize_line(line2)
                     j += 1
-                    line2app = self.azlyrics[
-                        j].lower()  # check the next line as well, incase the lyrics in tabslines correspond with 2 lines of text in azlyrics
+                    line2app = self.azlyrics[j].lower()  # check the next line as well, incase the lyrics in tabslines correspond with 2 lines of text in azlyrics
                     line2app = normalize_line(line2app)
-                    similarity = similar(line1,
-                                         line2)  # check similarity, so that "blowin'" and "blowing" can still be matched
+                    similarity = similar(line1,line2)  # check similarity, so that "blowin'" and "blowing" can still be matched
                     ind = line2.find(line1[0:4])
                     partlinesimilarity = similar(line1, line2[ind:ind + len(line1)])
                     if partlinesimilarity > 0.5 or similarity > 0.5:  # if tabslines text is only part of the azlyrics than it matches as well or if the similarity is similar. TODO check if part of line2 is similar enough?
@@ -376,14 +412,13 @@ class file:
 
     def sort_lyrics(self):
         i = 0
+        introtext = ""
+        starttext = ""
         for line in self.tabslines:
             if "intro" in line['group'].lower(): #if the tabslines are part of the intro, assing them regardless if they're lyrics or not.
-                self.chorded_lyrics.append({})
-                self.chorded_lyrics[-1]['lyrics'] = line['text']
-                self.chorded_lyrics[-1]['chords'] = ""
-                self.chorded_lyrics[-1]['start'] = 0
-                self.chorded_lyrics[-1]['end'] = 0
-                self.chorded_lyrics[-1]['group'] = line['group']
+                introtext += line['text'] + "\n"
+            elif "start" in line['group'].lower():
+                starttext += line['text'] + "\n"
             else:
                 if line['lyrics']: #if the tabslines is past the lyrics, only group them if this line is a lyrics. Assign the previous line for chords
                     self.chorded_lyrics.append({})
@@ -396,6 +431,21 @@ class file:
                     self.chorded_lyrics[-1]['stop'] = 0
                     self.chorded_lyrics[-1]['group'] = line['group']
             i += 1
+        introdict = {}
+        introdict['lyrics'] = introtext
+        introdict['chords'] = ""
+        introdict['start'] = 0
+        introdict['end'] = 0
+        introdict['group'] = "intro"
+        self.chorded_lyrics.insert(0,introdict)
+
+        startdict = {}
+        startdict['lyrics'] = starttext
+        startdict['chords'] = ""
+        startdict['start'] = 0
+        startdict['end'] = 0
+        startdict['group'] = "start"
+        self.chorded_lyrics.insert(0,startdict)
 
 
 def normalize_line(str):
@@ -483,9 +533,6 @@ def main():
     title_old = ""
     title = ""
 
-    black = (30, 30, 30)
-    current_line = (50, 50, 50)
-
     while True:
         title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
         artist = artist.replace(" ", "%20")
@@ -493,7 +540,7 @@ def main():
 
         if (artist != artist_old) or (title != title_old):
             print(("-" * 100 + "\n") * 3)
-            datafile = file(artist, title)
+            datafile = file(artist, title, version)
             datafile.open_file()
             print_tabs(datafile)
             datafile.close_file()
@@ -503,6 +550,6 @@ def main():
         else:
             time.sleep(5)
 
-
+version = '2019-06-01'
 if __name__ == "__main__":
     main()

@@ -1,0 +1,1 @@
+{"artist": "Dropkick%20Murphys", "title": "Climbing%20a%20Chair%20to%20Bed", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
