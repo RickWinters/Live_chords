@@ -3,7 +3,7 @@ import time
 
 import pygame
 
-from live_chords import get_current_song, file
+from live_chords import get_current_song, file, version
 
 
 def setup_screen():
@@ -91,7 +91,7 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
 def draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line):
     if len(chorded_lyrics) >= 1:
         size = screen.get_size()
-        height = int(round(size[1] / 6))
+        height = int(round(size[1] / 6)) #height of one line
         left_offset = 100
         if active_line > 1:
             chords_info = fonts['inactive'].render(chorded_lyrics[active_line - 2]['chords'], False,
@@ -163,7 +163,7 @@ def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title,
                     sys.exit()
             clock.tick(100)
     synced = True
-    datafile = file(artist.replace(" ", "%20"), title.replace(" ", "%20"))
+    datafile = file(artist.replace(" ", "%20"), title.replace(" ", "%20"), version)
     datafile.open_file()
     datafile.from_dict()
     datafile.chorded_lyrics = chorded_lyrics
@@ -203,7 +203,7 @@ def main():
             t1 = time.time()
 
         if (artist != artist_old) or (title != title_old):  # if song has changed open the file
-            datafile = file(artist, title)
+            datafile = file(artist, title, version)
             datafile.open_file()  # opens file, and if it doesn't exist the lyrics will be downloaded, analyzed etc
             datafile.close_file()  # if it's a new file the file is saved
             artist_old = artist  # keeping track of song
@@ -237,6 +237,7 @@ def main():
                     if active_line == len(chorded_lyrics):
                         count = 0
                         active_line = len(chorded_lyrics) - 1
+                        time.sleep(2)
                     print("active_line = " + str(active_line))
                     print("time = " + str(round((t + t0) / 60) - 1) + ":" + str(round((t + t0) % 60, 2)))
                     screen = draw_background(screen, fonts, colors, artist, title, synced, has_azlyrics, has_tabs)

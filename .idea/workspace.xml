@@ -1,8 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16414804-f0a3-41f4-b22a-52a2228916b6" name="Default" comment="added file version checking. Meaning if the backend is updated, files are lyrics are re-downloaded and scanned. Necessary to sync them again though.">
+    <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tabs/Acda_en_de_Munnik_Halve_Zinnen.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Acda_en_de_Munnik_Mooi_Liedje.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Alter_Bridge_Blackbird.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Anderson_East_Satisfy_Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Andrew_Belle_In_My_VeinsFeat._Erin_Mccarley.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Bernhoft_Lookalike.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Better_Late_Ms._Robinson.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_A_Head_Full_of_Dreams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Adventure_of_a_Lifetime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Dont_Let_It_Break_Your_Heart.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Paradise.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Speed_of_Sound.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Strawberry_Swing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_The_Scientist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_Viva_La_Vida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Coldplay_White_Shadows.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Danny_Vera_Baby_Dont_Go.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Danny_Vera_Pompadour_Hippie.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Danny_Vera_Roller_Coaster.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Disturbed_A_Reason_to_Fight.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Disturbed_The_Sound_Of_Silence.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dolly_Parton_Jolene.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Donavon_Frankenreiter_Like_the_Sun.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Climbing_a_Chair_to_Bed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Curse_Of_A_Fallen_Soul.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Deeds_Not_Words_at_Fenway_Park.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_F_Lannigans_Ball_on_Lansdowne,_Boston_Ma.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Famous_for_Nothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_God_Willing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Going_out_in_Style.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Hang_Em_High.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Johnny,_I_Hardly_Knew_Ya.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_My_Hero.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Paying_My_Way.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Peg_O_My_Heart.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Rose_Tattoo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Tessie_on_Lansdowne,_Boston_Ma.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_The_Burden.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_The_Dirty_Glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_The_Hardest_Mile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_The_Outcast.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_The_State_of_Massachusetts.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Time_to_Go_on_Lansdowne,_Boston_Ma.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Walk_Away.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_Wild_Rover.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Elvis_Presley_Guitar_Man.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Devils_Dance_Floor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Dont_Let_Me_Die.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Dont_Shut_em_Down.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Dont_Shut_em_Down_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_No_More_Paddys_Lament.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Queen_Annes_Revenge.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Rare_Oul_Times.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution_.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Speed_of_Darkness_.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Days_Weve_Yet_To_Meet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Ol_Beggars_Bush.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Powers_Out.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Theres_Nothing_Left_Pt._1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Theres_Nothing_Left_Pt._2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Us_of_Lesser_Gods.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Whats_Left_of_the_Flag.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Gamma_Ray_Time_for_Derance.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Gavin_James_The_Book_of_LoveEP_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Guns_N'_Roses_Sweet_Child_O_Mine.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Love_Songs_Love_Me_Like_You_Do_Instrumental_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Love_Songs_Photograph_Instrumental_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Love_Songs_Thinking_out_Loud_Instrumental_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Lynyrd_Skynyrd_Tuesday's_GoneDemo_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Lynyrd_Skynyrd_Tuesdays_Gone.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Lynyrd_Skynyrd_Tuesdays_GoneDemo_Version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/MARINA_Forget.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/MARINA_Oh_No!.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Dat_Ik_Je_Mis.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Manowar_Master_of_the_Wind.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Marc_Cohn_Walking_in_Memphis.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Marilyn_Manson_Sweet_Dreams_Are_Made_Of_This.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Me_First_and_the_Gimme_Gimmes_Jolene.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Metallica_Nothing_Else_Matters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Metallica_Tuesdays_Gone.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Noah_Kahan_Hurt_Somebody_With_Julia_Michaels.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Oasis_Dont_Look_Back_In_Anger.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Opeth_Windowpane.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Racoon_Love_You_More.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Racoon_Oceaan.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Shake_Shake_Go_England_Skies_Session.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Skid_Row_18_and_Life.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Snow_Patrol_Just_Say_Yes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Genesis_Singers_Ms._Robinson.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_A_Friend_Like_Me.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_By_My_Side.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_Control.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_She_Got_Arrested.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_Title_Holder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Interrupters_White_Noise.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_Scene_Iedereen_Is_Van_De_Wereld.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_White_Stripes_Jolene_.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/The_White_Stripes_Jolene__Under_Blackpool_Lights.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_By_My.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Children.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_De_Júste_Snaar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Finally.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Find_Your_Way.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Friday_Night.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Fugelfrij.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Heart_Of_Glass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Ill_See_You.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Ladybird.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_She_Couldnt_Laugh.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Standing_Still.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Stream.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_This_Is_How_It_Is.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Tink_Oan_My.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Were_Alone.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Why.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Wêr_Bisto.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Twarres_Your_Decisions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/U2_One.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Vetiver_More_Of_This.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tabs/Walking_On_Cars_Catch_Me_If_You_Can.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache-rickwinters12" beforeDir="false" afterPath="$PROJECT_DIR$/.cache-rickwinters12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flogging%20Molly_Drunken%20Lullabies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flogging_Molly_Devil's_Dance_Floor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pygame_UI_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame_UI_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bla.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_page.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Avicii_Wake_Me_UpRadio_Edit.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Badflower_Heroin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Billy_Joel_Piano_Man.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Bob_Dylan_Knockin'_On_Heaven's_DoorRemastered.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Dawn_Brothers_All_In_Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Ain't_Nothing_Wrong_With_a_Little_Bit_of_Loving.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Big_Talk.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Black_Hole_Raga_A_Mind_Slip.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_California_Burning.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Deceit_&amp;_Woo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Everything_Everywhere.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Evil_Mothergrabber.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Freeway_Flight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Pick_Your_Bones_out_of_the_Water.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Sugar_Moon.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Toux-Da-Loux.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/DeWolff_Working_Like_a_Dog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Don_McLean_American_Pie.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Duo_Gadjo_and_their_Hot_Friends_Sous_Le_Ciel_De_Paris.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Eagle-Eye_Cherry_Save_Tonight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_A_Prayer_for_Me_in_Silence.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_A_Prayer_for_Me_in_Silence.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Another_Bag_of_Bricks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Another_Bag_of_Bricks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Another_Bag_of_Bricks_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Between_A_Man_And_A_Woman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Between_A_Man_And_A_Woman.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Black_Friday_Rule.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Black_Friday_Rule.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Cruel_Mistress.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Crushed_Hostile_Nations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Death_Valley_Queen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Death_Valley_Queen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Devi's_Dance_Floor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Devil's_Dance_Floor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Devil's_Dance_Floor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Don't_Let_Me_Die.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Don't_Shut_'em_Down.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Don't_Shut_'em_Down_Version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Don’t_Let_Me_Die.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Drunken_Lullabies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Drunken_Lullabies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Every_Dog_Has_Its_Day.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Every_Dog_Has_Its_Day.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls_feat_Lucinda_Williams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Far_Away_Boys.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Float.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Float.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_From_The_Back_Of_A_Broken_Dream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_From_The_Back_Of_A_Broken_Dream.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Going_Home.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Going_Home.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Grace_of_God_Go_I.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Grace_of_God_Go_I.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Hope.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Hope.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_If_I_Ever_Leave_This_World_A.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_If_I_Ever_Leave_This_World_A.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Laura.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Laura.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_Is_Good.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_Is_Good.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_in_a_Tenement_Square.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_in_a_Tenement_Square.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Light_of_a_Fading_Star.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Light_of_a_Fading_Star.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Man_With_No_Country.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Man_With_No_Country.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_May_the_Living_be_Dead_In_Our_Wake.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_May_the_Living_be_Dead_In_Our_Wake.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_No_More_Paddy's_Lament.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Or_Boy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Or_BoyAll_Of_Our_Boys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Or_BoyAll_Of_Our_Boys.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Punch_Drunk_Grinning_Soul.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Punch_Drunk_Grinning_Soul.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Queen_Anne's_Revenge.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Rare_Oul'_Times.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Rebels_of_the_Sacred_Heart.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Rebels_of_the_Sacred_Heart.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Reptiles_We_Woke_Up.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Reptiles_We_Woke_Up.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Requiem_for_a_Dying_Song.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Requiem_for_a_Dying_Song.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution_Version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution_Version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Rise_Up.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Rise_Up.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Saints_&amp;_Sinners.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Saints_&amp;_Sinners_Version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Saints_&amp;_Sinners_Version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Salty_Dog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Salty_Dog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Selfish_Man.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Sentimental_Johnny.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Seven_Deadly_Sins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Seven_Deadly_Sins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_So_Sail_On.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_So_Sail_On.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Speed_of_Darkness.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Speed_of_Darkness.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Swagger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Swagger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_'Ol_Beggars_Bush.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Bride_Wore_Black.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Bride_Wore_Black.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Cradle_of_Humankind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Cradle_of_Humankind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Days_We've_Yet_To_Meet.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Guns_Of_Jericho.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Guns_Of_Jericho.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Hand_Of_John_L._Sullivan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Kilburn_High_Road.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Kilburn_High_Road.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Last_Serenade_Sailors_And_Fishermen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Last_Serenade_Sailors_And_Fishermen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Lightning_Storm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Lightning_Storm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Likes_of_You_Again.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Likes_of_You_Again.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Likes_of_You_Again_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Power's_Out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Present_State_of_Grace.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Present_State_of_Grace.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Seven_Deadly_Sins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Seven_Deadly_Sins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Son_Never_Shines_On_Closed_Doors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Son_Never_Shines_On_Closed_Doors.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Spoken_Wheel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Spoken_Wheel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Story_So_Far.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Story_So_Far.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Wanderlust.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Wanderlust.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Wanderlust_.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Worst_Day_Since_Yesterday.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Worst_Day_Since_Yesterday.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_There's_Nothing_Left_Pt._1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_These_Exiled_Years.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_These_Exiled_Years.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_To_Youth_My_Sweet_Roisin_Dubh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Tomorrow_Comes_a_Day_too_Soon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Tomorrow_Comes_a_Day_too_Soon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Until_We_Meet_Again.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Until_We_Meet_Again.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Us_Of_Lesser_Gods.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Wanderlust.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Wanderlust.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_What's_Left_of_the_Flag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_What's_Left_of_the_Flag.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_What’s_Left_of_the_Flag.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_With_a_Wonder_and_a_Wild_Desire.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_With_a_Wonder_and_a_Wild_Desire.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Within_a_Mile_of_Home.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Within_a_Mile_of_Home.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_You_Won't_Make_A_Fool_Out_Of_Me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Gavin_Mikhail_Amnesia.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Green_Day_Boulevard_of_Broken_Dreams.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Green_Day_Good_Riddance_Time_of_Your_Life.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/John_Denver_Take_Me_Home,_Country_RoadsRerecorded.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Johnny_Cash_Hurt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Johnny_Cash_Hurt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Oasis_Wonderwall.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Pink_Floyd_Wish_You_Were_Here2011_Remastered_Version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Shawn_Mendes_Stitches.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Sonata_Arctica_Candle_Lawns.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Sonata_Arctica_Tallulah.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/The_All-American_Rejects_Gives_You_Hell.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/WALK_THE_MOON_Shut_Up_and_Dance.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Yann_Tiersen_La_Valse_d'AmélieVersion_originale.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Yann_Tiersen_The_Waltz_of_the_MonstersAccordions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/no_song_playing_no_song_playing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/no_song_playing_no_song_playing.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,98 +262,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="live_chords" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/_bootlocale.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="125" selection-start-line="125" selection-end-line="125" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="1339">
+              <caret line="545" column="32" lean-forward="true" selection-start-line="545" selection-start-column="32" selection-end-line="545" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#438#2121#0" />
+                <element signature="e#2310#3162#0" />
+                <element signature="e#3282#4046#0" />
+                <element signature="e#4151#4698#0" />
+                <element signature="e#4778#5955#0" />
+                <element signature="e#6008#6483#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Current_song.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sailo</find>
-      <find>2045663</find>
-      <find>url</find>
-      <find>the last serenade</find>
-      <find>204</find>
-      <find>_get</find>
-      <find>play</find>
-      <find>headers</find>
-      <find>window.ugapp.store.page</find>
-      <find>.pop</find>
-      <find>seek</find>
-      <find>artist_font_color</find>
-      <find>artist_font</find>
-      <find>file</find>
-      <find>current</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>colors['artist_font']</replace>
-      <replace>fonts['artist']</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,32 +299,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html_page.txt" />
-        <option value="$PROJECT_DIR$/Current_song.py" />
-        <option value="$PROJECT_DIR$/spotipy_tutorial.py" />
-        <option value="$PROJECT_DIR$/Musixmatch_api.py" />
-        <option value="$PROJECT_DIR$/temp.txt" />
-        <option value="$PROJECT_DIR$/musixmatch test.py" />
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/spotipy/client.py" />
-        <option value="$PROJECT_DIR$/Pygame_UI_test.py" />
-        <option value="$PROJECT_DIR$/Azlyrics_api.py" />
-        <option value="$PROJECT_DIR$/live_chords.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/bla.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,18 +322,18 @@
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
               <item name="live_chords" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,50 +347,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bla">
-    <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="live_chords" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pygame_UI_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="bla" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="live_chords" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bla.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="live_chords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="live_chords" type="PythonConfigurationType" factoryName="Python">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,377 +369,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="musixmatch test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="live_chords" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/musixmatch test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="live_chords" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.Pygame_UI_test" />
-      <item itemvalue="Python.bla" />
-      <item itemvalue="Python.live_chords" />
-      <item itemvalue="Python.musixmatch test" />
-      <item itemvalue="Python.test" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.bla" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.Pygame_UI_test" />
-        <item itemvalue="Python.live_chords" />
-        <item itemvalue="Python.musixmatch test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="16414804-f0a3-41f4-b22a-52a2228916b6" name="Default" comment="" />
-      <created>1549465133554</created>
+      <changelist id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="" />
+      <created>1559847740628</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1549465133554</updated>
+      <updated>1559847740628</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48230088" visible="true" weight="0.12328767" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5176991" side_tool="true" weight="0.12381454" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34669557" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4301192" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932165" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32932165" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32822758" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32934782" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32932165" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32934782" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.475" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32934782" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32934782" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/musixmatch test.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>489</line>
-          <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="322" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="323" />
-        </line-breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="azartist" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>&quot;atlantic&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>j == 25</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;Doubt not&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;doubtnot&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;blowing&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;whistles&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;life is good&quot; in line1</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>j == len(self.azlyrics)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;blackened&quot; in line2</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>i == 490</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="896" selection-start-line="896" selection-end-line="896" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/HTMLParser.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_page.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="486" column="2653" selection-start-line="486" selection-start-column="2653" selection-end-line="486" selection-end-column="2653" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spotipy_tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="511" column="32" selection-end-line="592" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/musixmatch test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" selection-start-line="52" selection-end-line="56" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#40#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/html/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musixmatch_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="1667" selection-start-line="1667" selection-end-line="1667" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/spotipy/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="571" column="55" selection-start-line="571" selection-start-column="55" selection-end-line="571" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Current_song.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Azlyrics_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="1339">
+          <caret line="545" column="32" lean-forward="true" selection-start-line="545" selection-start-column="32" selection-end-line="545" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#438#2121#0" />
+            <element signature="e#2310#3162#0" />
+            <element signature="e#3282#4046#0" />
+            <element signature="e#4151#4698#0" />
+            <element signature="e#4778#5955#0" />
+            <element signature="e#6008#6483#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

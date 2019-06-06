@@ -6,7 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
-.idea
+.idea/
+
+account_info.txt
+.cache-rickwinters12
 
 # Distribution / packaging
 .Python

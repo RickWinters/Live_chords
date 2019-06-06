@@ -1,1 +1,0 @@
-{"artist": "John%20Denver", "title": "Take%20Me%20Home,%20Country%20RoadsRerecorded", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
