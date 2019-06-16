@@ -499,6 +499,10 @@ class file:
         startdict['group'] = "start"
         self.chorded_lyrics.insert(0,startdict)
 
+        #loop over all the lines to replace the tabs-tags in the chords with 4 spaces
+        for line in self.chorded_lyrics:
+            line['chords'] = line['chords'].replace("\t","    ")
+
 
 def normalize_line(str):
     str = str.replace("%20", "")
@@ -603,6 +607,6 @@ def main():
         else:
             time.sleep(5)
 
-version = '2019-06-16'
+version = '2019-06-16/2'
 if __name__ == "__main__":
     main()
