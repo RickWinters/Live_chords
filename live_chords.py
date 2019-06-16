@@ -167,11 +167,7 @@ def print_tabs(file):
         for line in file.tabslines:
             print(line['text'])
 
-
-# Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
-def search_lyrics(artist, title, print_to_console=False): #TODO: seperate out in methods, add search_muzikum
-    tabs = "no data found"
-    print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
+def search_ultimate_guitartabs(artist, title, print_to_console):
     found = False  # to keep track if the lyrics have been found or not
     # URL to search the website
     searchurl = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" + artist + "%20" + title
@@ -208,6 +204,10 @@ def search_lyrics(artist, title, print_to_console=False): #TODO: seperate out in
         if print_to_console:
             print_tabs(tabs)  # print the tabs, slowly scrolling (maybe)
 
+    return tabs
+
+def search_azlyrics(artist, title):
+
     print("STARTING SEARCH ON AZLYRICS")
     azlyrics = "no azlyrics found"  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
     azartist = artist.lower()
@@ -236,8 +236,18 @@ def search_lyrics(artist, title, print_to_console=False): #TODO: seperate out in
         azlyrics = seperate_lines(lyrics[0])
         azlyrics.append("str")
 
-    print("DONE WITH SEARCHING")
+    return azlyrics
 
+# Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
+def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzikum
+    tabs = "no data found"
+    print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
+    tabs = search_ultimate_guitartabs(artist, title, print_to_console)
+    azlyrics = search_azlyrics(artist, title)
+    if azlyrics == "no azlyrics found":
+        print("NO AZLYRICS FOUND, CODE TO SEARC ON MUZIKUM MUST BE INSERTED HERE")
+
+    print("DONE WITH SEARCHING")
     return tabs, azlyrics
 
 
