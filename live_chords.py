@@ -169,7 +169,7 @@ def print_tabs(file):
 
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
-def search_lyrics(artist, title, print_to_console=False):
+def search_lyrics(artist, title, print_to_console=False): #TODO: seperate out in methods, add search_muzikum
     tabs = "no data found"
     print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
     found = False  # to keep track if the lyrics have been found or not

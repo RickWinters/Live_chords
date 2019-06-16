@@ -1,1 +1,1 @@
-{"artist": "Flogging%20Molly", "title": "Screaming%20at%20the%20Wailing%20Wall", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
+{"artist": "Flogging%20Molly", "title": "Screaming%20at%20the%20Wailing%20Wall", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}

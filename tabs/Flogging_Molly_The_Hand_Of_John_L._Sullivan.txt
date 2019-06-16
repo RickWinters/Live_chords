@@ -1,0 +1,1 @@
+{"artist": "Flogging%20Molly", "title": "The%20Hand%20Of%20John%20L.%20Sullivan", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}
