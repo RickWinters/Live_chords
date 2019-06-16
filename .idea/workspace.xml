@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Website_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache-rickwinters12" beforeDir="false" afterPath="$PROJECT_DIR$/.cache-rickwinters12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Save_account_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/Save_account_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Dropkick_Murphys_My_Hero.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Dropkick_Murphys_My_Hero.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_Is_Good.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Life_Is_Good.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Vanaf_Nu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Vanaf_Nu.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="214" lean-forward="true" selection-start-line="214" selection-end-line="214" />
+            <state relative-caret-position="69">
+              <caret line="245" selection-start-line="245" selection-end-line="245" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#438#2121#0" />
@@ -27,6 +31,7 @@
                 <element signature="e#4151#4698#0" />
                 <element signature="e#4778#5955#0" />
                 <element signature="e#6008#6483#0" />
+                <element signature="e#6559#8396#0" />
                 <element signature="e#10540#20855#0" />
                 <element signature="e#20887#21148#0" />
                 <element signature="e#21182#21244#0" />
@@ -34,6 +39,49 @@
                 <element signature="e#21493#21683#0" />
                 <element signature="e#21715#22811#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Azlyrics_api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#122#1507#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spotipy_tutorial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="29" column="24" selection-start-line="6" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="309" selection-start-line="309" selection-end-line="309" />
             </state>
           </provider>
         </entry>
@@ -75,6 +123,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -83,6 +138,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Save_account_info.py" />
+        <option value="$PROJECT_DIR$/Website_test.py" />
         <option value="$PROJECT_DIR$/live_chords.py" />
       </list>
     </option>
@@ -131,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Save_account_info">
+  <component name="RunManager" selected="Python.live_chords">
     <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,6 +230,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Website_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="live_chords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Website_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="live_chords" type="PythonConfigurationType" factoryName="Python">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,6 +274,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Website_test" />
         <item itemvalue="Python.Save_account_info" />
         <item itemvalue="Python.Pygame_UI_test" />
       </list>
@@ -217,15 +295,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44853738" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44853738" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.7215601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,8 +328,27 @@
           <line>210</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Website_test.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/live_chords.py</url>
+          <line>245</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>line.strip()==&quot;&lt;!--sse--&gt;&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.cache-rickwinters12">
@@ -289,10 +385,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/musixmatch test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musixmatch_api.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Azlyrics_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#122#1507#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spotipy_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="24" selection-start-line="6" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="214" lean-forward="true" selection-start-line="214" selection-end-line="214" />
+        <state relative-caret-position="69">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#438#2121#0" />
@@ -301,6 +444,7 @@
             <element signature="e#4151#4698#0" />
             <element signature="e#4778#5955#0" />
             <element signature="e#6008#6483#0" />
+            <element signature="e#6559#8396#0" />
             <element signature="e#10540#20855#0" />
             <element signature="e#20887#21148#0" />
             <element signature="e#21182#21244#0" />

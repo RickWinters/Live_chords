@@ -168,6 +168,7 @@ def print_tabs(file):
             print(line['text'])
 
 def search_ultimate_guitartabs(artist, title, print_to_console):
+    tabs = "no data found"
     found = False  # to keep track if the lyrics have been found or not
     # URL to search the website
     searchurl = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" + artist + "%20" + title
@@ -235,8 +236,48 @@ def search_azlyrics(artist, title):
         lyrics = extract_lyrics(data)
         azlyrics = seperate_lines(lyrics[0])
         azlyrics.append("str")
+    else:
+        print("NO RESULTS FOUND ON AZLYRICS")
 
     return azlyrics
+
+def search_genius(artist, title):
+    print("STARTING SEARCH ON GENIUS.COM")
+    searchurl = "https://genius.com/" + artist.replace("%20","-") + "-" + title.replace("%20","-") + "-lyrics"
+    print(searchurl)
+    r = requests.get(searchurl)
+    data = r.text
+    html_lines = seperate_lines(data)
+    on_lyrics = False
+    in_lyrics_class = False
+    lyrics = []
+    # loop over all lines in the html data and find when were in the lyrics class, the lyrics will be in the lyrics class within the sse tags. So if that is all true, add that line of html to the lyrics
+    for i, line in enumerate(html_lines):
+        if line.strip() == "<!--/sse-->" and in_lyrics_class:
+            on_lyrics = False
+        if on_lyrics:
+            lyrics.append(line.replace("<br>", "").replace("<p>", "").replace("</p>", "").replace("</a>",
+                                                                                                  "").strip())  # remove paragraph and breakline tags and ending annotation tag
+        if line.strip() == "<!--sse-->" and in_lyrics_class:
+            on_lyrics = True
+        if line.strip() == "<div class=\"lyrics\">":
+            in_lyrics_class = True
+
+    # no to scan the seperated lyrics for annotation tags, and remove them
+    annotationTag = False
+    i = 0
+    while i < len(lyrics):
+        if lyrics[i][0:2] == "<a":
+            for j in range(0, 4):
+                lyrics.pop(i)
+            index = lyrics[i].find(">")
+            lyrics[i] = lyrics[i][index + 1:len(lyrics[i])]
+            annotationTag = True
+        else:
+            i += 1
+
+    return lyrics
+
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
 def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzikum
@@ -246,6 +287,7 @@ def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzi
     azlyrics = search_azlyrics(artist, title)
     if azlyrics == "no azlyrics found":
         print("NO AZLYRICS FOUND, CODE TO SEARC ON MUZIKUM MUST BE INSERTED HERE")
+        azlyrics = search_genius(artist, title)
 
     print("DONE WITH SEARCHING")
     return tabs, azlyrics
@@ -561,6 +603,6 @@ def main():
         else:
             time.sleep(5)
 
-version = '2019-06-01'
+version = '2019-06-16'
 if __name__ == "__main__":
     main()
