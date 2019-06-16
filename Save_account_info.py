@@ -20,3 +20,5 @@ text = json.dumps(data)
 accountinfo = open("./account_info.txt","w")
 accountinfo.write(text)
 accountinfo.close()
+
+#test
