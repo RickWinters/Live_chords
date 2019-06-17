@@ -38,93 +38,95 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
     size = screen.get_size()
     screen.fill(colors['inactive_line'])
     screenheight = int(round(size[1] / 6))
-    rect = pygame.Rect(0, int(screenheight * 2.5), size[0], screenheight)
-    pygame.draw.rect(screen, colors['active_line'], rect)
+    #rect = pygame.Rect(0, int(screenheight * 2.5), size[0], screenheight)
+    #pygame.draw.rect(screen, colors['active_line'], rect)
 
     title_string = "Title: " + title.replace("%20", " ")
-    artist_string = "by: " + artist.replace("%20", " ")
-    azlyrics_string = "azlyrics found = " + str(azlyrics)
+    artist_string = "Artist: " + artist.replace("%20", " ")
+    azlyrics_string = "lyrics found = " + str(azlyrics)
     tabs_stirng = "tabs found = " + str(tabs)
-    title_info = fonts['artist'].render(title_string, False, colors['artist'])
-    artist_info = fonts['artist'].render(artist_string, False, colors['artist'])
-    azlyrics_info = fonts['artist'].render(azlyrics_string, False, colors['artist'])
-    tabs_info = fonts['artist'].render(tabs_stirng, False, colors['artist'])
-    # screen.blit(title_info,(10,10))
-    # screen.blit(artist_info,(10,40))
-    # screen.blit(azlyrics_info,(10,70,))
-    # screen.blit(tabs_info,(10,100))
-    infostring = "{} {} {} {}".format(title_string, artist_string, azlyrics_string, tabs_stirng)
-    info_draw = fonts['artist'].render(infostring, False, colors['artist'])
-    screen.blit(info_draw, (10, 10))
+    string = title_string + "\n" + artist_string
+
+    pos = (10,10)
+    for line in string.splitlines():
+        pos = blit_text(screen, line, pos, fonts['artist'], colors['inactive_font'])
+
+    string = azlyrics_string + "\n" + tabs_stirng
+    pos = (size[0] - 400, 10)
+    for line in string.splitlines():
+        pos = blit_text(screen, line, pos, fonts['artist'], colors['artist'])
 
     if synced:
         synced_string = "song is synced"
         synced_info = fonts['artist'].render(synced_string, False, colors['artist'])
-        screen.blit(synced_info, (size[0] - 400, 10))
+        screen.blit(synced_info, pos)
     elif syncing:
         string = "syncing, press space for next line"
         synced_info = fonts['artist'].render(string, False, colors['artist'])
-        screen.blit(synced_info, (size[0] - 400, 10))
+        screen.blit(synced_info, pos)
     else:
-        synced_string = "song is not synced"
-        synced_info = fonts['artist'].render(synced_string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 10))
-        string = "Press space to start syncing"
-        synced_info = fonts['artist'].render(string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 35))
-        string = "Song will restart"
-        synced_info = fonts['artist'].render(string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 60))
-        string = "than press space to go to next line"
-        synced_info = fonts['artist'].render(string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 85))
-        string = "when song is done, syncing is done"
-        synced_info = fonts['artist'].render(string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 110))
-        string = "make sure to press space at start of song"
-        synced_info = fonts['artist'].render(string, False, (180, 180, 180))
-        screen.blit(synced_info, (size[0] - 400, 160))
-
+        string = "Restart song before syncing. Than press space to enter syncing mode and press space to go te next "\
+                 "line. The time of pressing space is save when all lines are completed"
+        blit_text(screen, string, pos, fonts['artist'], colors['inactive_font'])
     return screen
 
+def blit_text(surface, text, pos, font, color=pygame.Color('black')):
+    words = text.split(" ")  # 2D array where each row is a list of words.
+    space = font.size(' ')[0]  # The width of a space.
+    max_width, max_height = surface.get_size()
+    x, y = pos
+    for word in words:
+        word_surface = font.render(word, 0, color)
+        word_width, word_height = word_surface.get_size()
+        if x + word_width >= max_width:
+            x = pos[0]  # Reset the x.
+            y += word_height  # Start on new row.
+        surface.blit(word_surface, (x, y))
+        x += word_width + space
+    x = pos[0]  # Reset the x.
+    y += word_height  # Start on new row.
+
+    return x, y
 
 def draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line):
     if len(chorded_lyrics) >= 1:
+        drawing_line = active_line-4
+        if drawing_line < 0:
+            drawing_line = 0
         size = screen.get_size()
         height = int(round(size[1] / 6)) #height of one line
         left_offset = 100
-        if active_line > 1:
-            chords_info = fonts['inactive'].render(chorded_lyrics[active_line - 2]['chords'], False,
-                                                   colors['inactive_font'])
-            screen.blit(chords_info, (left_offset, height * 0.5))
-            lyrics_info = fonts['inactive'].render(chorded_lyrics[active_line - 2]['lyrics'], False,
-                                                   colors['inactive_font'])
-            screen.blit(lyrics_info, (left_offset, height * 0.8))
-        if active_line > 0:
-            chords_info = fonts['inactive'].render(chorded_lyrics[active_line - 1]['chords'], False,
-                                                   colors['inactive_font'])
-            screen.blit(chords_info, (left_offset, height * 1.5))
-            lyrics_info = fonts['inactive'].render(chorded_lyrics[active_line - 1]['lyrics'], False,
-                                                   colors['inactive_font'])
-            screen.blit(lyrics_info, (left_offset, height * 1.8))
-        if active_line < len(chorded_lyrics) - 1:
-            chords_info = fonts['inactive'].render(chorded_lyrics[active_line + 1]['chords'], False,
-                                                   colors['inactive_font'])
-            screen.blit(chords_info, (left_offset, height * 3.5))
-            lyrics_info = fonts['inactive'].render(chorded_lyrics[active_line + 1]['lyrics'], False,
-                                                   colors['inactive_font'])
-            screen.blit(lyrics_info, (left_offset, height * 3.8))
-        if active_line < len(chorded_lyrics) - 2:
-            chords_info = fonts['inactive'].render(chorded_lyrics[active_line + 2]['chords'], False,
-                                                   colors['inactive_font'])
-            screen.blit(chords_info, (left_offset, height * 4.5))
-            lyrics_info = fonts['inactive'].render(chorded_lyrics[active_line + 2]['lyrics'], False,
-                                                   colors['inactive_font'])
-            screen.blit(lyrics_info, (left_offset, height * 4.8))
-        chords_info = fonts['active'].render(chorded_lyrics[active_line]['chords'], False, colors['active_font'])
-        screen.blit(chords_info, (left_offset, height * 2.5))
-        lyrics_info = fonts['active'].render(chorded_lyrics[active_line]['lyrics'], False, colors['active_font'])
-        screen.blit(lyrics_info, (left_offset, height * 2.8))
+        x = 50
+        y = 70
+        startY = 0
+        stopY = 0
+        while y < size[1] and drawing_line < len(chorded_lyrics):
+            if drawing_line == active_line:
+                current_font = fonts['active']
+                current_color = colors['active_font']
+                startY = y
+            else:
+                current_font = fonts['inactive']
+                current_color = colors['inactive_font']
+
+            if chorded_lyrics[drawing_line]['group'] == "start":
+                lines = chorded_lyrics[drawing_line]['lyrics']
+            elif chorded_lyrics[drawing_line]['group'] == "intro":
+                lines = chorded_lyrics[drawing_line]['lyrics']
+            else:
+                lyrics = chorded_lyrics[drawing_line]['lyrics']
+                chords = chorded_lyrics[drawing_line]['chords']
+                lines = chords + "\n" + lyrics + "\n\n"
+
+            for line in lines.splitlines():
+                x, y = blit_text(screen, line, (x, y), current_font, current_color)
+                if drawing_line == active_line:
+                    stopY = y
+                    rect = pygame.Rect(0, startY, size[0], stopY)
+                    # pygame.draw.rect(screen, colors['active_line'], rect)
+                    # x, y = blit_text(screen, line, (x, y), current_font, current_color)
+            drawing_line += 1
+
     return screen
 
 

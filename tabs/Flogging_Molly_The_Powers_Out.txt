@@ -1,1 +1,1 @@
-{"artist": "Flogging%20Molly", "title": "The%20Powers%20Out", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}
+{"artist": "Flogging%20Molly", "title": "The%20Powers%20Out", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-16/2"}

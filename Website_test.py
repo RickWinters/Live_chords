@@ -2,7 +2,7 @@ import requests
 from live_chords import seperate_lines
 
 artist = "flogging-molly"
-title = "until-we-meet-again"
+title = "the-powers-out"
 
 searchurl = "https://genius.com/"+artist+"-"+title+"-lyrics"
 r = requests.get(searchurl)
