@@ -2,44 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/print_multiple_lines_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cache-rickwinters12" beforeDir="false" afterPath="$PROJECT_DIR$/.cache-rickwinters12" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pygame_UI_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pygame_UI_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Website_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Devils_Dance_Floor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Devils_Dance_Floor.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Dont_Shut_em_Down.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Dont_Shut_em_Down.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Drunken_Lullabies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Drunken_Lullabies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Every_Dog_Has_Its_Day.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Every_Dog_Has_Its_Day.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Float.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Float.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_From_The_Back_Of_A_Broken_Dream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_From_The_Back_Of_A_Broken_Dream.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Going_Home.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Going_Home.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_If_I_Ever_Leave_This_World_A.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_If_I_Ever_Leave_This_World_A.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Man_With_No_Country.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Man_With_No_Country.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Or_BoyAll_Of_Our_Boys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Or_BoyAll_Of_Our_Boys.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Punch_Drunk_Grinning_Soul.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Punch_Drunk_Grinning_Soul.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Queen_Annes_Revenge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Queen_Annes_Revenge.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Requiem_for_a_Dying_Song.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Requiem_for_a_Dying_Song.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution_.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Revolution_.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Salty_Dog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Salty_Dog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Seven_Deadly_Sins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Seven_Deadly_Sins.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_So_Sail_On.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_So_Sail_On.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Cradle_of_Humankind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Cradle_of_Humankind.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Lightning_Storm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Lightning_Storm.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Likes_of_You_Again.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Likes_of_You_Again.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Powers_Out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Powers_Out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Present_State_of_Grace.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Present_State_of_Grace.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Seven_Deadly_Sins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Seven_Deadly_Sins.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Story_So_Far.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Story_So_Far.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Worst_Day_Since_Yesterday.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Worst_Day_Since_Yesterday.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Theres_Nothing_Left_Pt._1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Theres_Nothing_Left_Pt._1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_These_Exiled_Years.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_These_Exiled_Years.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Whats_Left_of_the_Flag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Whats_Left_of_the_Flag.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_You_Wont_Make_A_Fool_Out_Of_Me.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_You_Wont_Make_A_Fool_Out_Of_Me.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Dat_Ik_Je_Mis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Dat_Ik_Je_Mis.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Vanaf_Nu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Maaike_Ouboter_Vanaf_Nu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Golden_Earring_Radar_Love.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Golden_Earring_Radar_Love.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Guus_Meeuwis_Het_Is_Een_Nacht..._Levensecht.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Guus_Meeuwis_Het_Is_Een_Nacht..._Levensecht.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/Ilse_DeLange_Half_The_Love.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Ilse_DeLange_Half_The_Love.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,73 +21,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="221">
-                    <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-                    <folding>
-                      <element signature="e#3919#4532#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="245" selection-start-line="245" selection-end-line="245" />
+            <state relative-caret-position="211">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#438#2121#0" />
-                <element signature="e#2310#3162#0" />
-                <element signature="e#3282#4046#0" />
-                <element signature="e#4151#4698#0" />
-                <element signature="e#4778#5955#0" />
-                <element signature="e#6008#6483#0" />
-                <element signature="e#8461#9809#0" />
-                <element signature="e#23172#23433#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+        <entry file="file://$PROJECT_DIR$/spotipy/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/print_multiple_lines_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
+            <state relative-caret-position="357">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -121,22 +47,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scan_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="447">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,10 +105,10 @@
         <option value="$PROJECT_DIR$/Save_account_info.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scan_files.py" />
-        <option value="$PROJECT_DIR$/Website_test.py" />
-        <option value="$PROJECT_DIR$/live_chords.py" />
         <option value="$PROJECT_DIR$/print_multiple_lines_test.py" />
         <option value="$PROJECT_DIR$/Pygame_UI_test.py" />
+        <option value="$PROJECT_DIR$/live_chords.py" />
+        <option value="$PROJECT_DIR$/Website_test.py" />
       </list>
     </option>
   </component>
@@ -209,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,7 +139,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Pygame_UI_test">
+  <component name="RunManager" selected="Python.live_chords">
     <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,10 +285,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Pygame_UI_test" />
-        <item itemvalue="Python.print_multiple_lines_test" />
         <item itemvalue="Python.Website_test" />
         <item itemvalue="Python.scan_files" />
+        <item itemvalue="Python.Pygame_UI_test" />
+        <item itemvalue="Python.print_multiple_lines_test" />
         <item itemvalue="Python.Save_account_info" />
       </list>
     </recent_temporary>
@@ -400,7 +314,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44853738" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.07150596" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42686892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -421,6 +335,16 @@
           <url>file://$PROJECT_DIR$/Website_test.py</url>
           <line>38</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/live_chords.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/live_chords.py</url>
+          <line>599</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -482,40 +406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/_bootlocale.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scan_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,6 +420,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/print_multiple_lines_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29869">
+          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -533,52 +458,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+    <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
+        <state relative-caret-position="1682">
+          <caret line="99" column="14" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/print_multiple_lines_test.py">
+    <entry file="file://$PROJECT_DIR$/Website_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="365">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scan_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/spotipy/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="245" selection-start-line="245" selection-end-line="245" />
+        <state relative-caret-position="211">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#438#2121#0" />
-            <element signature="e#2310#3162#0" />
-            <element signature="e#3282#4046#0" />
-            <element signature="e#4151#4698#0" />
-            <element signature="e#4778#5955#0" />
-            <element signature="e#6008#6483#0" />
-            <element signature="e#8461#9809#0" />
-            <element signature="e#23172#23433#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+    <entry file="file://$PROJECT_DIR$/spotipy/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pygame_UI_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-          <folding>
-            <element signature="e#3919#4532#0" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

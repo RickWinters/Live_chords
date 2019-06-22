@@ -46,6 +46,7 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = title.replace("\'","")
         title = title.replace("Version","")
         title = title.replace("version","")
+        title = title.replace(".","")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
     else:
         title = "no song playing"
@@ -277,6 +278,7 @@ def search_genius(artist, title):
             i += 1
 
     return lyrics
+
 
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
