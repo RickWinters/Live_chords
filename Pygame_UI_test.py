@@ -177,12 +177,12 @@ def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title,
 
 
 def main():
-    username = 'rickwinters12'
-    scope = 'user-read-currently-playing user-modify-playback-state'
-
-    clientid = 'cb3d87487c3f45678e4f28c0f1787d59'
-    clientsecret = '720cb763c5114ce581303e30846d962d'
-    redirect_uri = 'http://google.com/'
+    account_info = json.loads(open("./account_info.txt").read())
+    username = account_info['username']
+    scope = account_info['scope']
+    clientid = account_info['clientid']
+    clientsecret = account_info['clientsecret']
+    redirect_uri = account_info['redirect_uri']
 
     fonts, colors, screen, clock = setup_screen()
     artist = ""

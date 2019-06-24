@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.cache-rickwinters12" beforeDir="false" afterPath="$PROJECT_DIR$/.cache-rickwinters12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Website_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Coldplay_Fix_You.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Factory_Girls.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_The_Heart_of_the_Sea.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Tobacco_Island.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Flogging_Molly_Whistles_the_Wind.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Golden_Earring_Radar_Love.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Golden_Earring_Radar_Love.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Guus_Meeuwis_Het_Is_Een_Nacht..._Levensecht.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Guus_Meeuwis_Het_Is_Een_Nacht..._Levensecht.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/Ilse_DeLange_Half_The_Love.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/Ilse_DeLange_Half_The_Love.txt" afterDir="false" />
-    </list>
+    <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
@@ -31,15 +18,6 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spotipy/util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -112,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="976" />
@@ -130,6 +108,11 @@
             <path>
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
               <item name="live_chords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
+              <item name="live_chords" type="462c0819:PsiDirectoryNode" />
+              <item name="spotipy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
@@ -307,7 +290,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -495,6 +478,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spotipy/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -502,13 +492,6 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spotipy/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
