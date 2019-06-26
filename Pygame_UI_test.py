@@ -13,9 +13,9 @@ def setup_screen():
 
     pygame.init()
     pygame.font.init()
-    active_font = pygame.font.SysFont('lucida console', 30)
+    active_font = pygame.font.SysFont('lucida console', 35)
     active_font_colour = (180, 180, 180)
-    inactive_font = pygame.font.SysFont('monospace', 25)
+    inactive_font = pygame.font.SysFont('lucida console', 25)
     inactive_font_colour = (150, 150, 150)
     artist_font = pygame.font.SysFont('monospace', 20)
     artist_font_color = (90, 90, 90)
@@ -110,9 +110,7 @@ def draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line):
                 current_font = fonts['inactive']
                 current_color = colors['inactive_font']
 
-            if chorded_lyrics[drawing_line]['group'] == "start":
-                lines = chorded_lyrics[drawing_line]['lyrics']
-            elif chorded_lyrics[drawing_line]['group'] == "intro":
+            if chorded_lyrics[drawing_line]['group'] in ["start","intro","solo"]:
                 lines = chorded_lyrics[drawing_line]['lyrics']
             else:
                 lyrics = chorded_lyrics[drawing_line]['lyrics']

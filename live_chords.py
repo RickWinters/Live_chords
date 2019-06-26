@@ -33,12 +33,9 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
     if song is not None and song['item'] is not None:
         title = song['item']['name']  # extract the current song title
         t0 = song['progress_ms'] / 1000
-        if "acoustic" in title:
-            title = title.replace("acoustic", "")
-        if "Acoustic" in title:
-            title = title.replace("Acoustic", "")
-        if " - " in title:
-            title = title.replace(" - ", "")
+        title = title.replace("acoustic","")
+        title = title.replace("Acoustic","")
+        title = title.replace("-","")
         title = title.replace("(", "")
         title = title.replace(")", "")
         title = title.replace("live", "")
@@ -48,6 +45,8 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = title.replace("version","")
         title = title.replace(".","")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
+        artist = artist.replace("?","")
+        artist = artist.replace("!","")
     else:
         title = "no song playing"
         artist = "no song playing"
@@ -387,7 +386,8 @@ class file:
                     self.tabslines[-1]['text'] = line
                     self.tabslines[-1]['keyword'] = False
                     if ("chorus" in line.lower()) or ("verse" in line.lower()) or ("intro" in line.lower()) or ( #check for keywords in the line
-                            "outro" in line.lower()):
+                            "outro" in line.lower()) or ("interlude" in line.lower()) or ("bridge" in line.lower())\
+                            or ("instrumental" in line.lower()):
                         self.tabslines[-1]['keyword'] = True
                     self.tabslines[-1]['lyrics'] = False
                     self.tabslines[-1]['chords'] = False
@@ -412,6 +412,8 @@ class file:
         file.close()
 
     def compare_lyrics(self):
+        print("START WITH COMPARING LYRICS")
+        #this functions loops over all the strings in tabslines and finds which are lyrics and than assigns the previous line (of not already assigned to being lyrics) as chords
         i = 0
         for tabline in self.tabslines:
             line1 = tabline['text'].lower()  # line of text coming from the
@@ -451,6 +453,7 @@ class file:
         print("done with comparing lyrics")
 
     def group_on_keywords(self):
+        print("START GROUPING ON KEYWORDS")
         group = "start"
         in_intro = False
         passed_intro = False
@@ -460,24 +463,57 @@ class file:
                 line['lyrics'] = True
                 if "intro" in group.lower():
                     in_intro = True
-            if in_intro:
-                if passed_intro and line['text'] == "":
-                    group = "verse"
-                elif line['text'] != "":
+            if line['text'] == "":
+                group = "unspecified"
+                if in_intro:
                     passed_intro = True
+                    in_intro = False
+
 
             line['group'] = group
+        print("done with comparing on keywords")
 
     def sort_lyrics(self):
-        i = 0
+        print("START WITH SORTING THE LYRICS")
         introtext = ""
+        inintro = False
         starttext = ""
+        instart = False
+        solotext = ""
+        insolo = False
+        i = 0
         for line in self.tabslines:
+            if "solo" in line['group'].lower() or 'instrumental' in line['group'].lower()\
+                    or 'interlude' in line['group'].lower() or 'pre-verse' in line['group'].lower():
+                insolo = True
+                if line['text'] != "":
+                    solotext += line['text'] + "\n"
+            elif insolo:
+                self.add_chorded_lyrics_line(solotext,"","solo")
+                solotext = ""
+                insolo = False
+
             if "intro" in line['group'].lower(): #if the tabslines are part of the intro, assing them regardless if they're lyrics or not.
-                introtext += line['text'] + "\n"
-            elif "start" in line['group'].lower():
-                starttext += line['text'] + "\n"
-            else:
+                inintro = True
+                if line['text'] == "":
+                    self.tabslines[i]['group'] = "verse"
+                else:
+                    introtext += line['text'] + "\n"
+            elif inintro:
+                self.add_chorded_lyrics_line(introtext,"","intro")
+                introtext = ""
+                inintro = False
+
+            if "start" in line['group'].lower():
+                instart = True
+                if line['text'] != "":
+                    starttext += line['text'] + "\n"
+            elif instart:
+                self.add_chorded_lyrics_line(starttext,"","start")
+                starttext = ""
+                instart = False
+
+            if not instart and not inintro and not insolo:
                 if line['lyrics']: #if the tabslines is past the lyrics, only group them if this line is a lyrics. Assign the previous line for chords
                     self.chorded_lyrics.append({})
                     self.chorded_lyrics[-1]['lyrics'] = line['text'] #assign lyrics from tabslines into chorded_lyrics
@@ -489,26 +525,20 @@ class file:
                     self.chorded_lyrics[-1]['stop'] = 0
                     self.chorded_lyrics[-1]['group'] = line['group']
             i += 1
-        introdict = {}
-        introdict['lyrics'] = introtext
-        introdict['chords'] = ""
-        introdict['start'] = 0
-        introdict['end'] = 0
-        introdict['group'] = "intro"
-        self.chorded_lyrics.insert(0,introdict)
 
-        startdict = {}
-        startdict['lyrics'] = starttext
-        startdict['chords'] = ""
-        startdict['start'] = 0
-        startdict['end'] = 0
-        startdict['group'] = "start"
-        self.chorded_lyrics.insert(0,startdict)
 
         #loop over all the lines to replace the tabs-tags in the chords with 4 spaces
         for line in self.chorded_lyrics:
             line['chords'] = line['chords'].replace("\t","    ")
+        print("done with sorting the lyrics")
 
+    def add_chorded_lyrics_line(self,lyrics,chords,group):
+        self.chorded_lyrics.append({})
+        self.chorded_lyrics[-1]['lyrics'] = lyrics
+        self.chorded_lyrics[-1]['chords'] = chords
+        self.chorded_lyrics[-1]['start'] = 0
+        self.chorded_lyrics[-1]['stop'] = 0
+        self.chorded_lyrics[-1]['group'] = group
 
 def normalize_line(str):
     str = str.replace("%20", "")
@@ -613,6 +643,6 @@ def main():
         else:
             time.sleep(5)
 
-version = '2019-06-16/2'
+version = '2019-06-26/2'
 if __name__ == "__main__":
     main()
