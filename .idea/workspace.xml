@@ -90,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="976" />
@@ -139,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.live_chords">
+  <component name="RunManager" selected="Python.Pygame_UI_test">
     <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -268,9 +268,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.Website_test" />
         <item itemvalue="Python.scan_files" />
-        <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.print_multiple_lines_test" />
         <item itemvalue="Python.Save_account_info" />
       </list>
@@ -290,7 +290,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -298,7 +298,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.07150596" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42686892" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42686892" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
