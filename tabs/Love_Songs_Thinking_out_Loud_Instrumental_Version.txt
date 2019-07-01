@@ -1,1 +1,0 @@
-{"artist": "Love%20Songs", "title": "Thinking%20out%20Loud%20Instrumental%20Version", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

@@ -1,1 +1,0 @@
-{"artist": "Love%20Songs", "title": "Love%20Me%20Like%20You%20Do%20Instrumental%20Version", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

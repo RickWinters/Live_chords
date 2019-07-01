@@ -1,1 +1,0 @@
-{"artist": "Ramses%20Shaffy", "title": "ZingVechtHuilBidLachWerk%20En%20Bewonder", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}

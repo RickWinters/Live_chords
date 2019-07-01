@@ -1,1 +1,0 @@
-{"artist": "The%20Interrupters", "title": "She%20Got%20Arrested", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

@@ -1,1 +1,0 @@
-{"artist": "Dropkick%20Murphys", "title": "Johnny,%20I%20Hardly%20Knew%20Ya%20on%20Lansdowne,%20Boston%20Ma", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}

@@ -1,1 +1,0 @@
-{"artist": "Gavin%20James", "title": "The%20Book%20of%20LoveEP%20Version", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

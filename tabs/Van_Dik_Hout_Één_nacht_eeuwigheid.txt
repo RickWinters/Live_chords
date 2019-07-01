@@ -1,1 +1,0 @@
-{"artist": "Van%20Dik%20Hout", "title": "\u00c9\u00e9n%20nacht%20eeuwigheid", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-01"}

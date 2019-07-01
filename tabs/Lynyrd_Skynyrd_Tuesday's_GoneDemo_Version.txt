@@ -1,1 +1,0 @@
-{"artist": "Lynyrd%20Skynyrd", "title": "Tuesday's%20GoneDemo%20Version", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

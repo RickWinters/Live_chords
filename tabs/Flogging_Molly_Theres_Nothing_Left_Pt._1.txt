@@ -1,1 +1,0 @@
-{"artist": "Flogging%20Molly", "title": "Theres%20Nothing%20Left%20Pt.%201", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": [], "version": "2019-06-16/2"}

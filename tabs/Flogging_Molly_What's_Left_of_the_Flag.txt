@@ -1,1 +1,0 @@
-{"artist": "Flogging%20Molly", "title": "What's%20Left%20of%20the%20Flag", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

@@ -1,1 +1,0 @@
-{"artist": "Danny%20Vera", "title": "Pompadour%20Hippie", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}

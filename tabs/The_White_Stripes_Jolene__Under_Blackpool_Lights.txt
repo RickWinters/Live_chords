@@ -1,1 +1,0 @@
-{"artist": "The%20White%20Stripes", "title": "Jolene%20%20Under%20Blackpool%20Lights", "tabs": "", "synced": false, "tabslines": [], "azlyrics": "", "has_tabs": false, "has_azlyrics": false, "chorded_lyrics": []}
