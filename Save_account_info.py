@@ -1,11 +1,11 @@
 import json
 import os
 
-username = "YOUR SPOTIFY USERNAME HERE"
+username = "rickwinters12"
 scope = 'user-read-currently-playing user-modify-playback-state'
 
-clientid =     'YOUR CLIENT ID HERE'
-clientsecret = 'YOUR CLIENT SECRET HERE'
+clientid =     'cb3d87487c3f45678e4f28c0f1787d59'
+clientsecret = '720cb763c5114ce581303e30846d962d'
 redirect_uri = 'http://google.com/'
 
 data = {}
