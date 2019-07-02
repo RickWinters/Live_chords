@@ -52,8 +52,14 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         artist = "no song playing"
         t0 = 0
 
+    #TESTING PIECE OF CODE TO CONTACT WEBSERVER
+    data = requests.get("localhost:8080/live_chords/Get/Flogging_Molly/Far_Away_Boys")
+    print(data)
+
     # print("currently playing: " + title + " by " + artist)
     return title, artist, t0
+
+
 
 
 # the input is a single string, this function seperates the multiple lines outputting an array of strings, where every index is a new line
@@ -277,8 +283,6 @@ def search_genius(artist, title):
             i += 1
 
     return lyrics
-
-
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
 def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzikum
