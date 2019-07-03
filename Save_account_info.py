@@ -1,12 +1,12 @@
 import json
 import os
 
-username = "rickwinters12"
+username = "YOUR USERNAME HERE"
 scope = 'user-read-currently-playing user-modify-playback-state'
 
-clientid =     'cb3d87487c3f45678e4f28c0f1787d59'
-clientsecret = '720cb763c5114ce581303e30846d962d'
-redirect_uri = 'http://google.com/'
+clientid =     'YOUR CLIENT ID HERE'
+clientsecret = 'YOUR CLIENT SECRET HERE'
+redirect_uri = 'http://google.com/' #USE THIS LINK IN YOUR SPOTIFY API APP AS THE CALLBACK URI
 
 data = {}
 data['username'] = username

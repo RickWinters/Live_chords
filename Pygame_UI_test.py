@@ -1,6 +1,6 @@
+import json
 import sys
 import time
-import json
 
 import pygame
 
@@ -206,7 +206,7 @@ def main():
         if (artist != artist_old) or (title != title_old):  # if song has changed open the file
             datafile = file(artist, title, version)
             datafile.open_file()  # opens file, and if it doesn't exist the lyrics will be downloaded, analyzed etc
-            datafile.close_file()  # if it's a new file the file is saved
+            # datafile.close_file()  # if it's a new file the file is saved
             artist_old = artist  # keeping track of song
             title_old = title
             active_line = 0
@@ -262,6 +262,7 @@ def main():
                     title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
                     chorded_lyrics, synced = sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist,
                                                        title, synced, clock, t0, has_azlyrics, has_tabs)
+                    datafile.close_file()
                 if event.key == pygame.K_SPACE and synced:
                     count = 0
 
