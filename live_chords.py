@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import time
@@ -6,10 +7,11 @@ import urllib.request
 from difflib import SequenceMatcher
 
 import requests
+from bs4 import BeautifulSoup
+
 import spotipy
 import spotipy.util as util
-from bs4 import BeautifulSoup
-import datetime
+
 
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
@@ -51,9 +53,13 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = "no song playing"
         artist = "no song playing"
         t0 = 0
+    title = title.strip()
+    artist = artist.strip()
 
     # print("currently playing: " + title + " by " + artist)
     return title, artist, t0
+
+
 
 
 # the input is a single string, this function seperates the multiple lines outputting an array of strings, where every index is a new line
@@ -120,17 +126,6 @@ def sort_search_results(data):
     # while loop that loops over all the results and checks if it contains chords or tabs. If there are results which are not tabs or chords these results are popped.
 
     i = 0  # iterator
-    #while i < len(data) and len(data) > 1:  # while iterator
-    #    result = data[i]
-    #    if "type_name" in result:
-    #        # if not (result["type_name"] == "Chords" or result["type_name"] == "Tab"):
-    #        if not result["type_name"] == "Chords":
-    #            data.pop(i)
-    #        else:
-    #            i += 1
-    #    else:
-    #        data.pop(i)
-
     while i < len(data) and len(data) > 1:
         result = data[i]
         if "type" in result:
@@ -278,8 +273,6 @@ def search_genius(artist, title):
 
     return lyrics
 
-
-
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
 def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzikum
     tabs = "no data found"
@@ -358,22 +351,44 @@ class file:
         self.to_dict()
 
     def open_file(self): #this functions opens a file from the title if it exists and otherwise searches online
-        print("LOOKING FOR EXISTING FILE")
-        file_exists = os.path.isfile( #see if the file exists
-            "./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt")
+        file_exists = False
         correct_version = True
-        if file_exists:
-            print("FILE FOUND")
-            File = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
-                        "r")
-            text = File.read()
-            File.close()
-            self.data = json.loads(text)  # load the textfile into the dictionary data
-            self.from_dict()  # load the dictionary data into the variables
-            if self.file_version != self.script_version:
-                self.clear_file()
-                correct_version = False
-                print("UPDATING TO NEWER VERSION")
+
+        # try to get the correct file from the server
+        print("LOOKING FOR FILE ON SERVER")
+        try:
+            r = requests.get("http://localhost:8080/live_chords/Get/{}/{}".format(self.artist.replace("%20", "_"),
+                                                                                  self.title.replace("%20", "_")))
+            text = r.text
+            self.data = json.loads(text)
+            self.from_dict()
+        except:
+            print("NO CONNECTION TO SERVER")
+            self.tabs = "no_file_found"
+        if self.tabs == "no_file_found":  # if no file is found on the server, search for it locally
+            print("NO FILE FOUND ON SERVER")
+            print("LOOKING FOR EXISTING FILE")
+            file_exists = os.path.isfile(  # see if the file exists
+                "./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt")
+            correct_version = True
+            if file_exists:
+                print("FILE FOUND")
+                File = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
+                            "r")
+                text = File.read()
+                File.close()
+                self.data = json.loads(text)  # load the textfile into the dictionary data
+                self.from_dict()  # load the dictionary data into the variables
+                self.close_file()  # AND if it is not on the server, now try to save the local file to the server immidietly
+        else:
+            file_exists = True;
+
+        # CHECK IF THE FILE IS OF THE CORRECT VERSION
+        if self.file_version != self.script_version:
+            self.clear_file()
+            correct_version = False
+            print("UPDATING TO NEWER VERSION")
+
         if (not file_exists) or (not correct_version): #if the file doesn't exist go and soarch the file
             print("FILE NOT FOUND")
             tabs, azlyrics = search_lyrics(self.artist, self.title) #searches on the internet for the tabs and azlyrics
@@ -381,6 +396,12 @@ class file:
                 self.tabs = tabs
                 self.synced = False #defaulty synced is false
                 tabslines = seperate_lines(tabs, tabslines=True)
+                if len(self.azlyrics) == 1:
+                    if self.azlyrics[0] == "no_file_found":
+                        self.azlyrics.pop(0)
+                if len(self.chorded_lyrics) == 1:
+                    if self.chorded_lyrics[0]['lyrics'] == "no_file_found":
+                        self.chorded_lyrics.pop(0)
                 for line in tabslines:
                     self.tabslines.append({}) #append an empty dictionary to the tabslines, for each tabslines this dictionary keeps track of the raw text, if it is a keyword, and if it is lyrics or chords. #todo add a dictionary item + logic for actual 6 lines tabs
                     self.tabslines[-1]['text'] = line
@@ -402,14 +423,24 @@ class file:
                     self.compare_lyrics() #compare lyrics will analyze the tabslines for which lines are lyrics and which line is chords. this uses azlyrics as masterfile and marks any tabslines as lyrics when it is similar enough
                     self.group_on_keywords() #assign a group to every line by extending keywords to all following lines until the next keyword
                     self.sort_lyrics() #use all the tabslines to fill the 'chorded_lyrics', this is a group of lyrics chords belonging to this line. These can be printed to the screen as one single group.
-
+                self.close_file()
+        else:
+            print("FOUND FILE ON SERVER")
+            print(self)
 
     def close_file(self):
-        self.to_dict() #load the variables into the dictionary
-        text = json.dumps(self.data) #convert to json string
-        file = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt", "w")
-        file.write(text) #write file
-        file.close()
+        try:
+            self.to_dict()
+            data = json.dumps(self.data)
+            r = requests.post("http://localhost:8080/live_chords/Save/", json=self.data)
+            print(r)
+        except:
+            self.to_dict()  # load the variables into the dictionary
+            text = json.dumps(self.data)  # convert to json string
+            file = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
+                        "w")
+            file.write(text)  # write file
+            file.close()
 
     def compare_lyrics(self):
         print("START WITH COMPARING LYRICS")
@@ -636,7 +667,7 @@ def main():
             datafile = file(artist, title, version)
             datafile.open_file()
             print_tabs(datafile)
-            datafile.close_file()
+            # datafile.close_file()
             artist_old = artist
             title_old = title
 
