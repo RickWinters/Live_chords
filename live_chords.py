@@ -201,7 +201,7 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
 def search_azlyrics(artist, title):
 
     print("STARTING SEARCH ON AZLYRICS")
-    azlyrics = "no azlyrics found"  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
+    azlyrics = ["no azlyrics found"]  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
     azartist = artist.lower()
     azartist = azartist.replace("%20", "+")
     aztitle = title.lower()
@@ -270,14 +270,14 @@ def search_genius(artist, title):
     return lyrics
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
-def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzikum
+def search_lyrics(artist, title, print_to_console=False):
     tabs = "no data found"
-    azlyrics = "no azlyrics found"
+    azlyrics = ["no azlyrics found"]
     print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
     tabs = search_ultimate_guitartabs(artist, title, print_to_console)
     if tabs != "no data found":
         azlyrics = search_azlyrics(artist, title)
-        if azlyrics == "no azlyrics found":
+        if azlyrics == ["no azlyrics found"]:
             print("NO AZLYRICS FOUND, CODE TO SEARC ON MUZIKUM MUST BE INSERTED HERE")
             azlyrics = search_genius(artist, title)
         print("DONE WITH SEARCHING")
