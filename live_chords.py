@@ -290,7 +290,6 @@ def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzi
 
     return tabs, azlyrics
 
-
 # File class, This class has functions to open and save a file for the lyrics. The idea is that if the song has been downloaded before lyrics, tabdata and sync data will be saved to disk so that it can be opened quickly.
 # methods in this class are:
 #   'open_file()': checks if a file exists on disk, if not the search_lyrics function is called.
@@ -426,7 +425,6 @@ class file:
                 self.close_file()
         else:
             print("FOUND FILE ON SERVER")
-            print(self)
 
     def close_file(self):
         try:
@@ -673,6 +671,7 @@ def main():
 
         else:
             time.sleep(5)
+
 
 version = '2019-06-26/2'
 if __name__ == "__main__":
