@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Azlyrics_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Current_song.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Musixmatch_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_scripts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixmatch test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/print_multiple_lines_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scan_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/List_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spotipy_tutorial.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,8 +169,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -611,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spotipy/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -816,10 +799,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
