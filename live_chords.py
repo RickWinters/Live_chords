@@ -59,9 +59,6 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
     # print("currently playing: " + title + " by " + artist)
     return title, artist, t0
 
-
-
-
 # the input is a single string, this function seperates the multiple lines outputting an array of strings, where every index is a new line
 def seperate_lines(data, tabslines=False):
     # Seperate the HTML text in multiple lines of text, skipping the newline tag
@@ -78,7 +75,6 @@ def seperate_lines(data, tabslines=False):
         else:
             string = string + char  # if its not a new line, add the current character to the string
     return strings  # return list of strings
-
 
 # Input is string array of HTML of website with tabs, outputs a string with the tabs.
 def extract_tabs(strings):
@@ -297,7 +293,7 @@ def search_lyrics(artist, title, print_to_console=False): #TODO: add search_muzi
 #   'to_dict()': Write all the class variables to the dictionary
 #   'from_dict()': write all
 class file:
-    def __init__(self, artist, title, version):
+    def __init__(self, artist, title, version, server):
         self.artist = artist
         self.title = title
         self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
@@ -311,6 +307,7 @@ class file:
         self.script_version = version
         self.file_version = ""
         self.to_dict()
+        self.server = server
 
     def to_dict(self): #helper function to write all the instance variables to the dictionary
         self.data['artist'] = self.artist
@@ -353,18 +350,23 @@ class file:
         file_exists = False
         correct_version = True
 
-        # try to get the correct file from the server
-        print("LOOKING FOR FILE ON SERVER")
-        try:
-            r = requests.get("http://localhost:8080/live_chords/Get/{}/{}".format(self.artist.replace("%20", "_"),
-                                                                                  self.title.replace("%20", "_")))
-            text = r.text
-            self.data = json.loads(text)
-            self.from_dict()
-        except:
-            print("NO CONNECTION TO SERVER")
-            self.tabs = "no_file_found"
-        if self.tabs == "no_file_found":  # if no file is found on the server, search for it locally
+        #Check for a file on the server, if a serverlocation is set
+        if not self.server == "no_server":
+            print("LOOKING FOR FILE ON SERVER")
+            try:
+                r = requests.get(self.server + "Get/{}/{}".format(self.artist.replace("%20", "_"),
+                                                                  self.title.replace("%20", "_")))
+                text = r.text
+                self.data = json.loads(text)
+                self.from_dict()
+                file_exists = True;
+            except:
+                print("NO CONNECTION TO SERVER")
+                self.tabs = "no_file_found"
+                self.server = "no_server"
+
+        #IF no server location is set, or the server has not found a file, look for it locally
+        if self.tabs == "no_file_found" or self.server == "no_server":
             print("NO FILE FOUND ON SERVER")
             print("LOOKING FOR EXISTING FILE")
             file_exists = os.path.isfile(  # see if the file exists
@@ -378,9 +380,7 @@ class file:
                 File.close()
                 self.data = json.loads(text)  # load the textfile into the dictionary data
                 self.from_dict()  # load the dictionary data into the variables
-                self.close_file()  # AND if it is not on the server, now try to save the local file to the server immidietly
-        else:
-            file_exists = True;
+                self.close_file()  # AND if it is not on the server, now try to save the local file locally or to the server immidietly
 
         # CHECK IF THE FILE IS OF THE CORRECT VERSION
         if self.file_version != self.script_version:
@@ -388,13 +388,16 @@ class file:
             correct_version = False
             print("UPDATING TO NEWER VERSION")
 
-        if (not file_exists) or (not correct_version): #if the file doesn't exist go and soarch the file
+        #If the file doesn't exist locally, or is of the wrong version, search on the internet and create the file
+        if (not file_exists) or (not correct_version):
             print("FILE NOT FOUND")
             tabs, azlyrics = search_lyrics(self.artist, self.title) #searches on the internet for the tabs and azlyrics
-            if tabs != "no data found": #if tabs are found, fill in the instance variables
+            #if no tabs are found, the variable will be "no data found", and than its useless to do anything else
+            if tabs != "no data found":
                 self.tabs = tabs
-                self.synced = False #defaulty synced is false
+                self.synced = False #default synced is false
                 tabslines = seperate_lines(tabs, tabslines=True)
+                #Server will return a tabsfile with every value set to "no_file_found", if no file is found. These need to be deleted
                 if len(self.azlyrics) == 1:
                     if self.azlyrics[0] == "no_file_found":
                         self.azlyrics.pop(0)
@@ -427,12 +430,11 @@ class file:
             print("FOUND FILE ON SERVER")
 
     def close_file(self):
-        try:
+        if self.server != "no_server":
             self.to_dict()
-            data = json.dumps(self.data)
-            r = requests.post("http://localhost:8080/live_chords/Save/", json=self.data)
+            r = requests.post(self.server + "Save/", json=self.data)
             print(r)
-        except:
+        else:
             self.to_dict()  # load the variables into the dictionary
             text = json.dumps(self.data)  # convert to json string
             file = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
@@ -643,12 +645,26 @@ class Azlyrics(object):
 
 
 def main():
+    print("Choose which kind of server connection you want")
+    print("1: Localhost")
+    print("2: Remote server")
+    print("3: No server conncetion")
+    serverinput = input("-->: ")
+    server = "http://localhost:8080/live_chords/"
+
+    if serverinput == "2":
+        server = "192.168.1.111:8080/live_chords/"
+    elif serverinput == "3":
+        connectiontype = "no_server"
+
     account_info = json.loads(open("./account_info.txt").read())
     username = account_info['username']
     scope = account_info['scope']
     clientid = account_info['clientid']
     clientsecret = account_info['clientsecret']
     redirect_uri = account_info['redirect_uri']
+
+
 
     artist_old = ""
     artist = ""
@@ -662,7 +678,7 @@ def main():
 
         if (artist != artist_old) or (title != title_old):
             print(("-" * 100 + "\n") * 3)
-            datafile = file(artist, title, version)
+            datafile = file(artist, title, version, server)
             datafile.open_file()
             print_tabs(datafile)
             # datafile.close_file()
