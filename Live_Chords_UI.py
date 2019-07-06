@@ -182,10 +182,10 @@ def main():
     print("2: Remote server")
     print("3: No server conncetion")
     serverinput = input("-->: ")
-    server = "http://localhost:8080/live_chords/"
+    server = "http://localhost:8081/live_chords/"
 
     if serverinput == "2":
-        server = "http://82.75.204.165:8080/live_chords/"
+        server = "http://82.75.204.165:8081/live_chords/"
     elif serverinput == "3":
         server = "no_server"
 

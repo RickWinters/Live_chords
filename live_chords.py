@@ -164,6 +164,10 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
     tabs = "no data found"
     found = False  # to keep track if the lyrics have been found or not
     # URL to search the website
+    artist = artist.replace("%20"," ")
+    artist = artist.replace("_"," ")
+    title = title.replace("%20"," ")
+    title = title.replace("_"," ")
     searchurl = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" + artist + "%20" + title
     print(searchurl)
     r = requests.get(searchurl)
@@ -236,6 +240,10 @@ def search_azlyrics(artist, title):
 
 def search_genius(artist, title):
     print("STARTING SEARCH ON GENIUS.COM")
+    artist = artist.replace("%20","-")
+    artist = artist.replace("_","-")
+    title = title.replace("%20","-")
+    title = title.replace("_","-")
     searchurl = "https://genius.com/" + artist.replace("%20","-") + "-" + title.replace("%20","-") + "-lyrics"
     print(searchurl)
     r = requests.get(searchurl)
@@ -652,10 +660,10 @@ def main():
     print("2: Remote server")
     print("3: No server conncetion")
     serverinput = input("-->: ")
-    server = "http://localhost:8080/live_chords/"
+    server = "http://localhost:8081/live_chords/"
 
     if serverinput == "2":
-        server = "http://82.75.204.165:8080/live_chords/"
+        server = "http://82.75.204.165:8081/live_chords/"
     elif serverinput == "3":
         server = "no_server"
 
