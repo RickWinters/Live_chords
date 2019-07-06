@@ -46,6 +46,8 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
         title = title.replace("Version","")
         title = title.replace("version","")
         title = title.replace(".","")
+        title = title.replace("é","e")
+        title = title.replace("ê","e")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
         artist = artist.replace("?","")
         artist = artist.replace("!","")
@@ -655,7 +657,7 @@ def main():
     if serverinput == "2":
         server = "192.168.1.111:8080/live_chords/"
     elif serverinput == "3":
-        connectiontype = "no_server"
+        server = "no_server"
 
     account_info = json.loads(open("./account_info.txt").read())
     username = account_info['username']
@@ -689,6 +691,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-06-26/2'
+version = '2019-07-06'
 if __name__ == "__main__":
     main()

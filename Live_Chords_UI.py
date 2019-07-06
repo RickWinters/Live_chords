@@ -129,7 +129,7 @@ def draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line):
     return screen
 
 
-def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title, synced, clock, t0, azlyrics, tabs):
+def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title, synced, clock, t0, azlyrics, tabs, server):
     autosync = False
     print("t0 = " + str(t0))
     if autosync:
@@ -164,7 +164,7 @@ def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title,
                     sys.exit()
             clock.tick(100)
     synced = True
-    datafile = file(artist.replace(" ", "%20"), title.replace(" ", "%20"), version)
+    datafile = file(artist.replace(" ", "%20"), title.replace(" ", "%20"), version, server)
     datafile.open_file()
     datafile.from_dict()
     datafile.chorded_lyrics = chorded_lyrics
@@ -176,12 +176,26 @@ def sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist, title,
 
 
 def main():
+
+    print("Choose which kind of server connection you want")
+    print("1: Localhost")
+    print("2: Remote server")
+    print("3: No server conncetion")
+    serverinput = input("-->: ")
+    server = "http://localhost:8080/live_chords/"
+
+    if serverinput == "2":
+        server = "192.168.1.111:8080/live_chords/"
+    elif serverinput == "3":
+        server = "no_server"
+
     account_info = json.loads(open("./account_info.txt").read())
     username = account_info['username']
     scope = account_info['scope']
     clientid = account_info['clientid']
     clientsecret = account_info['clientsecret']
     redirect_uri = account_info['redirect_uri']
+
 
     fonts, colors, screen, clock = setup_screen()
     artist = ""
@@ -204,7 +218,7 @@ def main():
             t1 = time.time()
 
         if (artist != artist_old) or (title != title_old):  # if song has changed open the file
-            datafile = file(artist, title, version)
+            datafile = file(artist, title, version, server)
             datafile.open_file()  # opens file, and if it doesn't exist the lyrics will be downloaded, analyzed etc
             # datafile.close_file()  # if it's a new file the file is saved
             artist_old = artist  # keeping track of song
@@ -261,8 +275,8 @@ def main():
                     print("start syncing")
                     title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
                     chorded_lyrics, synced = sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist,
-                                                       title, synced, clock, t0, has_azlyrics, has_tabs)
-                    datafile.close_file()
+                                                       title, synced, clock, t0, has_azlyrics, has_tabs, server)
+                    #datafile.close_file()
                 if event.key == pygame.K_SPACE and synced:
                     count = 0
 
