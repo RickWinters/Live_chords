@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 import requests
 
@@ -63,3 +63,6 @@ for song in incomplete:
 print("\n\n\n\n Tabs from older version")
 for song in oldversion:
     print(song)
+
+print("\n\n\n\n Press ENTER to quit")
+input()
