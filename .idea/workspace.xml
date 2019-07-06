@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
+    <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="changed remote server address to home address external ip">
+      <change beforePath="$PROJECT_DIR$/.idea/live_chords.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/live_chords.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/List_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/List_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Live_Chords_UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Live_Chords_UI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,53 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+        <entry file="file://$PROJECT_DIR$/List_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
-              <caret line="252" column="33" lean-forward="true" selection-start-line="252" selection-start-column="33" selection-end-line="252" selection-end-column="33" />
-              <folding>
-                <element signature="e#133#1084#0" />
-                <element signature="e#733#924#0" />
-                <element signature="e#1189#2722#0" />
-                <element signature="e#1302#1372#0" />
-                <element signature="e#2062#2217#0" />
-                <element signature="e#2244#2405#0" />
-                <element signature="e#2424#2704#0" />
-                <element signature="e#2433#2623#0" />
-                <element signature="e#2798#3411#0" />
-                <element signature="e#3017#3321#0" />
-                <element signature="e#3170#3246#0" />
-                <element signature="e#3486#4993#0" />
-                <element signature="e#3523#4974#0" />
-                <element signature="e#3875#4974#0" />
-                <element signature="e#3923#4034#0" />
-                <element signature="e#4069#4157#0" />
-                <element signature="e#4338#4505#0" />
-                <element signature="e#4567#4944#0" />
-                <element signature="e#4703#4944#0" />
-                <element signature="e#4799#4854#0" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/List_files.py">
+        <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Save_account_info.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="131">
+              <caret line="188" column="28" lean-forward="true" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -68,11 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="e#244#286#0" />
-              </folding>
+            <state relative-caret-position="335">
+              <caret line="657" column="56" selection-start-line="657" selection-start-column="56" selection-end-line="657" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -112,9 +79,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Test_scripts.py" />
         <option value="$PROJECT_DIR$/Save_account_info.py" />
-        <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
-        <option value="$PROJECT_DIR$/live_chords.py" />
         <option value="$PROJECT_DIR$/List_files.py" />
+        <option value="$PROJECT_DIR$/live_chords.py" />
+        <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
       </list>
     </option>
   </component>
@@ -140,10 +107,6 @@
               <item name="live_chords" type="462c0819:PsiDirectoryNode" />
               <item name="spotipy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -153,6 +116,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -166,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.live_chords">
+  <component name="RunManager" selected="Python.scan_files">
     <configuration name="Pygame_UI_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,8 +259,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.scan_files" />
+        <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.Website_test" />
         <item itemvalue="Python.print_multiple_lines_test" />
         <item itemvalue="Python.Save_account_info" />
@@ -342,19 +306,27 @@
       <option name="project" value="LOCAL" />
       <updated>1562404976103</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed list_files.py so that cmdline doesn't quit at end">
+      <created>1562423885400</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562423885400</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13593256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13561471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32916668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Run" order="2" type="FLOATING" weight="0.37594798" />
+      <window_info anchor="bottom" x="0" y="0" width="1600" height="860" id="Run" order="2" type="FLOATING" weight="0.37594798" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4073673" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,6 +358,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -428,24 +403,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="bugfix" />
     <MESSAGE value="added / improved lyrics grouping and sorting algorithm. Any solo's or instrumental parts which include guitar chords are now shown in the UI as well :) and changed some tabs files" />
     <MESSAGE value="some more fixes" />
     <MESSAGE value="changed search lyrics bit so that if no lyrics are found, this is stored in a String[] so that the java backend can survive this." />
     <MESSAGE value="Some bug fixes concerning accents on titles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some bug fixes concerning accents on titles." />
+    <MESSAGE value="Changed list_files.py so that cmdline doesn't quit at end" />
+    <MESSAGE value="changed remote server address to home address external ip" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed remote server address to home address external ip" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>52</line>
+          <line>62</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>166</line>
+          <line>162</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
@@ -517,13 +499,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spotipy/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spotipy/util.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/adapters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -537,13 +513,7 @@
     <entry file="file://$PROJECT_DIR$/Musixmatch_api.py" />
     <entry file="file://$PROJECT_DIR$/print_multiple_lines_test.py" />
     <entry file="file://$PROJECT_DIR$/spotipy_tutorial.py" />
-    <entry file="file://$PROJECT_DIR$/account_info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="89" selection-start-column="89" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/account_info.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/encodings/cp1252.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -565,45 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="252" column="33" lean-forward="true" selection-start-line="252" selection-start-column="33" selection-end-line="252" selection-end-column="33" />
-          <folding>
-            <element signature="e#133#1084#0" />
-            <element signature="e#733#924#0" />
-            <element signature="e#1189#2722#0" />
-            <element signature="e#1302#1372#0" />
-            <element signature="e#2062#2217#0" />
-            <element signature="e#2244#2405#0" />
-            <element signature="e#2424#2704#0" />
-            <element signature="e#2433#2623#0" />
-            <element signature="e#2798#3411#0" />
-            <element signature="e#3017#3321#0" />
-            <element signature="e#3170#3246#0" />
-            <element signature="e#3486#4993#0" />
-            <element signature="e#3523#4974#0" />
-            <element signature="e#3875#4974#0" />
-            <element signature="e#3923#4034#0" />
-            <element signature="e#4069#4157#0" />
-            <element signature="e#4338#4505#0" />
-            <element signature="e#4567#4944#0" />
-            <element signature="e#4703#4944#0" />
-            <element signature="e#4799#4854#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_scripts.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -611,30 +543,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
+    <entry file="file://$PROJECT_DIR$/Save_account_info.py" />
+    <entry file="file://$PROJECT_DIR$/List_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="230">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#244#286#0" />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="657" column="56" selection-start-line="657" selection-start-column="56" selection-end-line="657" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/List_files.py">
+    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="131">
+          <caret line="188" column="28" lean-forward="true" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
         </state>
       </provider>
     </entry>

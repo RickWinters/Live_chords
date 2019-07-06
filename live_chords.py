@@ -655,7 +655,7 @@ def main():
     server = "http://localhost:8080/live_chords/"
 
     if serverinput == "2":
-        server = "192.168.1.111:8080/live_chords/"
+        server = "http://82.75.204.165:8080/live_chords/"
     elif serverinput == "3":
         server = "no_server"
 

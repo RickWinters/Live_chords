@@ -23,7 +23,7 @@ if choice == "2":
     if server == "1":
         serverurl = "http://localhost:8080/live_chords"
     elif server == "2":
-        serverurl = "http://192.168.1.111:8080/live_chords"
+        serverurl = "http://82.75.204.165:8080/live_chords"
 
     files = json.loads(requests.get(serverurl + "/List").text)
 
