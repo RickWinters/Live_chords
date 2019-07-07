@@ -415,15 +415,18 @@ class file:
                     if self.chorded_lyrics[0]['lyrics'] == "no_file_found":
                         self.chorded_lyrics.pop(0)
                 for line in tabslines:
-                    self.tabslines.append({}) #append an empty dictionary to the tabslines, for each tabslines this dictionary keeps track of the raw text, if it is a keyword, and if it is lyrics or chords. #todo add a dictionary item + logic for actual 6 lines tabs
-                    self.tabslines[-1]['text'] = line
-                    self.tabslines[-1]['keyword'] = False
-                    if ("chorus" in line.lower()) or ("verse" in line.lower()) or ("intro" in line.lower()) or ( #check for keywords in the line
-                            "outro" in line.lower()) or ("interlude" in line.lower()) or ("bridge" in line.lower())\
-                            or ("instrumental" in line.lower()):
-                        self.tabslines[-1]['keyword'] = True
-                    self.tabslines[-1]['lyrics'] = False
-                    self.tabslines[-1]['chords'] = False
+                    if line != "":
+                        self.tabslines.append(
+                            {})  # append an empty dictionary to the tabslines, for each tabslines this dictionary keeps track of the raw text, if it is a keyword, and if it is lyrics or chords. #todo add a dictionary item + logic for actual 6 lines tabs
+                        self.tabslines[-1]['text'] = line
+                        self.tabslines[-1]['keyword'] = False
+                        if ("chorus" in line.lower()) or ("verse" in line.lower()) or ("intro" in line.lower()) or (
+                                # check for keywords in the line
+                                "outro" in line.lower()) or ("interlude" in line.lower()) or ("bridge" in line.lower()) \
+                                or ("instrumental" in line.lower()) or "break" in line.lower():
+                            self.tabslines[-1]['keyword'] = True
+                        self.tabslines[-1]['lyrics'] = False
+                        self.tabslines[-1]['chords'] = False
                 self.azlyrics = azlyrics
                 self.has_azlyrics = True
                 self.has_tabs = True
@@ -496,20 +499,10 @@ class file:
     def group_on_keywords(self):
         print("START GROUPING ON KEYWORDS")
         group = "start"
-        in_intro = False
-        passed_intro = False
         for line in self.tabslines: #go over each tabslines, when a new keyword is seen, assing all following lines the same keyword
             if line['keyword']:
                 group = line['text']
                 line['lyrics'] = True
-                if "intro" in group.lower():
-                    in_intro = True
-            if line['text'] == "":
-                group = "unspecified"
-                if in_intro:
-                    passed_intro = True
-                    in_intro = False
-
 
             line['group'] = group
         print("done with comparing on keywords")
@@ -522,8 +515,11 @@ class file:
         instart = False
         solotext = ""
         insolo = False
+        inbreak = False
+
         i = 0
-        for line in self.tabslines:
+        while i < len(self.tabslines):
+            line = self.tabslines[i]
             if "solo" in line['group'].lower() or 'instrumental' in line['group'].lower()\
                     or 'interlude' in line['group'].lower() or 'pre-verse' in line['group'].lower():
                 insolo = True
@@ -554,7 +550,25 @@ class file:
                 starttext = ""
                 instart = False
 
-            if not instart and not inintro and not insolo:
+            if "break" in line['group'].lower() and not (insolo or inintro or instart or inbreak):
+                inbreak = True
+                j = 0
+                no_lyrics = True
+                while "break" in self.tabslines[i + j]['group'].lower():
+                    if self.tabslines[i + j]['lyrics'] == True and j > 0:
+                        no_lyrics = False
+                        break
+                    else:
+                        solotext += self.tabslines[i + j]['text'] + "\n"
+                    j += 1
+                if no_lyrics:
+                    self.add_chorded_lyrics_line(solotext, "", "break")
+                    i += j
+            elif inbreak:
+                solotext = ""
+                inbreak = False
+
+            if not (instart or inbreak or inintro or insolo):
                 if line['lyrics']: #if the tabslines is past the lyrics, only group them if this line is a lyrics. Assign the previous line for chords
                     self.chorded_lyrics.append({})
                     self.chorded_lyrics[-1]['lyrics'] = line['text'] #assign lyrics from tabslines into chorded_lyrics
@@ -699,6 +713,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-06'
+version = '2019-07-06/9a5a555a55535o555'
 if __name__ == "__main__":
     main()
