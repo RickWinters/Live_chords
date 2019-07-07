@@ -323,7 +323,7 @@ class file:
         self.data['artist'] = self.artist
         self.data['title'] = self.title
         self.data['tabs'] = self.tabs
-        self.data['synced'] = self.synced
+        # self.data['synced'] = self.synced
         self.data['tabslines'] = self.tabslines
         self.data['azlyrics'] = self.azlyrics
         self.data['has_tabs'] = self.has_tabs
@@ -345,9 +345,9 @@ class file:
             self.file_version = self.data['version']
 
     def clear_file(self):
-        self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
+        #self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
         self.tabs = ""
-        self.synced = False
+        #self.synced = False
         self.tabslines = []
         self.azlyrics = ""
         self.has_tabs = False
@@ -364,8 +364,11 @@ class file:
         if not self.server == "no_server":
             print("LOOKING FOR FILE ON SERVER")
             try:
-                r = requests.get(self.server + "Get/{}/{}".format(self.artist.replace("%20", "_"),
-                                                                  self.title.replace("%20", "_")))
+                artist = self.artist
+                title = self.title
+                artist = artist.replace("%20", "_")
+                title = title.replace("%20", "_")
+                r = requests.get(self.server + "Get/{}/{}".format(artist, title))
                 text = r.text
                 self.data = json.loads(text)
                 self.from_dict()
@@ -405,7 +408,6 @@ class file:
             #if no tabs are found, the variable will be "no data found", and than its useless to do anything else
             if tabs != "no data found":
                 self.tabs = tabs
-                self.synced = False #default synced is false
                 tabslines = seperate_lines(tabs, tabslines=True)
                 #Server will return a tabsfile with every value set to "no_file_found", if no file is found. These need to be deleted
                 if len(self.azlyrics) == 1:
@@ -446,7 +448,8 @@ class file:
         if self.server != "no_server":
             self.to_dict()
             r = requests.post(self.server + "Save/", json=self.data)
-            print(r)
+            if r.status_code == 200:
+                print("SAVE SUCCESFULL")
         else:
             self.to_dict()  # load the variables into the dictionary
             text = json.dumps(self.data)  # convert to json string
@@ -595,6 +598,9 @@ class file:
         self.chorded_lyrics[-1]['stop'] = 0
         self.chorded_lyrics[-1]['group'] = group
 
+    def setsyncedtrue(self):
+        self.synced = True
+
 def normalize_line(str):
     str = str.replace("%20", "")
     str = str.replace("'", "")
@@ -713,6 +719,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-06/9a5a555a55535o555'
+version = '2019-07-07'
 if __name__ == "__main__":
     main()
