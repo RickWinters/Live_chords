@@ -242,9 +242,10 @@ def search_genius(artist, title):
     print("STARTING SEARCH ON GENIUS.COM")
     artist = artist.replace("%20","-")
     artist = artist.replace("_","-")
-    artist = artist.replace(",", "")
+    artist = artist.replace("'", "")
     title = title.replace("%20","-")
     title = title.replace("_","-")
+    title = title.replace("'", "")
     searchurl = "https://genius.com/" + artist.replace("%20","-") + "-" + title.replace("%20","-") + "-lyrics"
     print(searchurl)
     r = requests.get(searchurl)
@@ -720,6 +721,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-07'
+version = '2019-07-08'
 if __name__ == "__main__":
     main()
