@@ -242,6 +242,7 @@ def search_genius(artist, title):
     print("STARTING SEARCH ON GENIUS.COM")
     artist = artist.replace("%20","-")
     artist = artist.replace("_","-")
+    artist = artist.replace(",", "")
     title = title.replace("%20","-")
     title = title.replace("_","-")
     searchurl = "https://genius.com/" + artist.replace("%20","-") + "-" + title.replace("%20","-") + "-lyrics"
