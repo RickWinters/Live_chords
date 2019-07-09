@@ -512,7 +512,8 @@ class file:
             if line['keyword']:
                 line['group'] = group = line['text']
                 line['lyrics'] = True
-                if self.tabslines[i + 1]['text'] == "":
+                if i < (len(self.tabslines) - 1) and self.tabslines[i + 1]['text'] == "":
+                    self.tabslines[i + 1]['group'] = group
                     i += 1
 
             if line['text'] == "":
