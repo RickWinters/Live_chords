@@ -321,11 +321,11 @@ class file:
         self.to_dict()
         self.server = server
 
-    def to_dict(self): #helper function to write all the instance variables to the dictionary
+    def to_dict(self, update=False):  # helper function to write all the instance variables to the dictionary
         self.data['artist'] = self.artist
         self.data['title'] = self.title
         self.data['tabs'] = self.tabs
-        # self.data['synced'] = self.synced
+        if not update: self.data['synced'] = self.synced
         self.data['tabslines'] = self.tabslines
         self.data['azlyrics'] = self.azlyrics
         self.data['has_tabs'] = self.has_tabs
@@ -346,10 +346,10 @@ class file:
         if 'version' in self.data:
             self.file_version = self.data['version']
 
-    def clear_file(self):
-        #self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
+    def clear_file(self, update=False):
+        if not update: self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
         self.tabs = ""
-        #self.synced = False
+        if not update: self.synced = False
         self.tabslines = []
         self.azlyrics = ""
         self.has_tabs = False
@@ -419,18 +419,17 @@ class file:
                     if self.chorded_lyrics[0]['lyrics'] == "no_file_found":
                         self.chorded_lyrics.pop(0)
                 for line in tabslines:
-                    if line != "":
-                        self.tabslines.append(
-                            {})  # append an empty dictionary to the tabslines, for each tabslines this dictionary keeps track of the raw text, if it is a keyword, and if it is lyrics or chords. #todo add a dictionary item + logic for actual 6 lines tabs
-                        self.tabslines[-1]['text'] = line
-                        self.tabslines[-1]['keyword'] = False
-                        if ("chorus" in line.lower()) or ("verse" in line.lower()) or ("intro" in line.lower()) or (
-                                # check for keywords in the line
-                                "outro" in line.lower()) or ("interlude" in line.lower()) or ("bridge" in line.lower()) \
-                                or ("instrumental" in line.lower()) or "break" in line.lower():
-                            self.tabslines[-1]['keyword'] = True
-                        self.tabslines[-1]['lyrics'] = False
-                        self.tabslines[-1]['chords'] = False
+                    self.tabslines.append(
+                        {})  # append an empty dictionary to the tabslines, for each tabslines this dictionary keeps track of the raw text, if it is a keyword, and if it is lyrics or chords. #todo add a dictionary item + logic for actual 6 lines tabs
+                    self.tabslines[-1]['text'] = line
+                    self.tabslines[-1]['keyword'] = False
+                    if ("chorus" in line.lower()) or ("verse" in line.lower()) or ("intro" in line.lower()) or (
+                            # check for keywords in the line
+                            "outro" in line.lower()) or ("interlude" in line.lower()) or ("bridge" in line.lower()) \
+                            or ("instrumental" in line.lower()) or "break" in line.lower():
+                        self.tabslines[-1]['keyword'] = True
+                    self.tabslines[-1]['lyrics'] = False
+                    self.tabslines[-1]['chords'] = False
                 self.azlyrics = azlyrics
                 self.has_azlyrics = True
                 self.has_tabs = True
@@ -504,12 +503,26 @@ class file:
     def group_on_keywords(self):
         print("START GROUPING ON KEYWORDS")
         group = "start"
-        for line in self.tabslines: #go over each tabslines, when a new keyword is seen, assing all following lines the same keyword
-            if line['keyword']:
-                group = line['text']
-                line['lyrics'] = True
-
+        i = 0
+        while i < len(
+                self.tabslines):  # go over each tabslines, when a new keyword is seen, assing all following lines the same keyword
+            line = self.tabslines[i]
             line['group'] = group
+
+            if line['keyword']:
+                line['group'] = group = line['text']
+                line['lyrics'] = True
+                if self.tabslines[i + 1]['text'] == "":
+                    i += 1
+
+            if line['text'] == "":
+                self.tabslines.pop(self.tabslines.index(line))
+                group = "verse"
+                continue
+
+            i += 1
+
+
         print("done with comparing on keywords")
 
     def sort_lyrics(self):
