@@ -39,8 +39,6 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
     size = screen.get_size()
     screen.fill(colors['inactive_line'])
     screenheight = int(round(size[1] / 6))
-    #rect = pygame.Rect(0, int(screenheight * 2.5), size[0], screenheight)
-    #pygame.draw.rect(screen, colors['active_line'], rect)
 
     title_string = "Title: " + title.replace("%20", " ")
     artist_string = "Artist: " + artist.replace("%20", " ")
@@ -58,13 +56,13 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
         pos = blit_text(screen, line, pos, fonts['artist'], colors['artist'])
 
     if synced:
-        synced_string = "song is synced"
-        synced_info = fonts['artist'].render(synced_string, False, colors['artist'])
-        screen.blit(synced_info, pos)
+        synced_string = "song is synced. To re-sync the song from current position, press space once"
+        pos = blit_text(screen, synced_string, pos, fonts['artist'], colors['inactive_font'])
+        synced_string = "press n if next song is playing"
+        pos = blit_text(screen, synced_string, pos, fonts['artist'], colors['inactive_font'])
     elif syncing:
         string = "syncing, press space for next line"
-        synced_info = fonts['artist'].render(string, False, colors['artist'])
-        screen.blit(synced_info, pos)
+        blit_text(screen, string, pos, fonts['artist'], colors['inactive_font'])
     else:
         string = "Restart song before syncing. Than press space to enter syncing mode and press space to go te next "\
                  "line. The time of pressing space is save when all lines are completed"
@@ -207,8 +205,13 @@ def main():
     recheck_amount = recheck_sec / sleeptime
     count = 0
     active_line = 0
-    t = 0
     t0 = 0
+    synced = False
+    chorded_lyrics = {}
+    has_azlyrics = False
+    has_tabs = False
+
+
 
     while True:
         if count == 0:  # if count is zero. That means that the script will look for which song is playing
@@ -254,7 +257,7 @@ def main():
                         active_line = len(chorded_lyrics) - 1
                         time.sleep(2)
                     print("active_line = " + str(active_line))
-                    print("time = " + str(round((t + t0) / 60) - 1) + ":" + str(round((t + t0) % 60, 2)))
+                    print("time = " + str(round(t / 60)) + ":" + str(round(t % 60, 2)))
                     screen = draw_background(screen, fonts, colors, artist, title, synced, has_azlyrics, has_tabs)
                     screen = draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line)
                     pygame.display.update()
@@ -271,6 +274,7 @@ def main():
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.KEYDOWN:
+                # SYNC THE SONG WHEN NOT SYNCED, THIS SHOULD START AT START OF SONG
                 if event.key == pygame.K_SPACE and not synced:
                     print("start syncing")
                     title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
@@ -278,6 +282,12 @@ def main():
                                                        title, synced, clock, t0, has_azlyrics, has_tabs, server)
                     #datafile.close_file()
                 if event.key == pygame.K_SPACE and synced:
+                    synced = False
+                    title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
+                    t = time.time() - t1 + t0
+                    chorded_lyrics, synced = sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist,
+                                                       title, synced, clock, t0, has_azlyrics, has_tabs, server)
+                if (event.key == pygame.K_n or event.key == pygame.K_b) and synced:
                     count = 0
 
 

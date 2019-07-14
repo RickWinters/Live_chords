@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Live_Chords_UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Live_Chords_UI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/List_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="374">
               <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -25,20 +25,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-281">
-              <caret line="187" column="39" selection-start-line="187" selection-start-column="39" selection-end-line="187" selection-end-column="39" />
+            <state relative-caret-position="213">
+              <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
               <folding>
                 <element signature="e#133#1084#0" />
                 <element signature="e#733#924#0" />
-                <element signature="e#1189#2722#0" />
-                <element signature="e#1302#1372#0" />
-                <element signature="e#2062#2217#0" />
-                <element signature="e#2244#2405#0" />
-                <element signature="e#2424#2704#0" />
-                <element signature="e#2433#2623#0" />
                 <element signature="e#2798#3411#0" />
                 <element signature="e#3017#3321#0" />
                 <element signature="e#3170#3246#0" />
@@ -51,37 +45,19 @@
                 <element signature="e#4567#4944#0" />
                 <element signature="e#4703#4944#0" />
                 <element signature="e#4799#4854#0" />
-                <element signature="e#5125#6938#0" />
-                <element signature="e#5196#5355#0" />
-                <element signature="e#5250#5355#0" />
-                <element signature="e#5374#6620#0" />
-                <element signature="e#5450#6620#0" />
-                <element signature="e#5538#6592#0" />
-                <element signature="e#5591#6480#0" />
-                <element signature="e#5647#6480#0" />
-                <element signature="e#5829#6480#0" />
-                <element signature="e#6547#6592#0" />
-                <element signature="e#9132#9695#0" />
-                <element signature="e#9394#9582#0" />
-                <element signature="e#10207#10837#0" />
-                <element signature="e#10307#10416#0" />
-                <element signature="e#10921#11163#0" />
-                <element signature="e#11218#11920#0" />
-                <element signature="e#11264#11304#0" />
-                <element signature="e#11366#11920#0" />
-                <element signature="e#11433#11831#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="605" selection-start-line="605" selection-end-line="605" />
+            <state relative-caret-position="-82">
+              <caret line="526" column="48" lean-forward="true" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
               <folding>
                 <element signature="e#244#286#0" />
+                <element signature="e#440#2265#0" />
                 <element signature="e#846#1001#0" />
                 <element signature="e#1231#2026#0" />
                 <element signature="e#2045#2120#0" />
@@ -115,6 +91,61 @@
                 <element signature="e#9120#9418#0" />
                 <element signature="e#9171#9418#0" />
                 <element signature="e#9441#9646#0" />
+                <element signature="e#9763#11549#0" />
+                <element signature="e#10561#11126#0" />
+                <element signature="e#10679#10948#0" />
+                <element signature="e#11274#11530#0" />
+                <element signature="e#11313#11497#0" />
+                <element signature="e#11757#12344#0" />
+                <element signature="e#11981#12244#0" />
+                <element signature="e#12081#12207#0" />
+                <element signature="e#12346#12566#0" />
+                <element signature="e#12962#13450#0" />
+                <element signature="e#13570#14041#0" />
+                <element signature="e#14179#14672#0" />
+                <element signature="e#14722#15117#0" />
+                <element signature="e#15239#20373#0" />
+                <element signature="e#15414#16021#0" />
+                <element signature="e#15483#15866#0" />
+                <element signature="e#15903#16021#0" />
+                <element signature="e#16201#17081#0" />
+                <element signature="e#16537#17081#0" />
+                <element signature="e#17202#17302#0" />
+                <element signature="e#17486#20317#0" />
+                <element signature="e#17800#20317#0" />
+                <element signature="e#18080#18164#0" />
+                <element signature="e#18235#18341#0" />
+                <element signature="e#18401#19345#0" />
+                <element signature="e#19725#20283#0" />
+                <element signature="e#20409#20977#0" />
+                <element signature="e#20452#20613#0" />
+                <element signature="e#20640#20977#0" />
+                <element signature="e#21017#23448#0" />
+                <element signature="e#21297#23404#0" />
+                <element signature="e#21494#23384#0" />
+                <element signature="e#21609#23384#0" />
+                <element signature="e#22436#22660#0" />
+                <element signature="e#23111#23384#0" />
+                <element signature="e#27915#28185#0" />
+                <element signature="e#28224#28242#0" />
+                <element signature="e#28273#28534#0" />
+                <element signature="e#28568#28630#0" />
+                <element signature="e#28663#28848#0" />
+                <element signature="e#28879#29069#0" />
+                <element signature="e#29101#30197#0" />
+                <element signature="e#29144#29191#0" />
+                <element signature="e#29239#29299#0" />
+                <element signature="e#29328#29583#0" />
+                <element signature="e#29379#29452#0" />
+                <element signature="e#29617#29892#0" />
+                <element signature="e#29634#29706#0" />
+                <element signature="e#29763#29892#0" />
+                <element signature="e#29797#29892#0" />
+                <element signature="e#29930#29995#0" />
+                <element signature="e#30031#30197#0" />
+                <element signature="e#30216#31504#0" />
+                <element signature="e#30967#31504#0" />
+                <element signature="e#31210#31463#0" />
               </folding>
             </state>
           </provider>
@@ -132,11 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Update_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -183,10 +211,10 @@
         <option value="$PROJECT_DIR$/Test_scripts.py" />
         <option value="$PROJECT_DIR$/Save_account_info.py" />
         <option value="$PROJECT_DIR$/List_files.py" />
-        <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$PROJECT_DIR$/live_chords.py" />
+        <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
       </list>
     </option>
   </component>
@@ -201,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,7 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Live_Chords_UI">
+  <component name="RunManager" selected="Python.Pygame_UI_test">
     <configuration name="Live_Chords_UI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="live_chords" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,10 +393,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Live_Chords_UI" />
-        <item itemvalue="Python.Update_all" />
-        <item itemvalue="Python.scan_files" />
         <item itemvalue="Python.Pygame_UI_test" />
+        <item itemvalue="Python.Update_all" />
+        <item itemvalue="Python.Live_Chords_UI" />
+        <item itemvalue="Python.scan_files" />
         <item itemvalue="Python.Website_test" />
       </list>
     </recent_temporary>
@@ -454,7 +482,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562596113363</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given">
+      <created>1562685463903</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562685463903</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable">
+      <created>1562685550566</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562685550566</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -465,8 +507,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="-1803" y="105" width="1600" height="860" id="Run" order="2" type="FLOATING" weight="0.37594798" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44853738" />
+      <window_info anchor="bottom" x="938" y="511" width="43" height="18" id="Run" order="2" type="FLOATING" weight="0.37594798" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41386783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -555,29 +597,25 @@
     <MESSAGE value="on ultimate guitar tab. A break could have lyrics with chords (this was handlede correctly before) or just chords (this wouldn't show up). Now it is handled correctly. If the break has just chords, it will be handled like a solo. If it does have lyrics, it will be handled as lyrics." />
     <MESSAGE value="updated version in the script as well :)" />
     <MESSAGE value="quick fix to replace &quot;'&quot; with &quot;&quot; in searching genius lyrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="quick fix to replace &quot;'&quot; with &quot;&quot; in searching genius lyrics" />
+    <MESSAGE value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given" />
+    <MESSAGE value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Update_all.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Update_all.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i == 70</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 69</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>i == 32</expression-string>
         <language-id>Python</language-id>
@@ -718,70 +756,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Update_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_scripts.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="187" column="39" selection-start-line="187" selection-start-column="39" selection-end-line="187" selection-end-column="39" />
-          <folding>
-            <element signature="e#133#1084#0" />
-            <element signature="e#733#924#0" />
-            <element signature="e#1189#2722#0" />
-            <element signature="e#1302#1372#0" />
-            <element signature="e#2062#2217#0" />
-            <element signature="e#2244#2405#0" />
-            <element signature="e#2424#2704#0" />
-            <element signature="e#2433#2623#0" />
-            <element signature="e#2798#3411#0" />
-            <element signature="e#3017#3321#0" />
-            <element signature="e#3170#3246#0" />
-            <element signature="e#3486#4993#0" />
-            <element signature="e#3523#4974#0" />
-            <element signature="e#3875#4974#0" />
-            <element signature="e#3923#4034#0" />
-            <element signature="e#4069#4157#0" />
-            <element signature="e#4338#4505#0" />
-            <element signature="e#4567#4944#0" />
-            <element signature="e#4703#4944#0" />
-            <element signature="e#4799#4854#0" />
-            <element signature="e#5125#6938#0" />
-            <element signature="e#5196#5355#0" />
-            <element signature="e#5250#5355#0" />
-            <element signature="e#5374#6620#0" />
-            <element signature="e#5450#6620#0" />
-            <element signature="e#5538#6592#0" />
-            <element signature="e#5591#6480#0" />
-            <element signature="e#5647#6480#0" />
-            <element signature="e#5829#6480#0" />
-            <element signature="e#6547#6592#0" />
-            <element signature="e#9132#9695#0" />
-            <element signature="e#9394#9582#0" />
-            <element signature="e#10207#10837#0" />
-            <element signature="e#10307#10416#0" />
-            <element signature="e#10921#11163#0" />
-            <element signature="e#11218#11920#0" />
-            <element signature="e#11264#11304#0" />
-            <element signature="e#11366#11920#0" />
-            <element signature="e#11433#11831#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/List_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="374">
           <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -789,12 +769,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Update_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="605" selection-start-line="605" selection-end-line="605" />
+        <state relative-caret-position="-82">
+          <caret line="526" column="48" lean-forward="true" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
           <folding>
             <element signature="e#244#286#0" />
+            <element signature="e#440#2265#0" />
             <element signature="e#846#1001#0" />
             <element signature="e#1231#2026#0" />
             <element signature="e#2045#2120#0" />
@@ -828,6 +816,84 @@
             <element signature="e#9120#9418#0" />
             <element signature="e#9171#9418#0" />
             <element signature="e#9441#9646#0" />
+            <element signature="e#9763#11549#0" />
+            <element signature="e#10561#11126#0" />
+            <element signature="e#10679#10948#0" />
+            <element signature="e#11274#11530#0" />
+            <element signature="e#11313#11497#0" />
+            <element signature="e#11757#12344#0" />
+            <element signature="e#11981#12244#0" />
+            <element signature="e#12081#12207#0" />
+            <element signature="e#12346#12566#0" />
+            <element signature="e#12962#13450#0" />
+            <element signature="e#13570#14041#0" />
+            <element signature="e#14179#14672#0" />
+            <element signature="e#14722#15117#0" />
+            <element signature="e#15239#20373#0" />
+            <element signature="e#15414#16021#0" />
+            <element signature="e#15483#15866#0" />
+            <element signature="e#15903#16021#0" />
+            <element signature="e#16201#17081#0" />
+            <element signature="e#16537#17081#0" />
+            <element signature="e#17202#17302#0" />
+            <element signature="e#17486#20317#0" />
+            <element signature="e#17800#20317#0" />
+            <element signature="e#18080#18164#0" />
+            <element signature="e#18235#18341#0" />
+            <element signature="e#18401#19345#0" />
+            <element signature="e#19725#20283#0" />
+            <element signature="e#20409#20977#0" />
+            <element signature="e#20452#20613#0" />
+            <element signature="e#20640#20977#0" />
+            <element signature="e#21017#23448#0" />
+            <element signature="e#21297#23404#0" />
+            <element signature="e#21494#23384#0" />
+            <element signature="e#21609#23384#0" />
+            <element signature="e#22436#22660#0" />
+            <element signature="e#23111#23384#0" />
+            <element signature="e#27915#28185#0" />
+            <element signature="e#28224#28242#0" />
+            <element signature="e#28273#28534#0" />
+            <element signature="e#28568#28630#0" />
+            <element signature="e#28663#28848#0" />
+            <element signature="e#28879#29069#0" />
+            <element signature="e#29101#30197#0" />
+            <element signature="e#29144#29191#0" />
+            <element signature="e#29239#29299#0" />
+            <element signature="e#29328#29583#0" />
+            <element signature="e#29379#29452#0" />
+            <element signature="e#29617#29892#0" />
+            <element signature="e#29634#29706#0" />
+            <element signature="e#29763#29892#0" />
+            <element signature="e#29797#29892#0" />
+            <element signature="e#29930#29995#0" />
+            <element signature="e#30031#30197#0" />
+            <element signature="e#30216#31504#0" />
+            <element signature="e#30967#31504#0" />
+            <element signature="e#31210#31463#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+          <folding>
+            <element signature="e#133#1084#0" />
+            <element signature="e#733#924#0" />
+            <element signature="e#2798#3411#0" />
+            <element signature="e#3017#3321#0" />
+            <element signature="e#3170#3246#0" />
+            <element signature="e#3486#4993#0" />
+            <element signature="e#3523#4974#0" />
+            <element signature="e#3875#4974#0" />
+            <element signature="e#3923#4034#0" />
+            <element signature="e#4069#4157#0" />
+            <element signature="e#4338#4505#0" />
+            <element signature="e#4567#4944#0" />
+            <element signature="e#4703#4944#0" />
+            <element signature="e#4799#4854#0" />
           </folding>
         </state>
       </provider>
