@@ -28,23 +28,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+            <state relative-caret-position="353">
+              <caret line="292" column="83" selection-start-line="292" selection-start-column="83" selection-end-line="292" selection-end-column="83" />
               <folding>
+                <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#133#1084#0" />
                 <element signature="e#733#924#0" />
-                <element signature="e#2798#3411#0" />
-                <element signature="e#3017#3321#0" />
-                <element signature="e#3170#3246#0" />
-                <element signature="e#3486#4993#0" />
-                <element signature="e#3523#4974#0" />
-                <element signature="e#3875#4974#0" />
-                <element signature="e#3923#4034#0" />
-                <element signature="e#4069#4157#0" />
-                <element signature="e#4338#4505#0" />
-                <element signature="e#4567#4944#0" />
-                <element signature="e#4703#4944#0" />
-                <element signature="e#4799#4854#0" />
               </folding>
             </state>
           </provider>
@@ -53,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="526" column="48" lean-forward="true" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
+            <state relative-caret-position="1292">
+              <caret line="526" column="48" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
               <folding>
                 <element signature="e#244#286#0" />
                 <element signature="e#440#2265#0" />
@@ -163,8 +152,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Update_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="493">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,8 +204,8 @@
         <option value="$PROJECT_DIR$/Save_account_info.py" />
         <option value="$PROJECT_DIR$/List_files.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$PROJECT_DIR$/live_chords.py" />
+        <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
       </list>
     </option>
@@ -229,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +237,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,26 +488,33 @@
       <option name="project" value="LOCAL" />
       <updated>1562685550566</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added functionality to re-sync a song while it is playing. Simply press space to enter sync-mode at the point it is. Could be usefull if part of the song is correctly synced but part of it is not.">
+      <created>1563101505625</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563101505625</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06638567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="938" y="511" width="43" height="18" id="Run" order="2" type="FLOATING" weight="0.37594798" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41386783" />
+      <window_info active="true" anchor="bottom" x="-1869" y="152" width="1914" height="1034" id="Run" order="2" type="FLOATING" visible="true" weight="0.37594798" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41386783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" x="82" y="485" width="1898" height="304" id="Python Console" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32916668" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -599,7 +598,8 @@
     <MESSAGE value="quick fix to replace &quot;'&quot; with &quot;&quot; in searching genius lyrics" />
     <MESSAGE value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given" />
     <MESSAGE value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable" />
+    <MESSAGE value="added functionality to re-sync a song while it is playing. Simply press space to enter sync-mode at the point it is. Could be usefull if part of the song is correctly synced but part of it is not." />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality to re-sync a song while it is playing. Simply press space to enter sync-mode at the point it is. Could be usefull if part of the song is correctly synced but part of it is not." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -749,16 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/List_files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -769,17 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Update_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/live_chords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="526" column="48" lean-forward="true" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
+        <state relative-caret-position="1292">
+          <caret line="526" column="48" selection-start-line="526" selection-start-column="48" selection-end-line="526" selection-end-column="48" />
           <folding>
             <element signature="e#244#286#0" />
             <element signature="e#440#2265#0" />
@@ -875,25 +858,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Update_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+        <state relative-caret-position="353">
+          <caret line="292" column="83" selection-start-line="292" selection-start-column="83" selection-end-line="292" selection-end-column="83" />
           <folding>
+            <element signature="e#0#11#0" expanded="true" />
             <element signature="e#133#1084#0" />
             <element signature="e#733#924#0" />
-            <element signature="e#2798#3411#0" />
-            <element signature="e#3017#3321#0" />
-            <element signature="e#3170#3246#0" />
-            <element signature="e#3486#4993#0" />
-            <element signature="e#3523#4974#0" />
-            <element signature="e#3875#4974#0" />
-            <element signature="e#3923#4034#0" />
-            <element signature="e#4069#4157#0" />
-            <element signature="e#4338#4505#0" />
-            <element signature="e#4567#4944#0" />
-            <element signature="e#4703#4944#0" />
-            <element signature="e#4799#4854#0" />
           </folding>
         </state>
       </provider>

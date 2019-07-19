@@ -207,6 +207,7 @@ def main():
     active_line = 0
     t0 = 0
     synced = False
+    syncing = False
     chorded_lyrics = {}
     has_azlyrics = False
     has_tabs = False
@@ -276,13 +277,15 @@ def main():
             if event.type == pygame.KEYDOWN:
                 # SYNC THE SONG WHEN NOT SYNCED, THIS SHOULD START AT START OF SONG
                 if event.key == pygame.K_SPACE and not synced:
+                    syncing = True
                     print("start syncing")
                     title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
                     chorded_lyrics, synced = sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist,
                                                        title, synced, clock, t0, has_azlyrics, has_tabs, server)
                     #datafile.close_file()
-                if event.key == pygame.K_SPACE and synced:
+                elif event.key == pygame.K_SPACE:
                     synced = False
+                    print("Start resyncing")
                     title, artist, t0 = get_current_song(username, clientid, clientsecret, redirect_uri)
                     t = time.time() - t1 + t0
                     chorded_lyrics, synced = sync_song(screen, fonts, colors, chorded_lyrics, active_line, artist,
