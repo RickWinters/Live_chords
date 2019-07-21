@@ -702,6 +702,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-21/6'
+version = '2019-07-21/7'
 if __name__ == "__main__":
     main()
