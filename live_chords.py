@@ -175,22 +175,11 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
     r = requests.get(searchurl)
     data = r.text  # Pure HTML as single string
     searchhtml = seperate_lines(data)  # seperate the lines by searching for the newline tag
-    search_results = extract_search_results(searchhtml)  # extract search results
-    if search_results == "no data found":  # if no data is found print this to the console and search on only title
-        print("NO SEARCH RESULTS FOUND")
-        print("SEARCHING ON JUST TITLE")
-        searchurl = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" + title
-        print(searchurl)
-        r = requests.get(searchurl)
-        data = r.text
-        searchhtml = seperate_lines(data)
-        search_results = extract_search_results(searchhtml)
-        if search_results != "no data found":
-            found = True
-        else:
-            print("NO SEARCH RESULTS FOUND ON ULTIMATE GUITAR TABS")
-    else:
+    search_results = extract_search_results(searchhtml)
+    if search_results != "no data found":
         found = True
+    else:
+        print("NO SEARCH RESULTS FOUND ON ULTIMATE GUITAR TABS")
 
     if found:
         print("GETTING LYRICS FROM ULTIMATE GUITAR TABS")
