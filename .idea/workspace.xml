@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Save_account_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/Save_account_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/List_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="368">
               <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="280" column="42" selection-start-line="280" selection-start-column="42" selection-end-line="280" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="218" column="96" lean-forward="true" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="96" />
               <folding>
                 <element signature="e#133#1084#0" />
                 <element signature="e#733#924#0" />
@@ -39,30 +38,125 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.cache-vehmfwoe8h7c17wvrn7j49lxk">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            <state relative-caret-position="-172">
+              <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#244#286#0" />
+                <element signature="e#334#1237#0" />
+                <element signature="e#440#2349#0" />
                 <element signature="e#846#1001#0" />
+                <element signature="e#2007#2238#0" />
+                <element signature="e#2129#2204#0" />
+                <element signature="e#2537#3389#0" />
+                <element signature="e#2855#3344#0" />
+                <element signature="e#2971#3229#0" />
+                <element signature="e#3087#3170#0" />
+                <element signature="e#3508#4272#0" />
+                <element signature="e#3647#3817#0" />
+                <element signature="e#3760#3817#0" />
+                <element signature="e#3971#4256#0" />
+                <element signature="e#4377#4924#0" />
+                <element signature="e#4425#4559#0" />
+                <element signature="e#4518#4559#0" />
+                <element signature="e#4753#4889#0" />
+                <element signature="e#5004#5803#0" />
+                <element signature="e#5241#5444#0" />
+                <element signature="e#5299#5406#0" />
+                <element signature="e#5554#5718#0" />
+                <element signature="e#5586#5718#0" />
+                <element signature="e#5641#5718#0" />
+                <element signature="e#5856#6331#0" />
+                <element signature="e#5904#6213#0" />
+                <element signature="e#5949#6213#0" />
+                <element signature="e#6078#6213#0" />
+                <element signature="e#6272#6331#0" />
+                <element signature="e#6402#7870#0" />
+                <element signature="e#7753#8397#0" />
+                <element signature="e#9204#9502#0" />
+                <element signature="e#9255#9502#0" />
+                <element signature="e#12430#12650#0" />
+                <element signature="e#13046#13534#0" />
+                <element signature="e#13654#14125#0" />
+                <element signature="e#14263#14756#0" />
+                <element signature="e#14806#15201#0" />
+                <element signature="e#15498#16105#0" />
+                <element signature="e#15567#15950#0" />
+                <element signature="e#15987#16105#0" />
+                <element signature="e#17286#17386#0" />
+                <element signature="e#20493#21061#0" />
+                <element signature="e#20536#20697#0" />
+                <element signature="e#20724#21061#0" />
+                <element signature="e#21827#22051#0" />
+                <element signature="e#23195#23468#0" />
+                <element signature="e#23575#24401#0" />
+                <element signature="e#23816#24350#0" />
+                <element signature="e#23924#24174#0" />
+                <element signature="e#24109#24174#0" />
+                <element signature="e#24227#24330#0" />
+                <element signature="e#24438#27930#0" />
+                <element signature="e#24706#27690#0" />
+                <element signature="e#24939#25043#0" />
+                <element signature="e#25085#25194#0" />
+                <element signature="e#25351#25536#0" />
+                <element signature="e#25579#25692#0" />
+                <element signature="e#25759#25865#0" />
+                <element signature="e#25908#26021#0" />
+                <element signature="e#26138#26681#0" />
+                <element signature="e#26301#26552#0" />
+                <element signature="e#26379#26426#0" />
+                <element signature="e#26603#26681#0" />
+                <element signature="e#26724#26769#0" />
+                <element signature="e#26849#27671#0" />
+                <element signature="e#27004#27671#0" />
+                <element signature="e#27999#28269#0" />
+                <element signature="e#28308#28326#0" />
+                <element signature="e#28357#28618#0" />
+                <element signature="e#28652#28714#0" />
+                <element signature="e#28747#28932#0" />
+                <element signature="e#28963#29153#0" />
+                <element signature="e#29185#30281#0" />
+                <element signature="e#29228#29275#0" />
+                <element signature="e#29323#29383#0" />
+                <element signature="e#29412#29667#0" />
+                <element signature="e#29463#29536#0" />
+                <element signature="e#29701#29976#0" />
+                <element signature="e#29718#29790#0" />
+                <element signature="e#29847#29976#0" />
+                <element signature="e#29881#29976#0" />
+                <element signature="e#30014#30079#0" />
+                <element signature="e#30115#30281#0" />
+                <element signature="e#31051#31588#0" />
+                <element signature="e#31294#31547#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/difflib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="312" selection-start-line="312" selection-end-line="312" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="204">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Save_account_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -70,7 +164,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Update_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="527">
               <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -81,7 +175,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="18" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -101,6 +202,7 @@
       <find>end</find>
       <find>SYNCED</find>
       <find>synced</find>
+      <find>replace</find>
     </findStrings>
     <replaceStrings>
       <replace>drawing_ling</replace>
@@ -118,13 +220,13 @@
         <option value="$PROJECT_DIR$/Website_test.py" />
         <option value="$PROJECT_DIR$/Pygame_UI_test.py" />
         <option value="$PROJECT_DIR$/account_info.txt" />
-        <option value="$PROJECT_DIR$/Test_scripts.py" />
-        <option value="$PROJECT_DIR$/Save_account_info.py" />
         <option value="$PROJECT_DIR$/List_files.py" />
-        <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
-        <option value="$PROJECT_DIR$/live_chords.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Save_account_info.py" />
+        <option value="$PROJECT_DIR$/Update_all.py" />
+        <option value="$PROJECT_DIR$/Test_scripts.py" />
+        <option value="$PROJECT_DIR$/live_chords.py" />
       </list>
     </option>
   </component>
@@ -304,10 +406,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Pygame_UI_test" />
+        <item itemvalue="Python.Website_test" />
         <item itemvalue="Python.Update_all" />
         <item itemvalue="Python.Live_Chords_UI" />
         <item itemvalue="Python.scan_files" />
-        <item itemvalue="Python.Website_test" />
       </list>
     </recent_temporary>
   </component>
@@ -420,13 +522,40 @@
       <option name="project" value="LOCAL" />
       <updated>1563554973263</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="removed searching tabs on just song title (mostly finds another song anyway)">
+      <created>1563707897558</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1563707897558</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" x="-1042" y="364" width="758" height="323" id="Run" order="2" type="WINDOWED" visible="true" weight="0.37594798" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.17984831" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" x="82" y="485" width="1898" height="304" id="Python Console" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32916668" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -442,25 +571,6 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" x="82" y="485" width="1898" height="304" id="Python Console" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32916668" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="0" y="0" width="1920" height="1040" id="Run" order="2" type="FLOATING" weight="0.37594798" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3726977" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -526,10 +636,28 @@
     <MESSAGE value="fix in grouping on keywords algorithm to not group all text in intro if that is the only keyword given, now with updated version variable" />
     <MESSAGE value="added functionality to re-sync a song while it is playing. Simply press space to enter sync-mode at the point it is. Could be usefull if part of the song is correctly synced but part of it is not." />
     <MESSAGE value="added &quot;mono&quot; to title filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;mono&quot; to title filter" />
+    <MESSAGE value="removed searching tabs on just song title (mostly finds another song anyway)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed searching tabs on just song title (mostly finds another song anyway)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Test_scripts.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="data" />
+        <watch expression="self.tabslines" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -654,71 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Save_account_info.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="848" selection-start-line="848" selection-end-line="848" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="334" selection-start-line="334" selection-end-line="334" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/List_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Update_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live_chords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#244#286#0" />
-            <element signature="e#846#1001#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="280" column="42" selection-start-line="280" selection-start-column="42" selection-end-line="280" selection-end-column="42" />
-          <folding>
-            <element signature="e#133#1084#0" />
-            <element signature="e#733#924#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,8 +794,207 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1393417918/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="5280" column="8" selection-start-line="5280" selection-start-column="8" selection-end-line="5280" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="867" selection-start-line="867" selection-end-line="867" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="879" selection-start-line="879" selection-end-line="879" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/OpenSSL/SSL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1813" selection-start-line="1813" selection-end-line="1813" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/lyricsgenius/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-802">
+          <caret line="255" column="8" selection-start-line="255" selection-start-column="8" selection-end-line="255" selection-end-column="8" />
+          <folding>
+            <element signature="e#1532#2249#0" />
+            <element signature="e#2288#2410#0" />
+            <element signature="e#2451#2577#0" />
+            <element signature="e#2943#3108#0" />
+            <element signature="e#3688#3822#0" />
+            <element signature="e#11141#11829#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Update_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/difflib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="312" selection-start-line="312" selection-end-line="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="218" column="96" lean-forward="true" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="96" />
+          <folding>
+            <element signature="e#133#1084#0" />
+            <element signature="e#733#924#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live_chords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
+          <folding>
+            <element signature="e#334#1237#0" />
+            <element signature="e#440#2349#0" />
+            <element signature="e#846#1001#0" />
+            <element signature="e#2007#2238#0" />
+            <element signature="e#2129#2204#0" />
+            <element signature="e#2537#3389#0" />
+            <element signature="e#2855#3344#0" />
+            <element signature="e#2971#3229#0" />
+            <element signature="e#3087#3170#0" />
+            <element signature="e#3508#4272#0" />
+            <element signature="e#3647#3817#0" />
+            <element signature="e#3760#3817#0" />
+            <element signature="e#3971#4256#0" />
+            <element signature="e#4377#4924#0" />
+            <element signature="e#4425#4559#0" />
+            <element signature="e#4518#4559#0" />
+            <element signature="e#4753#4889#0" />
+            <element signature="e#5004#5803#0" />
+            <element signature="e#5241#5444#0" />
+            <element signature="e#5299#5406#0" />
+            <element signature="e#5554#5718#0" />
+            <element signature="e#5586#5718#0" />
+            <element signature="e#5641#5718#0" />
+            <element signature="e#5856#6331#0" />
+            <element signature="e#5904#6213#0" />
+            <element signature="e#5949#6213#0" />
+            <element signature="e#6078#6213#0" />
+            <element signature="e#6272#6331#0" />
+            <element signature="e#6402#7870#0" />
+            <element signature="e#7753#8397#0" />
+            <element signature="e#9204#9502#0" />
+            <element signature="e#9255#9502#0" />
+            <element signature="e#12430#12650#0" />
+            <element signature="e#13046#13534#0" />
+            <element signature="e#13654#14125#0" />
+            <element signature="e#14263#14756#0" />
+            <element signature="e#14806#15201#0" />
+            <element signature="e#15498#16105#0" />
+            <element signature="e#15567#15950#0" />
+            <element signature="e#15987#16105#0" />
+            <element signature="e#17286#17386#0" />
+            <element signature="e#20493#21061#0" />
+            <element signature="e#20536#20697#0" />
+            <element signature="e#20724#21061#0" />
+            <element signature="e#21827#22051#0" />
+            <element signature="e#23195#23468#0" />
+            <element signature="e#23575#24401#0" />
+            <element signature="e#23816#24350#0" />
+            <element signature="e#23924#24174#0" />
+            <element signature="e#24109#24174#0" />
+            <element signature="e#24227#24330#0" />
+            <element signature="e#24438#27930#0" />
+            <element signature="e#24706#27690#0" />
+            <element signature="e#24939#25043#0" />
+            <element signature="e#25085#25194#0" />
+            <element signature="e#25351#25536#0" />
+            <element signature="e#25579#25692#0" />
+            <element signature="e#25759#25865#0" />
+            <element signature="e#25908#26021#0" />
+            <element signature="e#26138#26681#0" />
+            <element signature="e#26301#26552#0" />
+            <element signature="e#26379#26426#0" />
+            <element signature="e#26603#26681#0" />
+            <element signature="e#26724#26769#0" />
+            <element signature="e#26849#27671#0" />
+            <element signature="e#27004#27671#0" />
+            <element signature="e#27999#28269#0" />
+            <element signature="e#28308#28326#0" />
+            <element signature="e#28357#28618#0" />
+            <element signature="e#28652#28714#0" />
+            <element signature="e#28747#28932#0" />
+            <element signature="e#28963#29153#0" />
+            <element signature="e#29185#30281#0" />
+            <element signature="e#29228#29275#0" />
+            <element signature="e#29323#29383#0" />
+            <element signature="e#29412#29667#0" />
+            <element signature="e#29463#29536#0" />
+            <element signature="e#29701#29976#0" />
+            <element signature="e#29718#29790#0" />
+            <element signature="e#29847#29976#0" />
+            <element signature="e#29881#29976#0" />
+            <element signature="e#30014#30079#0" />
+            <element signature="e#30115#30281#0" />
+            <element signature="e#31051#31588#0" />
+            <element signature="e#31294#31547#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,6 +6,7 @@ import urllib.error
 import urllib.request
 from difflib import SequenceMatcher
 
+import lyricsgenius
 import requests
 from bs4 import BeautifulSoup
 
@@ -16,6 +17,31 @@ import spotipy.util as util
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
+
+def cleanArtistTitleString(artist, title):
+    title = title.replace("acoustic", "")
+    title = title.replace("Acoustic", "")
+    title = title.replace("-", "")
+    title = title.replace("(", "")
+    title = title.replace(")", "")
+    title = title.replace("live", "")
+    title = title.replace("Live", "")
+    title = title.replace("\'", "")
+    title = title.replace("Version", "")
+    title = title.replace("version", "")
+    title = title.replace(".", "")
+    title = title.replace("é", "e")
+    title = title.replace("ê", "e")
+    title = title.replace("mono", "")
+    title = title.replace("Mono", "")
+    artist = artist.replace("?", "")
+    artist = artist.replace("!", "")
+    artist = artist.replace("'", "")
+
+    title = title.strip()
+    artist = artist.strip()
+
+    return artist, title
 
 # Get current song playing from spotify
 def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user-read-currently-playing'):
@@ -35,30 +61,12 @@ def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user
     if song is not None and song['item'] is not None:
         title = song['item']['name']  # extract the current song title
         t0 = song['progress_ms'] / 1000
-        title = title.replace("acoustic","")
-        title = title.replace("Acoustic","")
-        title = title.replace("-","")
-        title = title.replace("(", "")
-        title = title.replace(")", "")
-        title = title.replace("live", "")
-        title = title.replace("Live", "")
-        title = title.replace("\'","")
-        title = title.replace("Version","")
-        title = title.replace("version","")
-        title = title.replace(".","")
-        title = title.replace("é","e")
-        title = title.replace("ê","e")
-        title = title.replace("mono", "")
-        title = title.replace("Mono", "")
         artist = song['item']['artists'][0]['name']  # extracte the song artist
-        artist = artist.replace("?","")
-        artist = artist.replace("!","")
+        artist, title = cleanArtistTitleString(artist, title)
     else:
         title = "no song playing"
         artist = "no song playing"
         t0 = 0
-    title = title.strip()
-    artist = artist.strip()
 
     # print("currently playing: " + title + " by " + artist)
     return title, artist, t0
@@ -231,44 +239,17 @@ def search_azlyrics(artist, title):
 
 def search_genius(artist, title):
     print("STARTING SEARCH ON GENIUS.COM")
-    artist = artist.replace("%20","-")
-    artist = artist.replace("_","-")
-    artist = artist.replace("'", "")
-    title = title.replace("%20","-")
-    title = title.replace("_","-")
-    title = title.replace("'", "")
-    searchurl = "https://genius.com/" + artist.replace("%20","-") + "-" + title.replace("%20","-") + "-lyrics"
-    print(searchurl)
-    r = requests.get(searchurl)
-    data = r.text
-    html_lines = seperate_lines(data)
-    on_lyrics = False
-    in_lyrics_class = False
-    lyrics = []
-    # loop over all lines in the html data and find when were in the lyrics class, the lyrics will be in the lyrics class within the sse tags. So if that is all true, add that line of html to the lyrics
-    for i, line in enumerate(html_lines):
-        if line.strip() == "<!--/sse-->" and in_lyrics_class:
-            on_lyrics = False
-        if on_lyrics:
-            lyrics.append(line.replace("<br>", "").replace("<p>", "").replace("</p>", "").replace("</a>",
-                                                                                                  "").strip())  # remove paragraph and breakline tags and ending annotation tag
-        if line.strip() == "<!--sse-->" and in_lyrics_class:
-            on_lyrics = True
-        if line.strip() == "<div class=\"lyrics\">":
-            in_lyrics_class = True
-
-    # no to scan the seperated lyrics for annotation tags, and remove them
-    annotationTag = False
-    i = 0
-    while i < len(lyrics):
-        if lyrics[i][0:2] == "<a":
-            for j in range(0, 4):
-                lyrics.pop(i)
-            index = lyrics[i].find(">")
-            lyrics[i] = lyrics[i][index + 1:len(lyrics[i])]
-            annotationTag = True
-        else:
-            i += 1
+    artist, title = cleanArtistTitleString(artist, title)
+    artist = artist.replace("%20", " ")
+    artist = artist.replace("_", " ")
+    title = title.replace("%20", " ")
+    title = title.replace("_", " ")
+    genius = lyricsgenius.Genius("KuYRMCOBfjMrfi29BOpFq8daC-zj0DUnm3VPExaFQ4-eTJZIVF8bJJmUIz8wkJ7c")
+    song = genius.search_song(title, artist)
+    if (similar(song.artist, artist) > 0.5 and similar(song.title, title)):
+        lyrics = seperate_lines(song.lyrics)
+    else:
+        lyrics = ["no azlyrics found"]
 
     return lyrics
 
@@ -279,10 +260,9 @@ def search_lyrics(artist, title, print_to_console=False):
     print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
     tabs = search_ultimate_guitartabs(artist, title, print_to_console)
     if tabs != "no data found":
-        azlyrics = search_azlyrics(artist, title)
+        azlyrics = search_genius(artist, title)
         if azlyrics == ["no azlyrics found"]:
-            print("NO AZLYRICS FOUND, CODE TO SEARC ON MUZIKUM MUST BE INSERTED HERE")
-            azlyrics = search_genius(artist, title)
+            azlyrics = search_azlyrics(artist, title)
         print("DONE WITH SEARCHING")
     else:
         print("stopping with searching, as no tabs are found")
@@ -399,7 +379,7 @@ class file:
             print("FILE NOT FOUND")
             tabs, azlyrics = search_lyrics(self.artist, self.title) #searches on the internet for the tabs and azlyrics
             #if no tabs are found, the variable will be "no data found", and than its useless to do anything else
-            if tabs != "no data found":
+            if tabs != "no data found" or azlyrics != ["no azlyrics found"]:
                 self.tabs = tabs
                 tabslines = seperate_lines(tabs, tabslines=True)
                 #Server will return a tabsfile with every value set to "no_file_found", if no file is found. These need to be deleted
@@ -454,6 +434,7 @@ class file:
         print("START WITH COMPARING LYRICS")
         #this functions loops over all the strings in tabslines and finds which are lyrics and than assigns the previous line (of not already assigned to being lyrics) as chords
         i = 0
+        l = len(self.tabslines)
         for tabline in self.tabslines:
             line1 = tabline['text'].lower()  # line of text coming from the
             line1 = normalize_line(line1)
@@ -487,7 +468,6 @@ class file:
                         matched = True
                         # self.azlyrics[j] = " "
                         break
-
             i += 1
         print("done with comparing lyrics")
 
@@ -619,18 +599,15 @@ def normalize_line(str):
     str = str.replace(")", "")
     return str
 
-
 def format_lyrics(lyrics):
     formated_lyrics = "\n".join(lyrics)
     return formated_lyrics
-
 
 def extract_lyrics(page):
     soup = BeautifulSoup(page, "html.parser")
     lyrics_tags = soup.find_all("div", attrs={"class": None, "id": None})
     lyrics = [tag.getText() for tag in lyrics_tags]
     return lyrics
-
 
 def normalize_str(str):
     str = str.replace("%20", "")
@@ -640,7 +617,6 @@ def normalize_str(str):
     str = str.replace(")", "")
     str = str.lower()
     return str
-
 
 class Azlyrics(object):
 
@@ -726,6 +702,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-09'
+version = '2019-07-21/6'
 if __name__ == "__main__":
     main()
