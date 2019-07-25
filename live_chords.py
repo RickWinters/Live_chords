@@ -664,24 +664,51 @@ class Azlyrics(object):
         return lyrics
 
 def select_account():
-    accounts = json.loads(open("./accounts.txt","a"))
-    correct = False
+    file = open("accounts.txt").read()
 
+    accounts = []
+    if not file == "":
+        accounts = json.loads(file)
+    correct = False
     while not correct:
         print("SELECT ACCOUNT TO LOG INTO, OR select '0' to create a new one")
         for account in accounts:
-            print(account['name'])
-        accountnumber = input("?:-->  ")
-        if accountnumber == "0":
-            new_account = {}
-            new_account['spotify_id'] = input("Spotify id = ?:--> ")
-            new_account['name'] = input("Name to display = ?:--> ")
-            new_account['number'] = len(accounts)+1
-            correct = True
-        elif accountnumber  or accountnumber > len(accounts):
+            print("{}: --> {}".format(account['number'],account['name']))
+        accountnumber = (input("?:-->  "))
+
+        try:
+            accountnumber = int(accountnumber)
+            if accountnumber == 0:
+                new_account = {}
+                new_account['spotify_id'] = input("Spotify id = ?:--> ")
+                new_account['name'] = input("Name to display = ?:--> ")
+                new_account['number'] = len(accounts) + 1
+                name = new_account['spotify_id']
+                if len(accounts) == 0:
+                    accounts = []
+                accounts.append(new_account)
+                file = open("accounts.txt","w")
+                file.write(json.dumps(accounts))
+                file.close()
+                correct = True
+            elif accountnumber > 0 and accountnumber <= len(accounts):
+                name = accounts[accountnumber - 1]['spotify_id']
+                correct = True
+            else:
+                print("\n\n\nYOU ENTERED SOMETHING WRONG\n\n\n")
+        except:
+            print("\n\n\nYOU ENTERED SOMETHING WRONG\n\n\n")
+
+    return name
 
 
 def main():
+    username = select_account()
+    scope = 'user-read-currently-playing user-modify-playback-state'
+    clientid = 'cb3d87487c3f45678e4f28c0f1787d59'
+    clientsecret = '720cb763c5114ce581303e30846d962d'
+    redirect_uri = 'http://google.com/'
+
     print("Choose which kind of server connection you want")
     print("1: Localhost")
     print("2: Remote server")
@@ -693,15 +720,6 @@ def main():
         server = "http://82.75.204.165:8081/live_chords/"
     elif serverinput == "3":
         server = "no_server"
-
-    account_info = json.loads(open("./account_info.txt").read())
-    username = account_info['username']
-    scope = account_info['scope']
-    clientid = account_info['clientid']
-    clientsecret = account_info['clientsecret']
-    redirect_uri = account_info['redirect_uri']
-
-
 
     artist_old = ""
     artist = ""
