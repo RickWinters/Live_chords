@@ -663,6 +663,23 @@ class Azlyrics(object):
             lyrics = extract_lyrics(page)
         return lyrics
 
+def select_account():
+    accounts = json.loads(open("./accounts.txt","a"))
+    correct = False
+
+    while not correct:
+        print("SELECT ACCOUNT TO LOG INTO, OR select '0' to create a new one")
+        for account in accounts:
+            print(account['name'])
+        accountnumber = input("?:-->  ")
+        if accountnumber == "0":
+            new_account = {}
+            new_account['spotify_id'] = input("Spotify id = ?:--> ")
+            new_account['name'] = input("Name to display = ?:--> ")
+            new_account['number'] = len(accounts)+1
+            correct = True
+        elif accountnumber  or accountnumber > len(accounts):
+
 
 def main():
     print("Choose which kind of server connection you want")
