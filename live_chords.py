@@ -44,10 +44,10 @@ def cleanArtistTitleString(artist, title):
     return artist, title
 
 # Get current song playing from spotify
-def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user-read-currently-playing'):
+def get_current_song(username, clientid, clientsecret, redirect_uri, scope='user-read-currently-playing', printconsole = True):
     # get acces token by logging in or get it from cache
     if __name__ != "__main__":
-        print("SEARCHING FOR SONG NOW AT " + str(datetime.datetime.now().time()))
+        if printconsole: print("SEARCHING FOR SONG NOW AT " + str(datetime.datetime.now().time()))
     token = util.prompt_for_user_token(username, scope, client_id=clientid, client_secret=clientsecret,
                                        redirect_uri=redirect_uri)
     # create spotipy object
@@ -98,14 +98,14 @@ def extract_tabs(strings):
             break
 
     # Put the content tabs json file in a dictionary
-    if content == " ":
-        tabs = "no tabs found"  # if no tabs are found...
-    else:
+    tabs = "no tabs found"
+    if not content == " ":
         data = json.loads(content)  # convert json file to python dictionary
         # print(data)
-        tabs = data["data"]["tab_view"]["wiki_tab"]["content"]  # extract the tab text
-        tabs = tabs.replace("[ch]", "")  # remove these characters
-        tabs = tabs.replace("[/ch]", "")
+        if "content" in data["data"]["tab_view"]["wiki_tab"]:
+            tabs = data["data"]["tab_view"]["wiki_tab"]["content"]  # extract the tab text
+            tabs = tabs.replace("[ch]", "")  # remove these characters
+            tabs = tabs.replace("[/ch]", "")
     return tabs
 
 
@@ -170,7 +170,7 @@ def print_tabs(file):
         for line in file.tabslines:
             print(line['text'])
 
-def search_ultimate_guitartabs(artist, title, print_to_console):
+def search_ultimate_guitartabs(artist, title, print_to_console, printconsole):
     tabs = "no data found"
     found = False  # to keep track if the lyrics have been found or not
     # URL to search the website
@@ -179,7 +179,7 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
     title = title.replace("%20"," ")
     title = title.replace("_"," ")
     searchurl = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" + artist + "%20" + title
-    print(searchurl)
+    if printconsole: print(searchurl)
     r = requests.get(searchurl)
     data = r.text  # Pure HTML as single string
     searchhtml = seperate_lines(data)  # seperate the lines by searching for the newline tag
@@ -187,13 +187,13 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
     if search_results != "no data found":
         found = True
     else:
-        print("NO SEARCH RESULTS FOUND ON ULTIMATE GUITAR TABS")
+        if printconsole: print("NO SEARCH RESULTS FOUND ON ULTIMATE GUITAR TABS")
 
     if found:
-        print("GETTING LYRICS FROM ULTIMATE GUITAR TABS")
+        if printconsole: print("GETTING LYRICS FROM ULTIMATE GUITAR TABS")
         url = sort_search_results(search_results)  # print search results, and get the url of the highest rating result
         # url = "https://tabs.ultimate-guitar.com/tab/flogging_molly/the_last_serenade_sailors_and_fishermen_chords_2045663"
-        print(url)
+        if printconsole: print(url)
         r = requests.get(url)  # get the website for the search result
         data = r.text  # HTMLtext
         htmldata = seperate_lines(data)  # seperated lines
@@ -203,27 +203,27 @@ def search_ultimate_guitartabs(artist, title, print_to_console):
 
     return tabs
 
-def search_azlyrics(artist, title):
+def search_azlyrics(artist, title, printconsole = True):
 
-    print("STARTING SEARCH ON AZLYRICS")
+    if printconsole: print("STARTING SEARCH ON AZLYRICS")
     azlyrics = ["no azlyrics found"]  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
     azartist = artist.lower()
     azartist = azartist.replace("%20", "+")
     aztitle = title.lower()
     aztitle = aztitle.replace("%20", "+") #on azlyrics the artist and title need to be formatted as "flogging+molly+life+is+good".
     url = "https://search.azlyrics.com/search.php?q={}+{}".format(azartist, aztitle)  # search on azlyrics
-    print(url)
+    if printconsole: print(url)
     r = requests.get(url)
     data = r.text
     lines = seperate_lines(data)
     found = False
     for line in lines:  # go through the html data from searching azlyrics and find the first result.
         if line.replace(" ", "")[0:2] == "1.":
-            print(line) #the link is found between the quotes
+            if printconsole: print(line) #the link is found between the quotes
             ind1 = line.find('"')
             ind2 = line[ind1 + 1:-1].find('"')
             link = line[ind1 + 1:ind2 + ind1 + 1]
-            print(link)
+            if printconsole: print(link)
             found = True
             break
     if found:
@@ -233,20 +233,20 @@ def search_azlyrics(artist, title):
         azlyrics = seperate_lines(lyrics[0])
         azlyrics.append("str")
     else:
-        print("NO RESULTS FOUND ON AZLYRICS")
+        if printconsole: print("NO RESULTS FOUND ON AZLYRICS")
 
     return azlyrics
 
-def search_genius(artist, title):
-    print("STARTING SEARCH ON GENIUS.COM")
+def search_genius(artist, title, printconsole = True):
+    if printconsole: print("STARTING SEARCH ON GENIUS.COM")
     artist, title = cleanArtistTitleString(artist, title)
     artist = artist.replace("%20", " ")
     artist = artist.replace("_", " ")
     title = title.replace("%20", " ")
     title = title.replace("_", " ")
     genius = lyricsgenius.Genius("KuYRMCOBfjMrfi29BOpFq8daC-zj0DUnm3VPExaFQ4-eTJZIVF8bJJmUIz8wkJ7c")
-    song = genius.search_song(title, artist)
-    if (similar(song.artist, artist) > 0.5 and similar(song.title, title)):
+    song = genius.search_song(title, artist, printconsole = printconsole)
+    if (song is not None) and (similar(song.artist, artist) > 0.5 and similar(song.title, title)):
         lyrics = seperate_lines(song.lyrics)
     else:
         lyrics = ["no azlyrics found"]
@@ -254,18 +254,18 @@ def search_genius(artist, title):
     return lyrics
 
 # Find the lyrics and tabs for a artsist,title. Firstly looking at both artist and title than, if nothing found, only looking at title of song.
-def search_lyrics(artist, title, print_to_console=False):
+def search_lyrics(artist, title, print_to_console=False, printconsole = True):
     tabs = "no data found"
     azlyrics = ["no azlyrics found"]
-    print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
-    tabs = search_ultimate_guitartabs(artist, title, print_to_console)
+    if printconsole: print("STARTING SEARCH ON ULTIMATE GUITAR TABS")
+    tabs = search_ultimate_guitartabs(artist, title, print_to_console, printconsole)
     if tabs != "no data found":
-        azlyrics = search_genius(artist, title)
+        azlyrics = search_genius(artist, title, printconsole)
         if azlyrics == ["no azlyrics found"]:
-            azlyrics = search_azlyrics(artist, title)
-        print("DONE WITH SEARCHING")
+            azlyrics = search_azlyrics(artist, title, printconsole)
+        if printconsole: print("DONE WITH SEARCHING")
     else:
-        print("stopping with searching, as no tabs are found")
+        if printconsole: print("stopping with searching, as no tabs are found")
 
     return tabs, azlyrics
 
@@ -276,7 +276,7 @@ def search_lyrics(artist, title, print_to_console=False):
 #   'to_dict()': Write all the class variables to the dictionary
 #   'from_dict()': write all
 class file:
-    def __init__(self, artist, title, version, server):
+    def __init__(self, artist, title, version, server, PrintToConsole = True):
         self.artist = artist
         self.title = title
         self.data = {}  # dictionary contains all class-variables as well in order to write them to json string file
@@ -291,6 +291,7 @@ class file:
         self.file_version = ""
         self.to_dict()
         self.server = server
+        self.printconsole = PrintToConsole
 
     def to_dict(self, update=False):  # helper function to write all the instance variables to the dictionary
         self.data['artist'] = self.artist
@@ -335,31 +336,33 @@ class file:
 
         #Check for a file on the server, if a serverlocation is set
         if not self.server == "no_server":
-            print("LOOKING FOR FILE ON SERVER")
+            if self.printconsole: print("LOOKING FOR FILE ON SERVER")
             try:
                 artist = self.artist
                 title = self.title
                 artist = artist.replace("%20", "_")
                 title = title.replace("%20", "_")
+                artist = artist.replace(" ","_")
+                title = title.replace(" ","_")
                 r = requests.get(self.server + "Get/{}/{}".format(artist, title))
                 text = r.text
                 self.data = json.loads(text)
                 self.from_dict()
                 file_exists = True;
             except:
-                print("NO CONNECTION TO SERVER")
+                if self.printconsole: print("NO CONNECTION TO SERVER")
                 self.tabs = "no_file_found"
                 self.server = "no_server"
 
         #IF no server location is set, or the server has not found a file, look for it locally
         if self.tabs == "no_file_found" or self.server == "no_server":
-            print("NO FILE FOUND ON SERVER")
-            print("LOOKING FOR EXISTING FILE")
+            if self.printconsole: print("NO FILE FOUND ON SERVER")
+            if self.printconsole: print("LOOKING FOR EXISTING FILE")
             file_exists = os.path.isfile(  # see if the file exists
                 "./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt")
             correct_version = True
             if file_exists:
-                print("FILE FOUND")
+                if self.printconsole: print("FILE FOUND")
                 File = open("./tabs/" + self.artist.replace("%20", "_") + "_" + self.title.replace("%20", "_") + ".txt",
                             "r")
                 text = File.read()
@@ -372,12 +375,12 @@ class file:
         if self.file_version != self.script_version:
             self.clear_file()
             correct_version = False
-            print("UPDATING TO NEWER VERSION")
+            if self.printconsole: print("UPDATING TO NEWER VERSION")
 
         #If the file doesn't exist locally, or is of the wrong version, search on the internet and create the file
         if (not file_exists) or (not correct_version):
-            print("FILE NOT FOUND")
-            tabs, azlyrics = search_lyrics(self.artist, self.title) #searches on the internet for the tabs and azlyrics
+            if self.printconsole: print("FILE NOT FOUND")
+            tabs, azlyrics = search_lyrics(self.artist, self.title, printconsole = self.printconsole) #searches on the internet for the tabs and azlyrics
             #if no tabs are found, the variable will be "no data found", and than its useless to do anything else
             if tabs != "no data found" or azlyrics != ["no azlyrics found"]:
                 self.tabs = tabs
@@ -414,14 +417,18 @@ class file:
                     self.sort_lyrics() #use all the tabslines to fill the 'chorded_lyrics', this is a group of lyrics chords belonging to this line. These can be printed to the screen as one single group.
                 self.close_file()
         else:
-            print("FOUND FILE ON SERVER")
+            if self.printconsole: print("FOUND FILE ON SERVER")
 
     def close_file(self):
         if self.server != "no_server":
+            self.artist = self.artist.replace(" ","_")
+            self.artist = self.artist.replace("%20","_")
+            self.title = self.title.replace(" ","_")
+            self.title = self.title.replace("%20","_")
             self.to_dict()
             r = requests.post(self.server + "Save/", json=self.data)
             if r.status_code == 200:
-                print("SAVE SUCCESFULL")
+                if self.printconsole: print("SAVE SUCCESFULL")
         else:
             self.to_dict()  # load the variables into the dictionary
             text = json.dumps(self.data)  # convert to json string
@@ -431,7 +438,7 @@ class file:
             file.close()
 
     def compare_lyrics(self):
-        print("START WITH COMPARING LYRICS")
+        if self.printconsole: print("START WITH COMPARING LYRICS")
         #this functions loops over all the strings in tabslines and finds which are lyrics and than assigns the previous line (of not already assigned to being lyrics) as chords
         i = 0
         l = len(self.tabslines)
@@ -469,10 +476,10 @@ class file:
                         # self.azlyrics[j] = " "
                         break
             i += 1
-        print("done with comparing lyrics")
+        if self.printconsole: print("done with comparing lyrics")
 
     def group_on_keywords(self):
-        print("START GROUPING ON KEYWORDS")
+        if self.printconsole: print("START GROUPING ON KEYWORDS")
         group = "start"
         i = 0
         while i < len(
@@ -495,10 +502,10 @@ class file:
             i += 1
 
 
-        print("done with comparing on keywords")
+        if self.printconsole: print("done with comparing on keywords")
 
     def sort_lyrics(self):
-        print("START WITH SORTING THE LYRICS")
+        if self.printconsole: print("START WITH SORTING THE LYRICS")
         introtext = ""
         inintro = False
         starttext = ""
@@ -575,7 +582,7 @@ class file:
         #loop over all the lines to replace the tabs-tags in the chords with 4 spaces
         for line in self.chorded_lyrics:
             line['chords'] = line['chords'].replace("\t","    ")
-        print("done with sorting the lyrics")
+        if self.printconsole: print("done with sorting the lyrics")
 
     def add_chorded_lyrics_line(self,lyrics,chords,group):
         self.chorded_lyrics.append({})
@@ -620,7 +627,7 @@ def normalize_str(str):
 
 class Azlyrics(object):
 
-    def __init__(self, artist, music):
+    def __init__(self, artist, music, printconsole):
         self.artist = artist
         self.music = music
 
@@ -632,7 +639,7 @@ class Azlyrics(object):
             self.artist = "rickastley"
             self.music = "nevergonnagiveyouup"
         url = "http://azlyrics.com/lyrics/{}/{}.html".format(*self.normalize_artist_music())
-        print(url)
+        if self.printconsole: print(url)
         return url
 
     def get_page(self):
@@ -641,7 +648,7 @@ class Azlyrics(object):
             return page.read()
         except urllib.error.HTTPError as e:
             if e.code == 404:
-                print("Music not found")
+                if self.printconsole: print("Music not found")
                 page = "no azlyrics found"
                 return page
 

@@ -25,7 +25,7 @@ def setup_screen():
     active_line_colour = (50, 50, 50)
     inactive_line_colour = (30, 30, 30)
 
-    screen = pygame.display.set_mode(screen_size)
+    screen = pygame.display.set_mode(screen_size, pygame.RESIZABLE)
     colors = {'active_line': active_line_colour, 'inactive_line': inactive_line_colour, 'artist': artist_font_color,
               'active_font': active_font_colour, 'inactive_font': inactive_font_colour}
 
@@ -52,6 +52,7 @@ def draw_background(screen, fonts, colors, artist, title, synced, azlyrics, tabs
 
     string = azlyrics_string + "\n" + tabs_stirng
     pos = (size[0] - 400, 10)
+    print(pos)
     for line in string.splitlines():
         pos = blit_text(screen, line, pos, fonts['artist'], colors['artist'])
 
@@ -194,7 +195,6 @@ def main():
     clientsecret = account_info['clientsecret']
     redirect_uri = account_info['redirect_uri']
 
-
     fonts, colors, screen, clock = setup_screen()
     artist = ""
     artist_old = ""
@@ -264,10 +264,9 @@ def main():
                     pygame.display.update()
                 clock.tick(100)  # loop every ms
             else:
-                time.sleep(
-                    sleeptime)  # do nothing and loop while counting to 5 sec. however don't sleep 5 sec so the screen is updated
+                time.sleep(sleeptime)  # do nothing and loop while counting to 5 sec. however don't sleep 5 sec so the screen is updated
                 count += 1
-                if count == recheck_amount:
+                if count >= recheck_amount:
                     count = 0
 
         for event in pygame.event.get():
@@ -292,7 +291,12 @@ def main():
                                                        title, synced, clock, t0, has_azlyrics, has_tabs, server)
                 if (event.key == pygame.K_n or event.key == pygame.K_b) and synced:
                     count = 0
-
+            if event.type == pygame.VIDEORESIZE:
+                screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE)
+                print("SCREENRESIZE = " + str(screen.get_size()))
+                screen = draw_background(screen, fonts, colors, artist, title, synced, has_azlyrics, has_tabs)
+                screen = draw_lyrics(screen, fonts, colors, chorded_lyrics, active_line)
+                pygame.display.update()
 
 if __name__ == "__main__":
     main()
