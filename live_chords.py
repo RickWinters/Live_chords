@@ -132,9 +132,10 @@ def extract_search_results(strings):
 # Print the search results to the console
 def sort_search_results(data):
     # while loop that loops over all the results and checks if it contains chords or tabs. If there are results which are not tabs or chords these results are popped.
+    tab_url = "no data found"
 
     i = 0  # iterator
-    while i < len(data) and len(data) > 1:
+    while i < len(data) and len(data) > 0:
         result = data[i]
         if "type" in result:
             if result['type'].lower() == "chords":
@@ -145,14 +146,16 @@ def sort_search_results(data):
             data.pop(i)
 
     # Sort remaining search results by highest rating.
-    highest_rating = 0
-    if len(data) > 1:
-        for result in data:
-            if result["rating"] >= highest_rating:
-                highest_rating = result["rating"]
-                tab_url = result["tab_url"]
-    else:
-        tab_url = data[0]['tab_url']
+
+    if len(data) > 0:
+        highest_rating = 0
+        if len(data) > 1:
+            for result in data:
+                if result["rating"] >= highest_rating:
+                    highest_rating = result["rating"]
+                    tab_url = result["tab_url"]
+        else:
+            tab_url = data[0]['tab_url']
 
     return tab_url  # return tab_url
 
@@ -192,14 +195,14 @@ def search_ultimate_guitartabs(artist, title, print_to_console, printconsole):
     if found:
         if printconsole: print("GETTING LYRICS FROM ULTIMATE GUITAR TABS")
         url = sort_search_results(search_results)  # print search results, and get the url of the highest rating result
-        # url = "https://tabs.ultimate-guitar.com/tab/flogging_molly/the_last_serenade_sailors_and_fishermen_chords_2045663"
-        if printconsole: print(url)
-        r = requests.get(url)  # get the website for the search result
-        data = r.text  # HTMLtext
-        htmldata = seperate_lines(data)  # seperated lines
-        tabs = extract_tabs(htmldata)  # extracted the tabs line
-        if print_to_console:
-            print_tabs(tabs)  # print the tabs, slowly scrolling (maybe)
+        if url != "no data found":
+            if printconsole: print(url)
+            r = requests.get(url)  # get the website for the search result
+            data = r.text  # HTMLtext
+            htmldata = seperate_lines(data)  # seperated lines
+            tabs = extract_tabs(htmldata)  # extracted the tabs line
+            if print_to_console:
+                print_tabs(tabs)  # print the tabs, slowly scrolling (maybe)
 
     return tabs
 
@@ -744,6 +747,6 @@ def main():
             time.sleep(5)
 
 
-version = '2019-07-21/7'
+version = '2019-08-25'
 if __name__ == "__main__":
     main()
