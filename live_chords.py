@@ -551,7 +551,7 @@ class file:
                 inbreak = True
                 j = 0
                 no_lyrics = True
-                while "break" in self.tabslines[i + j]['group'].lower():
+                while i+j < len(self.tabslines) and ("break" in self.tabslines[i + j]['group'].lower()):
                     if self.tabslines[i + j]['lyrics'] == True and j > 0:
                         no_lyrics = False
                         break
