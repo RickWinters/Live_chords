@@ -13,10 +13,8 @@ from bs4 import BeautifulSoup
 import spotipy
 import spotipy.util as util
 
-
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
-
 
 def cleanArtistTitleString(artist, title):
     title = title.replace("acoustic", "")
@@ -108,7 +106,6 @@ def extract_tabs(strings):
             tabs = tabs.replace("[/ch]", "")
     return tabs
 
-
 # Extract the search results for ultimate guitar tabs search
 def extract_search_results(strings):
     content = ""
@@ -127,7 +124,6 @@ def extract_search_results(strings):
     # print(data)
 
     return data
-
 
 # Print the search results to the console
 def sort_search_results(data):
@@ -158,7 +154,6 @@ def sort_search_results(data):
             tab_url = data[0]['tab_url']
 
     return tab_url  # return tab_url
-
 
 # Print tabs to console
 def print_tabs(file):
@@ -207,7 +202,6 @@ def search_ultimate_guitartabs(artist, title, print_to_console, printconsole):
     return tabs
 
 def search_azlyrics(artist, title, printconsole = True):
-
     if printconsole: print("STARTING SEARCH ON AZLYRICS")
     azlyrics = ["no azlyrics found"]  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
     azartist = artist.lower()
@@ -249,7 +243,7 @@ def search_genius(artist, title, printconsole = True):
     title = title.replace("_", " ")
     genius = lyricsgenius.Genius("KuYRMCOBfjMrfi29BOpFq8daC-zj0DUnm3VPExaFQ4-eTJZIVF8bJJmUIz8wkJ7c")
     song = genius.search_song(title, artist, printconsole = printconsole)
-    if (song is not None) and (similar(song.artist, artist) > 0.5 and similar(song.title, title)):
+    if (song is not None) and (similar(song.artist, artist) > 0.5 and similar(song.title, title))> 0.5:
         lyrics = seperate_lines(song.lyrics)
     else:
         lyrics = ["no azlyrics found"]
@@ -704,7 +698,6 @@ def select_account():
 
     return name
 
-
 def main():
     username = select_account()
     scope = 'user-read-currently-playing user-modify-playback-state'
@@ -745,7 +738,6 @@ def main():
 
         else:
             time.sleep(5)
-
 
 version = '2019-08-25'
 if __name__ == "__main__":
