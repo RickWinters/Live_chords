@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 import json
 import os
@@ -13,10 +15,8 @@ from bs4 import BeautifulSoup
 import spotipy
 import spotipy.util as util
 
-
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
-
 
 def cleanArtistTitleString(artist, title):
     title = title.replace("acoustic", "")
@@ -108,7 +108,6 @@ def extract_tabs(strings):
             tabs = tabs.replace("[/ch]", "")
     return tabs
 
-
 # Extract the search results for ultimate guitar tabs search
 def extract_search_results(strings):
     content = ""
@@ -128,13 +127,13 @@ def extract_search_results(strings):
 
     return data
 
-
 # Print the search results to the console
 def sort_search_results(data):
     # while loop that loops over all the results and checks if it contains chords or tabs. If there are results which are not tabs or chords these results are popped.
+    tab_url = "no data found"
 
     i = 0  # iterator
-    while i < len(data) and len(data) > 1:
+    while i < len(data) and len(data) > 0:
         result = data[i]
         if "type" in result:
             if result['type'].lower() == "chords":
@@ -145,17 +144,18 @@ def sort_search_results(data):
             data.pop(i)
 
     # Sort remaining search results by highest rating.
-    highest_rating = 0
-    if len(data) > 1:
-        for result in data:
-            if result["rating"] >= highest_rating:
-                highest_rating = result["rating"]
-                tab_url = result["tab_url"]
-    else:
-        tab_url = data[0]['tab_url']
+
+    if len(data) > 0:
+        highest_rating = 0
+        if len(data) > 1:
+            for result in data:
+                if result["rating"] >= highest_rating:
+                    highest_rating = result["rating"]
+                    tab_url = result["tab_url"]
+        else:
+            tab_url = data[0]['tab_url']
 
     return tab_url  # return tab_url
-
 
 # Print tabs to console
 def print_tabs(file):
@@ -192,19 +192,18 @@ def search_ultimate_guitartabs(artist, title, print_to_console, printconsole):
     if found:
         if printconsole: print("GETTING LYRICS FROM ULTIMATE GUITAR TABS")
         url = sort_search_results(search_results)  # print search results, and get the url of the highest rating result
-        # url = "https://tabs.ultimate-guitar.com/tab/flogging_molly/the_last_serenade_sailors_and_fishermen_chords_2045663"
-        if printconsole: print(url)
-        r = requests.get(url)  # get the website for the search result
-        data = r.text  # HTMLtext
-        htmldata = seperate_lines(data)  # seperated lines
-        tabs = extract_tabs(htmldata)  # extracted the tabs line
-        if print_to_console:
-            print_tabs(tabs)  # print the tabs, slowly scrolling (maybe)
+        if url != "no data found":
+            if printconsole: print(url)
+            r = requests.get(url)  # get the website for the search result
+            data = r.text  # HTMLtext
+            htmldata = seperate_lines(data)  # seperated lines
+            tabs = extract_tabs(htmldata)  # extracted the tabs line
+            if print_to_console:
+                print_tabs(tabs)  # print the tabs, slowly scrolling (maybe)
 
     return tabs
 
 def search_azlyrics(artist, title, printconsole = True):
-
     if printconsole: print("STARTING SEARCH ON AZLYRICS")
     azlyrics = ["no azlyrics found"]  # if no azlyrics are found, this string will remain the same so that other functions know no azlyrics are found
     azartist = artist.lower()
@@ -246,7 +245,7 @@ def search_genius(artist, title, printconsole = True):
     title = title.replace("_", " ")
     genius = lyricsgenius.Genius("KuYRMCOBfjMrfi29BOpFq8daC-zj0DUnm3VPExaFQ4-eTJZIVF8bJJmUIz8wkJ7c")
     song = genius.search_song(title, artist, printconsole = printconsole)
-    if (song is not None) and (similar(song.artist, artist) > 0.5 and similar(song.title, title)):
+    if (song is not None) and (similar(song.artist, artist) > 0.5 and similar(song.title, title))> 0.5:
         lyrics = seperate_lines(song.lyrics)
     else:
         lyrics = ["no azlyrics found"]
@@ -551,7 +550,7 @@ class file:
                 inbreak = True
                 j = 0
                 no_lyrics = True
-                while "break" in self.tabslines[i + j]['group'].lower():
+                while i+j < len(self.tabslines) and ("break" in self.tabslines[i + j]['group'].lower()):
                     if self.tabslines[i + j]['lyrics'] == True and j > 0:
                         no_lyrics = False
                         break
@@ -701,7 +700,6 @@ def select_account():
 
     return name
 
-
 def main():
     username = select_account()
     scope = 'user-read-currently-playing user-modify-playback-state'
@@ -745,5 +743,6 @@ def main():
 
 
 version = '2019-10-13'
+
 if __name__ == "__main__":
     main()

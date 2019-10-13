@@ -38,7 +38,7 @@ if choice == "1":
 for file in files:
     if choice == "1":
         file = json.loads(open(file).read())
-    string = file['artist'].replace("%20", " ") + ' - ' + file['title'].replace("%20", " ")
+    string = file['artist'].replace("%20"," ").replace("_"," ") + ' - ' + file['title'].replace("%20"," ").replace("_"," ")
     if (not 'version' in file) or (file['version'] != version):
         oldversion.append(string)
     elif file['synced']:
@@ -47,6 +47,11 @@ for file in files:
         ready.append(string)
     else:
         incomplete.append(string)
+
+oldversion.sort()
+synced.sort()
+ready.sort()
+incomplete.sort()
 
 print("Synced:")
 for song in synced:

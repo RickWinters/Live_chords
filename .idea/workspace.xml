@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bad611-7058-488d-bbd8-6d2e5722a4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Live_Chords_UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Live_Chords_UI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/live_chords.py" beforeDir="false" afterPath="$PROJECT_DIR$/live_chords.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,126 +13,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live_chords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="672" selection-start-line="672" selection-end-line="672" />
+            <state relative-caret-position="17">
+              <caret line="203" column="56" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lyricsgenius/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="40" column="123" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
               <folding>
-                <element signature="e#264#306#0" />
-                <element signature="e#1706#1861#0" />
-                <element signature="e#2091#2335#0" />
-                <element signature="e#2354#2429#0" />
-                <element signature="e#3026#3515#0" />
-                <element signature="e#3142#3400#0" />
-                <element signature="e#3258#3341#0" />
-                <element signature="e#3818#3988#0" />
-                <element signature="e#3931#3988#0" />
-                <element signature="e#4105#4464#0" />
-                <element signature="e#4270#4464#0" />
-                <element signature="e#4633#4767#0" />
-                <element signature="e#4726#4767#0" />
-                <element signature="e#4961#5097#0" />
-                <element signature="e#5449#5652#0" />
-                <element signature="e#5507#5614#0" />
-                <element signature="e#5762#5926#0" />
-                <element signature="e#5794#5926#0" />
-                <element signature="e#5849#5926#0" />
-                <element signature="e#6112#6421#0" />
-                <element signature="e#6157#6421#0" />
-                <element signature="e#6286#6421#0" />
-                <element signature="e#6480#6539#0" />
-                <element signature="e#7455#8133#0" />
-                <element signature="e#8995#9327#0" />
-                <element signature="e#9046#9327#0" />
-                <element signature="e#9350#9555#0" />
-                <element signature="e#10846#11067#0" />
-                <element signature="e#11186#11406#0" />
-                <element signature="e#11825#12356#0" />
-                <element signature="e#12476#12947#0" />
-                <element signature="e#13085#13578#0" />
-                <element signature="e#13628#14023#0" />
-                <element signature="e#16314#16436#0" />
-                <element signature="e#16620#19544#0" />
-                <element signature="e#17027#19544#0" />
-                <element signature="e#17307#17391#0" />
-                <element signature="e#17462#17568#0" />
-                <element signature="e#17628#18572#0" />
-                <element signature="e#18952#19510#0" />
-                <element signature="e#19658#20468#0" />
-                <element signature="e#19701#20104#0" />
-                <element signature="e#20131#20468#0" />
-                <element signature="e#20508#23014#0" />
-                <element signature="e#20842#22948#0" />
-                <element signature="e#21039#22929#0" />
-                <element signature="e#21154#22929#0" />
-                <element signature="e#21981#22205#0" />
-                <element signature="e#22656#22929#0" />
-                <element signature="e#23057#23927#0" />
-                <element signature="e#23320#23854#0" />
-                <element signature="e#23428#23678#0" />
-                <element signature="e#23613#23678#0" />
-                <element signature="e#23731#23834#0" />
-                <element signature="e#23964#27500#0" />
-                <element signature="e#24254#27238#0" />
-                <element signature="e#24487#24591#0" />
-                <element signature="e#24633#24742#0" />
-                <element signature="e#24899#25084#0" />
-                <element signature="e#25127#25240#0" />
-                <element signature="e#25307#25413#0" />
-                <element signature="e#25456#25569#0" />
-                <element signature="e#25686#26229#0" />
-                <element signature="e#25849#26100#0" />
-                <element signature="e#25927#25974#0" />
-                <element signature="e#26151#26229#0" />
-                <element signature="e#26272#26317#0" />
-                <element signature="e#26397#27219#0" />
-                <element signature="e#26552#27219#0" />
-                <element signature="e#27569#27839#0" />
-                <element signature="e#27878#27896#0" />
-                <element signature="e#27927#28188#0" />
-                <element signature="e#28221#28283#0" />
-                <element signature="e#28315#28500#0" />
-                <element signature="e#28530#28720#0" />
-                <element signature="e#28751#29905#0" />
-                <element signature="e#28808#28855#0" />
-                <element signature="e#28903#28963#0" />
-                <element signature="e#28992#29269#0" />
-                <element signature="e#29043#29116#0" />
-                <element signature="e#29303#29600#0" />
-                <element signature="e#29320#29392#0" />
-                <element signature="e#29449#29600#0" />
-                <element signature="e#29483#29600#0" />
-                <element signature="e#29638#29703#0" />
-                <element signature="e#29739#29905#0" />
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/_bootlocale.py">
+        <entry file="file://$PROJECT_DIR$/Update_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1033">
-              <caret line="354" selection-start-line="354" selection-end-line="354" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
+            <state relative-caret-position="561">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -144,38 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="292" selection-start-line="292" selection-end-line="292" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Save_account_info.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Update_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="5746">
+              <caret line="340" selection-start-line="340" selection-end-line="340" />
             </state>
           </provider>
         </entry>
@@ -183,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_scripts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -233,20 +138,19 @@
         <option value="$PROJECT_DIR$/Website_test.py" />
         <option value="$PROJECT_DIR$/Pygame_UI_test.py" />
         <option value="$PROJECT_DIR$/account_info.txt" />
-        <option value="$PROJECT_DIR$/List_files.py" />
         <option value="$PROJECT_DIR$/Save_account_info.py" />
         <option value="$PROJECT_DIR$/Test_scripts.py" />
-        <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/lyricsgenius/api.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/List_files.py" />
         <option value="$PROJECT_DIR$/Live_Chords_UI.py" />
+        <option value="$PROJECT_DIR$/Update_all.py" />
         <option value="$PROJECT_DIR$/live_chords.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -263,6 +167,11 @@
             <path>
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
               <item name="live_chords" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
+              <item name="live_chords" type="462c0819:PsiDirectoryNode" />
+              <item name="lyricsgenius" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="live_chords" type="b2602c69:ProjectViewProjectNode" />
@@ -421,18 +330,18 @@
     <list>
       <item itemvalue="Python.live_chords" />
       <item itemvalue="Python.Live_Chords_UI" />
+      <item itemvalue="Python.Pygame_UI_test" />
       <item itemvalue="Python.Update_all" />
       <item itemvalue="Python.Website_test" />
       <item itemvalue="Python.scan_files" />
-      <item itemvalue="Python.Pygame_UI_test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Live_Chords_UI" />
         <item itemvalue="Python.Update_all" />
+        <item itemvalue="Python.scan_files" />
         <item itemvalue="Python.Pygame_UI_test" />
         <item itemvalue="Python.Website_test" />
-        <item itemvalue="Python.scan_files" />
       </list>
     </recent_temporary>
   </component>
@@ -571,21 +480,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07165437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="-1160" y="245" width="751" height="323" id="Run" order="2" type="WINDOWED" weight="0.37594798" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3445287" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.37594798" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25893825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.51570964" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" x="82" y="485" width="1898" height="304" id="Python Console" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" x="82" y="485" width="1898" height="304" id="Python Console" order="10" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32916668" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -688,13 +598,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>690</line>
+          <line>687</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/live_chords.py</url>
-          <line>685</line>
+          <line>682</line>
           <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/List_files.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -707,7 +622,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="file._CHUNK_SIZE" />
+        <watch expression="song" />
       </configuration>
     </watches-manager>
   </component>
@@ -750,6 +665,53 @@
       </expression>
       <expression>
         <expression-string>line.strip()==&quot;&lt;!--sse--&gt;&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>song.lyrics</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>song = genius.search_song(title, artist,  printconsole = False)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>song = genius.search_genius(title, artist,  printconsole = False)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>song = genius.search_genius(title, artist, False)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>title = &quot;seize the Day&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>title = Seize the day</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>genius.search_song(title, artist, False)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>genius.search_song(title, artist)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>genius.search_song(title, artist, printconsole = printconsole)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -844,20 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/difflib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="312" selection-start-line="312" selection-end-line="312" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/tqdm/_tqdm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042">
-          <caret line="131" column="6" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -865,41 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/lyricsgenius/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3536">
-          <caret line="252" column="29" selection-start-line="252" selection-start-column="29" selection-end-line="252" selection-end-column="29" />
-          <folding>
-            <element signature="e#1532#2249#0" />
-            <element signature="e#2288#2410#0" />
-            <element signature="e#2451#2577#0" />
-            <element signature="e#2943#3108#0" />
-            <element signature="e#3688#3822#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.py" />
-    <entry file="file://$PROJECT_DIR$/List_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Update_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/lyricsgenius/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -914,44 +828,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account_info.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/account_info.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1033">
           <caret line="354" selection-start-line="354" selection-end-line="354" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="292" selection-start-line="292" selection-end-line="292" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,107 +843,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/lyricsgenius/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="206" column="8" selection-start-line="206" selection-start-column="8" selection-end-line="206" selection-end-column="8" />
+          <folding>
+            <element signature="e#1532#2249#0" />
+            <element signature="e#2288#2410#0" />
+            <element signature="e#2451#2577#0" />
+            <element signature="e#2943#3108#0" />
+            <element signature="e#3688#3822#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Save_account_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spotipy/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12555">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/difflib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5678">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lyricsgenius/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/tqdm/_tqdm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11730">
+          <caret line="705" column="8" selection-start-line="705" selection-start-column="8" selection-end-line="705" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live_chords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="203" column="56" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lyricsgenius/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="123" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/live_chords.py">
+    <entry file="file://$PROJECT_DIR$/Update_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="672" selection-start-line="672" selection-end-line="672" />
+        <state relative-caret-position="561">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
           <folding>
-            <element signature="e#264#306#0" />
-            <element signature="e#1706#1861#0" />
-            <element signature="e#2091#2335#0" />
-            <element signature="e#2354#2429#0" />
-            <element signature="e#3026#3515#0" />
-            <element signature="e#3142#3400#0" />
-            <element signature="e#3258#3341#0" />
-            <element signature="e#3818#3988#0" />
-            <element signature="e#3931#3988#0" />
-            <element signature="e#4105#4464#0" />
-            <element signature="e#4270#4464#0" />
-            <element signature="e#4633#4767#0" />
-            <element signature="e#4726#4767#0" />
-            <element signature="e#4961#5097#0" />
-            <element signature="e#5449#5652#0" />
-            <element signature="e#5507#5614#0" />
-            <element signature="e#5762#5926#0" />
-            <element signature="e#5794#5926#0" />
-            <element signature="e#5849#5926#0" />
-            <element signature="e#6112#6421#0" />
-            <element signature="e#6157#6421#0" />
-            <element signature="e#6286#6421#0" />
-            <element signature="e#6480#6539#0" />
-            <element signature="e#7455#8133#0" />
-            <element signature="e#8995#9327#0" />
-            <element signature="e#9046#9327#0" />
-            <element signature="e#9350#9555#0" />
-            <element signature="e#10846#11067#0" />
-            <element signature="e#11186#11406#0" />
-            <element signature="e#11825#12356#0" />
-            <element signature="e#12476#12947#0" />
-            <element signature="e#13085#13578#0" />
-            <element signature="e#13628#14023#0" />
-            <element signature="e#16314#16436#0" />
-            <element signature="e#16620#19544#0" />
-            <element signature="e#17027#19544#0" />
-            <element signature="e#17307#17391#0" />
-            <element signature="e#17462#17568#0" />
-            <element signature="e#17628#18572#0" />
-            <element signature="e#18952#19510#0" />
-            <element signature="e#19658#20468#0" />
-            <element signature="e#19701#20104#0" />
-            <element signature="e#20131#20468#0" />
-            <element signature="e#20508#23014#0" />
-            <element signature="e#20842#22948#0" />
-            <element signature="e#21039#22929#0" />
-            <element signature="e#21154#22929#0" />
-            <element signature="e#21981#22205#0" />
-            <element signature="e#22656#22929#0" />
-            <element signature="e#23057#23927#0" />
-            <element signature="e#23320#23854#0" />
-            <element signature="e#23428#23678#0" />
-            <element signature="e#23613#23678#0" />
-            <element signature="e#23731#23834#0" />
-            <element signature="e#23964#27500#0" />
-            <element signature="e#24254#27238#0" />
-            <element signature="e#24487#24591#0" />
-            <element signature="e#24633#24742#0" />
-            <element signature="e#24899#25084#0" />
-            <element signature="e#25127#25240#0" />
-            <element signature="e#25307#25413#0" />
-            <element signature="e#25456#25569#0" />
-            <element signature="e#25686#26229#0" />
-            <element signature="e#25849#26100#0" />
-            <element signature="e#25927#25974#0" />
-            <element signature="e#26151#26229#0" />
-            <element signature="e#26272#26317#0" />
-            <element signature="e#26397#27219#0" />
-            <element signature="e#26552#27219#0" />
-            <element signature="e#27569#27839#0" />
-            <element signature="e#27878#27896#0" />
-            <element signature="e#27927#28188#0" />
-            <element signature="e#28221#28283#0" />
-            <element signature="e#28315#28500#0" />
-            <element signature="e#28530#28720#0" />
-            <element signature="e#28751#29905#0" />
-            <element signature="e#28808#28855#0" />
-            <element signature="e#28903#28963#0" />
-            <element signature="e#28992#29269#0" />
-            <element signature="e#29043#29116#0" />
-            <element signature="e#29303#29600#0" />
-            <element signature="e#29320#29392#0" />
-            <element signature="e#29449#29600#0" />
-            <element signature="e#29483#29600#0" />
-            <element signature="e#29638#29703#0" />
-            <element signature="e#29739#29905#0" />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5746">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Live_Chords_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
