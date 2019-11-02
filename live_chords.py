@@ -36,6 +36,8 @@ def cleanArtistTitleString(artist, title):
     title = title.replace("Mono", "")
     title = title.replace("Remastered","")
     title = title.replace("remastered","")
+    title = title.replace("Remaster","")
+    title = title.replace("remaster","")
     artist = artist.replace("?", "")
     artist = artist.replace("!", "")
     artist = artist.replace("'", "")
